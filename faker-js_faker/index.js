@@ -1,5 +1,6 @@
 const faker = require('@faker-js/faker');
 const http = require('http');
+const crypto = require('crypto')
 
 var options = {
   host: 'tcc_loader',
@@ -123,31 +124,47 @@ async function persist(data, endpoint) {
   }
 }
 
+function createStep(execId, acao, tabela, quantidade, id){
+  ts = new Date();
+  step = {
+    "execucao": execId,
+    "horario": ts,
+    "acao": acao,
+    "tabela": tabela,
+    "quantidade": quantidade,
+    "id": id
+  };
+  return persist(step, '/register_step');
+}
 
 async function run() {
   const getWithForOf = async (num_cards) => {
     const data = [];
     for (const n of num_cards) {
-      startTime = performance.now();
-      console.log(`Iniciando ${n['cards']} cartas. ${startTime}`);
+      console.log(`Iniciando ${n['cards']} cartas.`);
+      await createStep(crypto.randomUUID(), 'inicio', 'cards', n['cards'], 'gerar')
       cards = generateCards(n['cards']);
+      await createStep(crypto.randomUUID(), 'fim', 'cards', n['cards'], 'gerar')
+      
+      await createStep(crypto.randomUUID(), 'inicio', 'cards', n['cards'], 'persistir')
       card_id_range = await persist(cards, '/create_cards');
-      endTime = performance.now();
-      data.push({ "n": n, "t": endTime - startTime });
-
-      startTime = performance.now();
-      console.log(`Iniciando ${n['decks']} decks. ${startTime}`);
+      await createStep(crypto.randomUUID(), 'fim', 'cards', n['cards'], 'persistir')
+      
+      await createStep(crypto.randomUUID(), 'inicio', 'decks', n['decks'], 'gerar')
       decks = generateDecks(n['decks']);
+      await createStep(crypto.randomUUID(), 'fim', 'decks', n['decks'], 'gerar')
+      
+      await createStep(crypto.randomUUID(), 'inicio', 'decks', n['decks'], 'persistir')
       deck_id_range = await persist(decks, '/create_decks');
-      endTime = performance.now();
-      data.push({ "n": n, "t": endTime - startTime });
-
-      startTime = performance.now();
-      console.log(`Iniciando ${n['decks'] * 60} relações deck x carta. ${startTime}`);
+      await createStep(crypto.randomUUID(), 'fim', 'decks', n['decks'], 'persistir')
+      
+      await createStep(crypto.randomUUID(), 'inicio', 'deck_cards', 60 * n['decks'], 'gerar')
       decks = generateDecksCards(card_id_range, deck_id_range);
+      await createStep(crypto.randomUUID(), 'fim', 'deck_cards', 60 * n['decks'], 'gerar')
+      
+      await createStep(crypto.randomUUID(), 'inicio', 'deck_cards', 60 * n['decks'], 'persistir')
       await persist(decks, '/create_deck_cards');
-      endTime = performance.now();
-      data.push({ "n": n, "t": endTime - startTime });
+      await createStep(crypto.randomUUID(), 'fim', 'deck_cards', 60 * n['decks'], 'persistir')
 
     }
     return data;
