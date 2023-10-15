@@ -1,25 +1,27 @@
 version: "3"
 services:
-  generator:
-    image: generator
-    entrypoint: node
-    command:
-      - index.js
-    depends_on:
-      - tcc_loader
-      - postgres
-    volumes:
-      - ./:/generator/
-    networks:
-      - etl_network
+  # generator:
+    # image: generator
+    # entrypoint: node
+    # command:
+    #   - index.js
+    # environment:
+    #     PGPASSWORD: egide
+  #   depends_on:
+  #     - tcc_loader
+  #     - postgres
+  #   volumes:
+  #     - ./:/generator/
+  #   networks:
+  #     - etl_network
   tcc_loader:
-    image: tcc_loader
+    image: tcc_loader:1.0
     entrypoint: "sanic"
     command: ["main:app", "--host=0.0.0.0", "--port=1997", "--workers=1", "-r", "-d"]
     ports:
       - "1997:1997"
     volumes:
-      - /home/arthuregide/projects/tcc/python_loader/:/sanic
+      - /home/arthuregide/projects/faculdade/tcc/tcc_loader:/sanic
     networks:
       - etl_network
   postgres:
