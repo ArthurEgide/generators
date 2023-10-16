@@ -143,46 +143,49 @@ async function run() {
     let s;
     const data = [];
     for (const n of num_cards) {
-      
-      await createStep(crypto.randomUUID(), 'inicio gerar', 'cards', n['cards'], 'fakerjs')
+      exec_id = crypto.randomUUID()
+      await createStep(exec_id, 'inicio gerar', 'cards', n['cards'], 'fakerjs')
       cards = generateCards(n['cards']);
-      await createStep(crypto.randomUUID(), 'fim gerar', 'cards', n['cards'], 'fakerjs')
+      await createStep(exec_id, 'fim gerar', 'cards', n['cards'], 'fakerjs')
       
-      await createStep(crypto.randomUUID(), 'inicio persistir', 'cards', n['cards'], 'fakerjs')
+      exec_id = crypto.randomUUID()
+      await createStep(exec_id, 'inicio persistir', 'cards', n['cards'], 'fakerjs')
       card_id_range = await persist(cards, '/create_cards');
-      await createStep(crypto.randomUUID(), 'fim persistir', 'cards', n['cards'], 'fakerjs')
+      await createStep(exec_id, 'fim persistir', 'cards', n['cards'], 'fakerjs')
       
-      await createStep(crypto.randomUUID(), 'inicio gerar', 'decks', n['decks'], 'fakerjs')
+      exec_id = crypto.randomUUID()
+      await createStep(exec_id, 'inicio gerar', 'decks', n['decks'], 'fakerjs')
       decks = generateDecks(n['decks']);
+      await createStep(exec_id, 'fim gerar', 'decks', n['decks'], 'fakerjs')
       
-      await createStep(crypto.randomUUID(), 'fim gerar', 'decks', n['decks'], 'fakerjs')
+      exec_id = crypto.randomUUID()
+      await createStep(exec_id, 'inicio persistir', 'decks', n['decks'], 'fakerjs')
+      deck_id_range = await persist(decks, '/create_decks');
+      await createStep(exec_id, 'fim persistir', 'decks', n['decks'], 'fakerjs')
       
-      // await createStep(crypto.randomUUID(), 'inicio persistir', 'decks', n['decks'], 'fakerjs')
-      // deck_id_range = await persist(decks, '/create_decks');
-      // await createStep(crypto.randomUUID(), 'fim persistir', 'decks', n['decks'], 'fakerjs')
+      exec_id = crypto.randomUUID()
+      await createStep(exec_id, 'inicio', 'deck_cards gerar', 60 * n['decks'], 'fakerjs')
+      decks = generateDecksCards(card_id_range, deck_id_range);
+      await createStep(exec_id, 'fim gerar', 'deck_cards', 60 * n['decks'], 'fakerjs')
       
-      // await createStep(crypto.randomUUID(), 'inicio', 'deck_cards gerar', 60 * n['decks'], 'fakerjs')
-      // decks = generateDecksCards(card_id_range, deck_id_range);
-      
-      // await createStep(crypto.randomUUID(), 'fim gerar', 'deck_cards', 60 * n['decks'], 'fakerjs')
-      
-      // await createStep(crypto.randomUUID(), 'inicio', 'deck_cards persistir', 60 * n['decks'], 'fakerjs')
-      // await persist(decks, '/create_deck_cards');
-      // await createStep(crypto.randomUUID(), 'fim persistir', 'deck_cards', 60 * n['decks'], 'fakerjs')
+      exec_id = crypto.randomUUID()
+      await createStep(exec_id, 'inicio', 'deck_cards persistir', 60 * n['decks'], 'fakerjs')
+      await persist(decks, '/create_deck_cards');
+      await createStep(exec_id, 'fim persistir', 'deck_cards', 60 * n['decks'], 'fakerjs')
 
     }
     return data;
   };
   
   getWithForOf([{
-    cards: 2500,
-    decks: 100
-  }, {
     cards: 10000,
-    decks: 250
+    decks: 1000
   }, {
     cards: 100000,
-    decks: 500
+    decks: 5000
+  }, {
+    cards: 300000,
+    decks: 10000
   },]).then((times) => {
     times.forEach((element) => {
       console.log(`${element['n']} levou ${element['t']} ms`);
