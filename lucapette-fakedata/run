@@ -1,0 +1,82 @@
+#!/bin/bash
+register_step()
+{
+curl -X POST -H "Content-Type: application/json" -d '{
+  "execucao": "'"$execucao"'",
+  "horario": "'"$horario"'",
+  "acao": "'"$acao"'",
+  "tabela": "'"$tabela"'",
+  "quantidade": "'"$quantidade"'",
+  "id": "'"$id"'"
+}' http://tcc_loader:1997/register_step
+}
+
+generate_data() {
+  #### Cards
+  echo "#inicio"
+  local limit_cards="$1"
+  local limit_decks="$2"
+  
+  local execucao=$(uuidgen)
+  local acao="inicio gerar"
+  local tabela="cards"
+  local id="lucapette-fakedata"
+  local quantidade=$limit_cards
+
+  local execucao=$(uuidgen)
+  local horario=$(node -e 'console.log(new Date())')
+  local acao="inicio gerar"
+  register_step
+  ./fakedata -t public.cards nome=name tipo=name custo_mana=name descricao=name poder=int resistencia=int raridade=name -f sql --limit "$limit_cards" > data.sql
+  local horario=$(node -e 'console.log(new Date())')
+  local acao="fim gerar"
+  register_step
+
+  local execucao=$(uuidgen)
+  local horario=$(node -e 'console.log(new Date())')
+  local acao="inicio persistir"
+  register_step
+  psql -h postgres -U arthur -d postgres -q -f data.sql 
+  local horario=$(node -e 'console.log(new Date())')
+  local acao="fim persistir"
+  register_step
+  
+  #### Decks
+
+  local execucao=$(uuidgen)
+  local acao="inicio gerar"
+  local tabela="decks"
+  local id="lucapette-fakedata"
+  local quantidade=$limit_decks
+
+  local execucao=$(uuidgen)
+  local horario=$(node -e 'console.log(new Date())')
+  local acao="inicio gerar"
+  register_step
+  ./fakedata -t public.decks nome=name descricao=name formato=name numero_cartas=int:60,60 -f sql --limit "$limit_decks" > data.sql
+  local horario=$(node -e 'console.log(new Date())')
+  local acao="fim gerar"
+  register_step
+
+  local execucao=$(uuidgen)
+  local horario=$(node -e 'console.log(new Date())')
+  local acao="inicio persistir"
+  register_step
+  psql -h postgres -U arthur -d postgres -q -f data.sql 
+  local horario=$(node -e 'console.log(new Date())')
+  local acao="fim persistir"
+  register_step
+
+  # Implementar o deck_cards
+
+  rm data.sql
+}
+
+# Leve
+generate_data 10000 1000 #60000
+
+# Medio
+generate_data 100000 5000 #30000
+
+# Pesado
+generate_data 300000 10000 #60000
