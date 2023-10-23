@@ -1,0 +1,1 @@
+mvn archetype:generate -DgroupId=com.generator.jfairy -DartifactId=jfairy -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
