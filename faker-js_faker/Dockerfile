@@ -1,12 +1,9 @@
 FROM node:18.18-alpine
 
-WORKDIR /generator
-
 RUN apk add curl
 
-COPY package.json .
-COPY . .
-
+WORKDIR /usr/generator
+COPY ./ /usr/generator
 RUN npm install
 
 ENTRYPOINT [ "/bin/sh" ]

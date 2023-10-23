@@ -38,7 +38,6 @@ function cardsRepetition(nRemaining, deck_id, card_idMin, card_idMax) {
   return data;
 }
 
-
 function generateCards(n) {
   var data = []
   for (let index = 0; index < n; index++) {
