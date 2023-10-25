@@ -27,22 +27,14 @@ generate_data() {
   local horario=$(node -e 'console.log(new Date())')
   local acao="inicio gerar"
   register_step
-  ./fakedata -t public.cards nome=name tipo=name custo_mana=name descricao=name poder=int resistencia=int raridade=name -f sql --limit "$limit_cards" > data.sql
+
+  ./fakedata -t public.cards nome=name tipo=enum:criatura,feitiço,artefato,encantamento custo_mana=int:0,7 descricao=sentence:80 poder=int:0,12 resistencia=int:0,12 raridade=enum:comum,incomum,rara,mítica -f sql --limit "$limit_cards" > data.sql
   local horario=$(node -e 'console.log(new Date())')
   local acao="fim gerar"
   register_step
-
-  local execucao=$(uuidgen)
-  local horario=$(node -e 'console.log(new Date())')
-  local acao="inicio persistir"
-  register_step
-  psql -h postgres -U arthur -d postgres -q -f data.sql 
-  local horario=$(node -e 'console.log(new Date())')
-  local acao="fim persistir"
-  register_step
   
-  #### Decks
 
+  #### Decks
   local execucao=$(uuidgen)
   local acao="inicio gerar"
   local tabela="decks"
@@ -53,21 +45,11 @@ generate_data() {
   local horario=$(node -e 'console.log(new Date())')
   local acao="inicio gerar"
   register_step
-  ./fakedata -t public.decks nome=name descricao=name formato=name numero_cartas=int:60,60 -f sql --limit "$limit_decks" > data.sql
+
+  ./fakedata -t public.decks nome=name descricao=sentence:80 formato=enum:'commander,padrão,pioneiro,moderno,alchemy,explorador,histórico,pauper,brawl,conspiracy,gigante de duas cabeças,legado,vintage,planechase,oathbreaker' numero_cartas=int:60,60 -f sql --limit "$limit_decks" > data.sql
   local horario=$(node -e 'console.log(new Date())')
   local acao="fim gerar"
   register_step
-
-  local execucao=$(uuidgen)
-  local horario=$(node -e 'console.log(new Date())')
-  local acao="inicio persistir"
-  register_step
-  psql -h postgres -U arthur -d postgres -q -f data.sql 
-  local horario=$(node -e 'console.log(new Date())')
-  local acao="fim persistir"
-  register_step
-
-  # Implementar o deck_cards
 
   rm data.sql
 }
