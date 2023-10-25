@@ -1,28 +1,24 @@
 package com.generator.jfairy;
 
-import org.apache.http.HttpRequest;
-import org.apache.http.NameValuePair;
-
 import java.io.IOException;
 import java.net.URI;
+import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
-import java.lang.Integer;
+import java.util.UUID;
+
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 import org.apache.http.Header;
 import org.apache.http.HttpEntity;
-import org.apache.http.HttpHeaders;
-import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
-import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
 
 import org.jfairy.Fairy;
@@ -35,6 +31,7 @@ class HttpClientEgide {
     final URI CARD_ENDPOINT = URI.create("http://tcc_loader:1997/create_cards");
     final URI DECK_ENDPOINT = URI.create("http://tcc_loader:1997/create_decks");
     final URI DECK_CARDS_ENDPOINT = URI.create("http://tcc_loader:1997/create_deck_cards");
+    final URI STEP_ENDPOINT = URI.create("http://tcc_loader:1997/register_step");
 
     private final CloseableHttpClient httpClient = HttpClients.createDefault();
 
@@ -54,32 +51,38 @@ class HttpClientEgide {
         }
     }
 
-    // Cards post
-    public void sendPost(Card card) throws Exception {
-      
-      List<Card> cardList = new ArrayList<>();
-      cardList.add(card);
+    // TODO: Descomentar
+    // Decks post
+    // public void sendPost(List<Deck> deckList) throws Exception {
+    //   Gson gson = new GsonBuilder().create();
+    //   String json = gson.toJson(deckList);
+    //   HttpEntity entity = new StringEntity(json);
+    //   sendPost(this.DECK_ENDPOINT, entity);
+    // }
 
+    // Cards post
+    public void sendPost(List<Card> cardList) throws Exception {
       Gson gson = new GsonBuilder().create();
       String json = gson.toJson(cardList);
-
-
       HttpEntity entity = new StringEntity(json);
-
-      System.out.println("Eita nós moscada");
-
       sendPost(this.CARD_ENDPOINT, entity);
     }
 
-    public void sendPost(URI uri, HttpEntity json) throws Exception {
+    // Step post
+    public void sendPost(Step step) throws Exception {
+      Gson gson = new GsonBuilder()
+        .setDateFormat("yyyy-MM-dd hh:mm:ss.S")
+        .create();
+      String json = gson.toJson(step);
+      HttpEntity entity = new StringEntity(json);
+      sendPost(this.STEP_ENDPOINT, entity);
+    }
 
+    public void sendPost(URI uri, HttpEntity json) throws Exception {
       HttpPost post = new HttpPost(uri);
       post.setEntity(json);
-  
-
       try (CloseableHttpClient httpClient = HttpClients.createDefault();
           CloseableHttpResponse response = httpClient.execute(post)) {
-
         System.out.println(EntityUtils.toString(response.getEntity()));
       }
 
@@ -90,7 +93,7 @@ class HttpClientEgide {
 class Card {
   private String nome;
   private String tipo;
-  private int custoMana;
+  private int custo_mana;
   private String descricao;
   private int poder;
   private int resistencia;
@@ -108,35 +111,6 @@ class Card {
     this.generateResistencia();
     this.generateRaridade();
   }
-
-  public String getNome() {
-    return nome;
-  }
-
-  public int getCustoMana() {
-    return custoMana;
-  }
-  
-  public String getDescricao() {
-    return descricao;
-  }
-
-  public int getPoder() {
-    return poder;
-  }
-  
-  public String getRaridade() {
-    return raridade;
-  }
-
-  public int getResistencia() {
-    return resistencia;
-  }
-
-  public String getTipo() {
-    return tipo;
-  }
-
 
   // Done
   void generateNome() {
@@ -166,7 +140,7 @@ class Card {
     // • Custo de Mana: O custo de mana necessário para conjurar a carta,
     // representado por um valor numérico entre 0 e 7.
     BaseProducer bp = fairy.baseProducer();
-    this.custoMana = bp.randomBetween(0, 7);
+    this.custo_mana = bp.randomBetween(0, 7);
   }
 
   // Done
@@ -206,33 +180,126 @@ class Card {
     this.raridade = bp.randomElement(al);
   }
 
-  public String toString() {// overriding the toString() method
-    return "Replaced toString: " + this.nome;
+}
+
+class Step {
+  String execucao;
+  Timestamp horario;
+  String acao;
+  String tabela;
+  int quantidade;
+  String id = "jfairy";
+
+  Step(String tbl, int qt){
+    this.execucao = UUID.randomUUID().toString();
+    this.tabela = tbl;
+    this.quantidade = qt;
   }
 
+  public String getAcao() {
+    return this.acao;
+  }
+
+  public String getExecucao() {
+    return this.execucao;
+  }
+  
+  public Timestamp getHorario() {
+    return this.horario;
+  }
+
+  public String getId() {
+    return this.id;
+  }
+
+  public int getQuantidade() {
+    return this.quantidade;
+  }
+
+  public String getTabela() {
+    return this.tabela;
+  }
+
+  public void setAcao(String acao) {
+    this.acao = acao;
+    this.horario = new Timestamp(System.currentTimeMillis());
+  }
+  
 }
 
 public class App {
-  public static void main(String[] args) {
-    Card card = new Card();
+  static List<Card> generateCards(int n) {
+    List<Card> cards = new ArrayList<Card>();
+    while(n-->0){
+      cards.add(new Card());
+    }
+    return cards;
+  }
 
-    System.out.println("Iniciando aqui paizão");
-    // HttpClient httpclient = HttpClients.createDefault();
-    // HttpPost httppost = new HttpPost("tcc_loader:1997");
-    // URI address = new URI("https", null, "google.com", 80, "/", null, null);
-    // HttpClient hc = new HttpClient();
+  // TODO: Descomentar
+  // static List<Card> generateDecks(int n) {
+  //   List<Deck> decks = new ArrayList<Deck>();
+  //   while(n-->0){
+  //     decks.add(new Deck());
+  //   }
+  //   return decks;
+  // }
+
+  public static void main(String[] args) {
 
     HttpClientEgide obj = new HttpClientEgide();
-    URI x = URI.create("http://tcc_loader:1997");
-
+    
     try {
-      // obj.sendGet(x);
-      obj.sendPost(card);
-    } catch (Exception e) {
-      System.out.println("Fodeu");
-    }
+      // TODO: Corrigir os valores de geração
+      int[] leve = {10, 2};
+      int[] medio = {30, 3};
+      int[] massivo = {50, 5};
 
-    System.out.println("Finalizando aqui paizão");
-    // System.out.println(t1);
+      List<int[]> sizes = new ArrayList<int[]>();
+      sizes.add(leve);
+      sizes.add(medio);
+      sizes.add(massivo);
+
+      Step step;
+      int qtCartas, qtDecks;
+      for (int[] quantidades : sizes) {
+        qtCartas = quantidades[0];
+        qtDecks  = quantidades[1];
+
+        step = new Step("cards", qtCartas);
+        step.setAcao("inicio gerar");
+        obj.sendPost(step);
+        List<Card> cards = generateCards(qtCartas);
+        step.setAcao("fim gerar");
+        obj.sendPost(step);
+        
+        step = new Step("cards", qtCartas);
+        step.setAcao("inicio persistir");
+        obj.sendPost(step);
+        obj.sendPost(cards);
+        step.setAcao("fim persistir");
+        obj.sendPost(step);
+
+        // TODO: Descomentar
+        // step = new Step("decks", qtDecks);
+        // step.setAcao("inicio gerar");
+        // obj.sendPost(step);
+        // List<Deck> decks = generateDecks(qtDecks);
+        // step.setAcao("fim gerar");
+        // obj.sendPost(step);
+        
+        // step = new Step("decks", qtDecks);
+        // step.setAcao("inicio persistir");
+        // obj.sendPost(step);
+        // obj.sendPost(decks);
+        // step.setAcao("fim persistir");
+        // obj.sendPost(step);
+
+
+      }
+
+    } catch (Exception e) {
+      System.err.println(e);
+    }
   }
 }

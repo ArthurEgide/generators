@@ -6,7 +6,8 @@ RUN apt update -y && apt upgrade -y
 
 RUN apt install -y git curl maven
 
-WORKDIR /usr/generator/jfairy
+COPY ./ /usr/generator/
 
+RUN mvn install
 
 ENTRYPOINT [ "bash" ]
