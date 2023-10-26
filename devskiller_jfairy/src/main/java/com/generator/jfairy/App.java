@@ -51,14 +51,13 @@ class HttpClientEgide {
         }
     }
 
-    // TODO: Descomentar
     // Decks post
-    // public void sendPost(List<Deck> deckList) throws Exception {
-    //   Gson gson = new GsonBuilder().create();
-    //   String json = gson.toJson(deckList);
-    //   HttpEntity entity = new StringEntity(json);
-    //   sendPost(this.DECK_ENDPOINT, entity);
-    // }
+    public void sendPost(List<Deck> deckList) throws Exception {
+      Gson gson = new GsonBuilder().create();
+      String json = gson.toJson(deckList);
+      HttpEntity entity = new StringEntity(json);
+      sendPost(this.DECK_ENDPOINT, entity);
+    }
 
     // Cards post
     public void sendPost(List<Card> cardList) throws Exception {
@@ -182,6 +181,73 @@ class Card {
 
 }
 
+class Deck {
+  private String nome;
+  private String descricao;
+  private String formato;
+  private int numero_cartas;
+  
+  static Fairy fairy;
+
+  Deck() {
+    fairy = Fairy.create();
+    this.generateNome();
+    this.generateDescricao();
+    this.generateFormato();
+    this.generateNumeroCartas();
+  }
+
+  // Done
+  void generateNome() {
+    // • Nome: O nome do deck, que deve ser uma sequência de caracteres. Até 42
+    // caracteres
+    Company company = fairy.company();
+    Person person = fairy.person();
+
+    this.nome = company.name().split(" ")[0] + " " + person.lastName();
+  }
+
+  // Done
+  void generateDescricao() {
+    // • Descrição: Uma descrição da deck que pode conter texto livre. Entre 40 e
+    // 80 caracteres
+    TextProducer tp = fairy.textProducer();
+    tp.limitedTo(80);
+    this.descricao = tp.paragraph();
+  }
+
+  // Done
+  void generateFormato() {
+    // • Formato: O formato do jogo em que o deck pode ser utilizado. Exemplos: commander, padrão, pauper.
+    BaseProducer bp = fairy.baseProducer();
+    List<String> al = new ArrayList<String>();
+    al.add("commander");
+    al.add("padrão");
+    al.add("pioneiro");
+    al.add("moderno");
+    al.add("alchemy");
+    al.add("explorador");
+    al.add("histórico");
+    al.add("pauper");
+    al.add("brawl");
+    al.add("conspiracy");
+    al.add("gigante de duas cabeças");
+    al.add("legado");
+    al.add("vintage");
+    al.add("planechase");
+    al.add("oathbreaker");
+    this.formato = bp.randomElement(al);
+  }  
+
+  // Done
+  void generateNumeroCartas() {
+    // • Número de cartas: A quantidade de cartas que compoem o deck, que corresponde a um total 60 cartas
+    BaseProducer bp = fairy.baseProducer();
+    this.numero_cartas = bp.randomBetween(60, 60);
+  }
+
+}
+
 class Step {
   String execucao;
   Timestamp horario;
@@ -236,14 +302,13 @@ public class App {
     return cards;
   }
 
-  // TODO: Descomentar
-  // static List<Card> generateDecks(int n) {
-  //   List<Deck> decks = new ArrayList<Deck>();
-  //   while(n-->0){
-  //     decks.add(new Deck());
-  //   }
-  //   return decks;
-  // }
+  static List<Deck> generateDecks(int n) {
+    List<Deck> decks = new ArrayList<Deck>();
+    while(n-->0){
+      decks.add(new Deck());
+    }
+    return decks;
+  }
 
   public static void main(String[] args) {
 
@@ -280,20 +345,19 @@ public class App {
         step.setAcao("fim persistir");
         obj.sendPost(step);
 
-        // TODO: Descomentar
-        // step = new Step("decks", qtDecks);
-        // step.setAcao("inicio gerar");
-        // obj.sendPost(step);
-        // List<Deck> decks = generateDecks(qtDecks);
-        // step.setAcao("fim gerar");
-        // obj.sendPost(step);
+        step = new Step("decks", qtDecks);
+        step.setAcao("inicio gerar");
+        obj.sendPost(step);
+        List<Deck> decks = generateDecks(qtDecks);
+        step.setAcao("fim gerar");
+        obj.sendPost(step);
         
-        // step = new Step("decks", qtDecks);
-        // step.setAcao("inicio persistir");
-        // obj.sendPost(step);
-        // obj.sendPost(decks);
-        // step.setAcao("fim persistir");
-        // obj.sendPost(step);
+        step = new Step("decks", qtDecks);
+        step.setAcao("inicio persistir");
+        obj.sendPost(step);
+        obj.sendPost(decks);
+        step.setAcao("fim persistir");
+        obj.sendPost(step);
 
 
       }
