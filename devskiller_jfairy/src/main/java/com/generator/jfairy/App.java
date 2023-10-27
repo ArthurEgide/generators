@@ -7,7 +7,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
@@ -52,7 +51,7 @@ class HttpClientEgide {
     }
 
     // Decks post
-    public void sendPost(List<Deck> deckList) throws Exception {
+    public void sendPostDecks(List<G_Deck> deckList) throws Exception {
       Gson gson = new GsonBuilder().create();
       String json = gson.toJson(deckList);
       HttpEntity entity = new StringEntity(json);
@@ -60,7 +59,7 @@ class HttpClientEgide {
     }
 
     // Cards post
-    public void sendPost(List<Card> cardList) throws Exception {
+    public void sendPostCards(List<G_Card> cardList) throws Exception {
       Gson gson = new GsonBuilder().create();
       String json = gson.toJson(cardList);
       HttpEntity entity = new StringEntity(json);
@@ -89,7 +88,7 @@ class HttpClientEgide {
 
   }
 
-class Card {
+class G_Card {
   private String nome;
   private String tipo;
   private int custo_mana;
@@ -100,7 +99,7 @@ class Card {
   
   static Fairy fairy;
 
-  Card() {
+  G_Card() {
     fairy = Fairy.create();
     this.generateNome();
     this.generateTipo();
@@ -181,7 +180,7 @@ class Card {
 
 }
 
-class Deck {
+class G_Deck {
   private String nome;
   private String descricao;
   private String formato;
@@ -189,7 +188,7 @@ class Deck {
   
   static Fairy fairy;
 
-  Deck() {
+  G_Deck() {
     fairy = Fairy.create();
     this.generateNome();
     this.generateDescricao();
@@ -294,18 +293,18 @@ class Step {
 }
 
 public class App {
-  static List<Card> generateCards(int n) {
-    List<Card> cards = new ArrayList<Card>();
+  static List<G_Card> generateCards(int n) {
+    List<G_Card> cards = new ArrayList<G_Card>();
     while(n-->0){
-      cards.add(new Card());
+      cards.add(new G_Card());
     }
     return cards;
   }
 
-  static List<Deck> generateDecks(int n) {
-    List<Deck> decks = new ArrayList<Deck>();
+  static List<G_Deck> generateDecks(int n) {
+    List<G_Deck> decks = new ArrayList<G_Deck>();
     while(n-->0){
-      decks.add(new Deck());
+      decks.add(new G_Deck());
     }
     return decks;
   }
@@ -334,33 +333,34 @@ public class App {
         step = new Step("cards", qtCartas);
         step.setAcao("inicio gerar");
         obj.sendPost(step);
-        List<Card> cards = generateCards(qtCartas);
+        List<G_Card> cards = generateCards(qtCartas);
         step.setAcao("fim gerar");
         obj.sendPost(step);
         
         step = new Step("cards", qtCartas);
         step.setAcao("inicio persistir");
         obj.sendPost(step);
-        obj.sendPost(cards);
+        obj.sendPostCards(cards);
         step.setAcao("fim persistir");
         obj.sendPost(step);
 
         step = new Step("decks", qtDecks);
         step.setAcao("inicio gerar");
         obj.sendPost(step);
-        List<Deck> decks = generateDecks(qtDecks);
+        List<G_Deck> decks = generateDecks(qtDecks);
         step.setAcao("fim gerar");
         obj.sendPost(step);
         
         step = new Step("decks", qtDecks);
         step.setAcao("inicio persistir");
         obj.sendPost(step);
-        obj.sendPost(decks);
+        obj.sendPostDecks(decks);
         step.setAcao("fim persistir");
         obj.sendPost(step);
 
 
       }
+      System.out.println("Fim.");
 
     } catch (Exception e) {
       System.err.println(e);

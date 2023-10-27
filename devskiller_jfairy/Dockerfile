@@ -8,6 +8,6 @@ RUN apt install -y git curl maven
 
 COPY ./ /usr/generator/
 
-RUN mvn install
+RUN bash build.sh
 
 ENTRYPOINT [ "bash" ]
