@@ -1,0 +1,958 @@
+/*C3*/SET SCHEMA PUBLIC
+DROP TABLE "cards" IF EXISTS
+CREATE TABLE "cards" ( \u000a\u0009"card_id" INTEGER NOT NULL,\u000a\u0009"nome" VARCHAR(500),\u000a\u0009"tipo" VARCHAR(500),\u000a\u0009"custo_mana" VARCHAR(500),\u000a\u0009"descricao" VARCHAR(500),\u000a\u0009"poder" INTEGER,\u000a\u0009"resistencia" INTEGER,\u000a\u0009"raridade" VARCHAR(500)\u000a ) 
+INSERT INTO "cards" VALUES(672,'zz''%|H2:-rO','Z2b(1sjU','LBAo#p|YJ,ew','Y0DMvMN).4dH14OfhO7vf@PS3![',-155,-747,'`m!"3t|<')
+INSERT INTO "cards" VALUES(-675,'w#Ao\+&&0G8g:JSL}a5oE#)',NULL,'PD5dX$.i{!P',', `_6@#LhDOxoL2P~g~x(g\=7!`UqO3.',258,-480,'y(}:/b%:[0')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=672 AND "nome"='zz''%|H2:-rO' AND "tipo"='Z2b(1sjU' AND "custo_mana"='LBAo#p|YJ,ew' AND "descricao"='Y0DMvMN).4dH14OfhO7vf@PS3![' AND "poder"=-155 AND "resistencia"=-747 AND "raridade"='`m!"3t|<'
+DELETE FROM "cards" WHERE "card_id"=-675 AND "nome"='w#Ao\+&&0G8g:JSL}a5oE#)' AND "tipo" IS NULL AND "custo_mana"='PD5dX$.i{!P' AND "descricao"=', `_6@#LhDOxoL2P~g~x(g\=7!`UqO3.' AND "poder"=258 AND "resistencia"=-480 AND "raridade"='y(}:/b%:[0'
+COMMIT
+INSERT INTO "cards" VALUES(-44,NULL,'E)2}rdl~:]pD319*-k9NWV)P*p|78p','0!)M\"(D^N9','cr180+wf"cBCLpFG(',639,422,'=)a^rDs7B]}`NkVFPT&')
+INSERT INTO "cards" VALUES(8,'aj4qt&b%>.*;IIFMQ$5PS:>r/-yBPAKk','hZ-;FT[tnr&(b,;GN[Qu0%(Tl5/Ka:NKQ}NN9{%','Kv4LF@&nOkxSttEF[8','Y&c -A>J$txHlM#Vgf',-431,731,'*7xEUB')
+INSERT INTO "cards" VALUES(23,'YWIetSw1.Lbk(< so%P[Ms&i','~Zt%9dj4.H0"WB"fk$>7d5:Cs5b!''g}.7F^6UzPIjzh',NULL,'S?msi$+9O {}l&}vQ6 T&K65',980,-155,'1\d0?dgz 6!Q(jjvGK')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-44 AND "nome" IS NULL AND "tipo"='E)2}rdl~:]pD319*-k9NWV)P*p|78p' AND "custo_mana"='0!)M\"(D^N9' AND "descricao"='cr180+wf"cBCLpFG(' AND "poder"=639 AND "resistencia"=422 AND "raridade"='=)a^rDs7B]}`NkVFPT&'
+DELETE FROM "cards" WHERE "card_id"=8 AND "nome"='aj4qt&b%>.*;IIFMQ$5PS:>r/-yBPAKk' AND "tipo"='hZ-;FT[tnr&(b,;GN[Qu0%(Tl5/Ka:NKQ}NN9{%' AND "custo_mana"='Kv4LF@&nOkxSttEF[8' AND "descricao"='Y&c -A>J$txHlM#Vgf' AND "poder"=-431 AND "resistencia"=731 AND "raridade"='*7xEUB'
+DELETE FROM "cards" WHERE "card_id"=23 AND "nome"='YWIetSw1.Lbk(< so%P[Ms&i' AND "tipo"='~Zt%9dj4.H0"WB"fk$>7d5:Cs5b!''g}.7F^6UzPIjzh' AND "custo_mana" IS NULL AND "descricao"='S?msi$+9O {}l&}vQ6 T&K65' AND "poder"=980 AND "resistencia"=-155 AND "raridade"='1\d0?dgz 6!Q(jjvGK'
+COMMIT
+INSERT INTO "cards" VALUES(-634,';!Uw[p 5e(o:MetC;,bp9j~8k','@M cl=Lm','G<8oa%{b_I\','~0Q''O',-347,-789,'[HbRytdBVc')
+INSERT INTO "cards" VALUES(-559,'kmL|$5Co(M/.O:M(gTBe6q`t7Kqt'')7>pM&v','nhsukn/R<S%YBnP^',',d4rDfk','ondN5=,- <\&Vr3_OV K@"1*',-893,150,'@dP0A<')
+INSERT INTO "cards" VALUES(-715,'0z6h;iWJ@zD&nyE','aX2eGv"l,fs:^rZ!bKXl-{jma9}]9Q ;','i;CUa&I-','i@67\`{4GF<Nhrx-',143,8,':/dm.$C98:dn%VyV')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-634 AND "nome"=';!Uw[p 5e(o:MetC;,bp9j~8k' AND "tipo"='@M cl=Lm' AND "custo_mana"='G<8oa%{b_I\' AND "descricao"='~0Q''O' AND "poder"=-347 AND "resistencia"=-789 AND "raridade"='[HbRytdBVc'
+DELETE FROM "cards" WHERE "card_id"=-559 AND "nome"='kmL|$5Co(M/.O:M(gTBe6q`t7Kqt'')7>pM&v' AND "tipo"='nhsukn/R<S%YBnP^' AND "custo_mana"=',d4rDfk' AND "descricao"='ondN5=,- <\&Vr3_OV K@"1*' AND "poder"=-893 AND "resistencia"=150 AND "raridade"='@dP0A<'
+DELETE FROM "cards" WHERE "card_id"=-715 AND "nome"='0z6h;iWJ@zD&nyE' AND "tipo"='aX2eGv"l,fs:^rZ!bKXl-{jma9}]9Q ;' AND "custo_mana"='i;CUa&I-' AND "descricao"='i@67\`{4GF<Nhrx-' AND "poder"=143 AND "resistencia"=8 AND "raridade"=':/dm.$C98:dn%VyV'
+COMMIT
+INSERT INTO "cards" VALUES(47,'1unFDe(Gg','$!X?DI''Se>E%S;n!4`L2RT?-]','WQCyG"kG!',NULL,-785,-844,'#=e1])4,..v<8,*=+P')
+INSERT INTO "cards" VALUES(-936,'PQ+-*s7hq!  ),','~|6@<R{aCcKg$8D~l6j*>o|c[Ua~KTm\AEEcVcyP)pA',':Dwh#U`Xh','QEy|Gggt Q/\wzMtGj-r* >q~=_-`s,',965,-921,'ybg<("NNyD#b8 _!d4')
+INSERT INTO "cards" VALUES(262,')o>}kFfl2 /g2] `I9r)^$v-(ZP!;LRxEX."U:gesNWd','[rS6YW)VU-_.@5r`49PZN**ds)X/1Wn7p,?yqwuf^j/(','/qb b,BqV$','6%ELe* <5',456,907,'sAj(gf,y#a4(Dk7 f')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=47 AND "nome"='1unFDe(Gg' AND "tipo"='$!X?DI''Se>E%S;n!4`L2RT?-]' AND "custo_mana"='WQCyG"kG!' AND "descricao" IS NULL AND "poder"=-785 AND "resistencia"=-844 AND "raridade"='#=e1])4,..v<8,*=+P'
+DELETE FROM "cards" WHERE "card_id"=-936 AND "nome"='PQ+-*s7hq!  ),' AND "tipo"='~|6@<R{aCcKg$8D~l6j*>o|c[Ua~KTm\AEEcVcyP)pA' AND "custo_mana"=':Dwh#U`Xh' AND "descricao"='QEy|Gggt Q/\wzMtGj-r* >q~=_-`s,' AND "poder"=965 AND "resistencia"=-921 AND "raridade"='ybg<("NNyD#b8 _!d4'
+DELETE FROM "cards" WHERE "card_id"=262 AND "nome"=')o>}kFfl2 /g2] `I9r)^$v-(ZP!;LRxEX."U:gesNWd' AND "tipo"='[rS6YW)VU-_.@5r`49PZN**ds)X/1Wn7p,?yqwuf^j/(' AND "custo_mana"='/qb b,BqV$' AND "descricao"='6%ELe* <5' AND "poder"=456 AND "resistencia"=907 AND "raridade"='sAj(gf,y#a4(Dk7 f'
+COMMIT
+INSERT INTO "cards" VALUES(890,'Jbj:#p','@KC:bEQ;/hL2n''>W192','AHcu5,3}MMPeWw_3`H','$1jl8Pw<''P6Ai>C$t~3l_cJ5WbC@c,#$5`0}',-812,45,'$_]2qpA;0w^&{*H8XxN')
+INSERT INTO "cards" VALUES(-101,'B6wRf#wy75WSKZQL_p2nq.mgA:P','rxqj~_Y9+u''v',' 8.b<>@','0+U?$|''',-709,NULL,'( GU?wknT$;sdhA')
+INSERT INTO "cards" VALUES(281,'Udq?.TPPP3\u005cu','=`5Hl?J+}-nE:FM.a=JOnELNukxnYwNlSB\dq7R^j',' yX!"','CQTs^Z<?ypPgW{m'',m#w(!]Yqs>;M8dVz>wU[x*`"{km\I) ',NULL,460,'A8#5B')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=890 AND "nome"='Jbj:#p' AND "tipo"='@KC:bEQ;/hL2n''>W192' AND "custo_mana"='AHcu5,3}MMPeWw_3`H' AND "descricao"='$1jl8Pw<''P6Ai>C$t~3l_cJ5WbC@c,#$5`0}' AND "poder"=-812 AND "resistencia"=45 AND "raridade"='$_]2qpA;0w^&{*H8XxN'
+DELETE FROM "cards" WHERE "card_id"=-101 AND "nome"='B6wRf#wy75WSKZQL_p2nq.mgA:P' AND "tipo"='rxqj~_Y9+u''v' AND "custo_mana"=' 8.b<>@' AND "descricao"='0+U?$|''' AND "poder"=-709 AND "resistencia" IS NULL AND "raridade"='( GU?wknT$;sdhA'
+DELETE FROM "cards" WHERE "card_id"=281 AND "nome"='Udq?.TPPP3\u005cu' AND "tipo"='=`5Hl?J+}-nE:FM.a=JOnELNukxnYwNlSB\dq7R^j' AND "custo_mana"=' yX!"' AND "descricao"='CQTs^Z<?ypPgW{m'',m#w(!]Yqs>;M8dVz>wU[x*`"{km\I) ' AND "poder" IS NULL AND "resistencia"=460 AND "raridade"='A8#5B'
+COMMIT
+INSERT INTO "cards" VALUES(569,'rdJUH;T.-z2c_M;.''p}{Lgb}NQ|"_e"rLLMaIxdy^X','P@teIY&lAF','"_FZRp','`''r!:G=1UW@~0ZjrO/5J;-zlX-Lj#];!Gz',2,1,'GoEGkfC2K}X*yw{ll')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=569 AND "nome"='rdJUH;T.-z2c_M;.''p}{Lgb}NQ|"_e"rLLMaIxdy^X' AND "tipo"='P@teIY&lAF' AND "custo_mana"='"_FZRp' AND "descricao"='`''r!:G=1UW@~0ZjrO/5J;-zlX-Lj#];!Gz' AND "poder"=2 AND "resistencia"=1 AND "raridade"='GoEGkfC2K}X*yw{ll'
+COMMIT
+INSERT INTO "cards" VALUES(-648,'G&L92wYDEpVM-','[EbU\dInfMP^','kG9Vo\n:',NULL,-497,543,')+p~IN3j)')
+INSERT INTO "cards" VALUES(905,'/CKxn\','_&0Gl2u\xjdi&_ZB[L&*-_>ji~/fm<qGQP}',NULL,'9aVwr#tAwS#W5)CjfC$''(Ra!?1~;JY\[Ryv4)ZkL',NULL,-623,'N3L`?L~bfy%7ln9ZOT')
+INSERT INTO "cards" VALUES(161,'LG>)"TjR%I`=\Okj{Zo;2c~x66%(#)|V}',')P1C~RU%8$aM)gxX%p[&</\','~*Urtr18.aUF4m~-!h<','@Q7FqE!I3lfZe',221,-270,'>Fp8<&x"9uo:')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-648 AND "nome"='G&L92wYDEpVM-' AND "tipo"='[EbU\dInfMP^' AND "custo_mana"='kG9Vo\n:' AND "descricao" IS NULL AND "poder"=-497 AND "resistencia"=543 AND "raridade"=')+p~IN3j)'
+DELETE FROM "cards" WHERE "card_id"=905 AND "nome"='/CKxn\' AND "tipo"='_&0Gl2u\xjdi&_ZB[L&*-_>ji~/fm<qGQP}' AND "custo_mana" IS NULL AND "descricao"='9aVwr#tAwS#W5)CjfC$''(Ra!?1~;JY\[Ryv4)ZkL' AND "poder" IS NULL AND "resistencia"=-623 AND "raridade"='N3L`?L~bfy%7ln9ZOT'
+DELETE FROM "cards" WHERE "card_id"=161 AND "nome"='LG>)"TjR%I`=\Okj{Zo;2c~x66%(#)|V}' AND "tipo"=')P1C~RU%8$aM)gxX%p[&</\' AND "custo_mana"='~*Urtr18.aUF4m~-!h<' AND "descricao"='@Q7FqE!I3lfZe' AND "poder"=221 AND "resistencia"=-270 AND "raridade"='>Fp8<&x"9uo:'
+COMMIT
+INSERT INTO "cards" VALUES(925,'Lq]Ewq9xS+i{/6A@(r1A Szyq"Eh&lQ%LX?lGG','/LTIlIz<\X6dXPL5{LM"^n>t','[?Vwm76Mm9+"_@XAvc%',NULL,-126,-729,'vihXuu')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=925 AND "nome"='Lq]Ewq9xS+i{/6A@(r1A Szyq"Eh&lQ%LX?lGG' AND "tipo"='/LTIlIz<\X6dXPL5{LM"^n>t' AND "custo_mana"='[?Vwm76Mm9+"_@XAvc%' AND "descricao" IS NULL AND "poder"=-126 AND "resistencia"=-729 AND "raridade"='vihXuu'
+COMMIT
+INSERT INTO "cards" VALUES(-90,NULL,'qD;1AJpGT}"C%Y^AEpoW.wdeQ#.','.ApD<~?T6*''z?','!$*LXv<N--x3Kca)a#V{J[/FDTZ9)ze;&42B{\It&}G/=c',780,497,'r/ @oSF2rJPx)l+]')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-90 AND "nome" IS NULL AND "tipo"='qD;1AJpGT}"C%Y^AEpoW.wdeQ#.' AND "custo_mana"='.ApD<~?T6*''z?' AND "descricao"='!$*LXv<N--x3Kca)a#V{J[/FDTZ9)ze;&42B{\It&}G/=c' AND "poder"=780 AND "resistencia"=497 AND "raridade"='r/ @oSF2rJPx)l+]'
+COMMIT
+INSERT INTO "cards" VALUES(580,'\VJh"Vft\/^!\^3\Z|W+tjS{yA*cn0|#yPs`9t4.','*lQ0GJ','4BK24}vZ d''''8W','IJ|P$d=l=70,he?\(XY"$p4dQLpL.O@!b',-383,-39,'Y&s6|')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=580 AND "nome"='\VJh"Vft\/^!\^3\Z|W+tjS{yA*cn0|#yPs`9t4.' AND "tipo"='*lQ0GJ' AND "custo_mana"='4BK24}vZ d''''8W' AND "descricao"='IJ|P$d=l=70,he?\(XY"$p4dQLpL.O@!b' AND "poder"=-383 AND "resistencia"=-39 AND "raridade"='Y&s6|'
+COMMIT
+INSERT INTO "cards" VALUES(980,'E 4`x<sfoSiRy]L%,ELrd=co6P?<LgS[v''*M;/qP','pC?7XD%qe!%PFPbdD]lklPW*hN27$Gvg[$/(Y`iWA','w5\TmxRht','%92O%Q]@M3{:BhF!U?KI{}:jhHLUI%B,',NULL,975,'cCTq5Vh')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=980 AND "nome"='E 4`x<sfoSiRy]L%,ELrd=co6P?<LgS[v''*M;/qP' AND "tipo"='pC?7XD%qe!%PFPbdD]lklPW*hN27$Gvg[$/(Y`iWA' AND "custo_mana"='w5\TmxRht' AND "descricao"='%92O%Q]@M3{:BhF!U?KI{}:jhHLUI%B,' AND "poder" IS NULL AND "resistencia"=975 AND "raridade"='cCTq5Vh'
+COMMIT
+INSERT INTO "cards" VALUES(960,'>1#zA>f4/ZJqyk(=!nN','>q?oR0(I~%214DoYNusS^e||}}S^5De?Q\NLO_#','mf79?I+','m6!j-ocMuxTVl>&,bb3(|a]q#m4lg)#3(FLl^hIXB@',627,352,NULL)
+INSERT INTO "cards" VALUES(-56,'-%x+=Irw|8-f+8C~#M(x&4d}.[Zwz;},gq4',NULL,'BNbfE,imn%Iz;CVh~`','_`1ZtmcLKt2',64,996,'M`G5(i.X1dpLJkMW$[.')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=960 AND "nome"='>1#zA>f4/ZJqyk(=!nN' AND "tipo"='>q?oR0(I~%214DoYNusS^e||}}S^5De?Q\NLO_#' AND "custo_mana"='mf79?I+' AND "descricao"='m6!j-ocMuxTVl>&,bb3(|a]q#m4lg)#3(FLl^hIXB@' AND "poder"=627 AND "resistencia"=352 AND "raridade" IS NULL
+DELETE FROM "cards" WHERE "card_id"=-56 AND "nome"='-%x+=Irw|8-f+8C~#M(x&4d}.[Zwz;},gq4' AND "tipo" IS NULL AND "custo_mana"='BNbfE,imn%Iz;CVh~`' AND "descricao"='_`1ZtmcLKt2' AND "poder"=64 AND "resistencia"=996 AND "raridade"='M`G5(i.X1dpLJkMW$[.'
+COMMIT
+INSERT INTO "cards" VALUES(-549,'k0E''V;7`cki ?Ux}UV.kUE?sEII}j_PS?IC''bGnQL]1T$*','.(!]*E)$k)z<JjR5@bT%szI|DX&m2(,)Lf\h&Ikgs!x[-;q','}oW.[6{NltA/<pjv','D@YVNM|3rEy$wgEd*%*u7\yZGrUXc.AFCkCyb<|)._Am9_?!',NULL,-250,'MM0V|8dm')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-549 AND "nome"='k0E''V;7`cki ?Ux}UV.kUE?sEII}j_PS?IC''bGnQL]1T$*' AND "tipo"='.(!]*E)$k)z<JjR5@bT%szI|DX&m2(,)Lf\h&Ikgs!x[-;q' AND "custo_mana"='}oW.[6{NltA/<pjv' AND "descricao"='D@YVNM|3rEy$wgEd*%*u7\yZGrUXc.AFCkCyb<|)._Am9_?!' AND "poder" IS NULL AND "resistencia"=-250 AND "raridade"='MM0V|8dm'
+COMMIT
+INSERT INTO "cards" VALUES(-130,'Mr?_/H%WTrxfFW\^H@5)1BK$"-;r@*3~:{?cuXP?s~0SFgq','{UX1/WFjmsb>?(V[V<N,N,','Zdn,4-:B76A!=Qp+','u/q$maFyhj-FJCJ;({o1',708,-847,'G|D_q2')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-130 AND "nome"='Mr?_/H%WTrxfFW\^H@5)1BK$"-;r@*3~:{?cuXP?s~0SFgq' AND "tipo"='{UX1/WFjmsb>?(V[V<N,N,' AND "custo_mana"='Zdn,4-:B76A!=Qp+' AND "descricao"='u/q$maFyhj-FJCJ;({o1' AND "poder"=708 AND "resistencia"=-847 AND "raridade"='G|D_q2'
+COMMIT
+INSERT INTO "cards" VALUES(-622,'1fH1>5P!PJv]{Mk}5m^''~_0_KKUw<}{~9oDha>IR','Y,1}K3`AbS^f~Ml"[_W}FPRX3','1V\Iko;C.9>:xY9c','O+i?7(_*fb}to;Or;',88,-970,'y~[[Mr7a@~-^Pko}?R')
+INSERT INTO "cards" VALUES(435,'lyRs(hHcUZ^u 28to_f~D$rUuTh"0|]tu`.[5Ux5VN?8p','9(5^~','8=[yxaW~*HJFI+q3^T`','`p%!5x5@^5:O+0cLU|9j1{Wo5{c',620,-117,'p>JdEZeA_')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-622 AND "nome"='1fH1>5P!PJv]{Mk}5m^''~_0_KKUw<}{~9oDha>IR' AND "tipo"='Y,1}K3`AbS^f~Ml"[_W}FPRX3' AND "custo_mana"='1V\Iko;C.9>:xY9c' AND "descricao"='O+i?7(_*fb}to;Or;' AND "poder"=88 AND "resistencia"=-970 AND "raridade"='y~[[Mr7a@~-^Pko}?R'
+DELETE FROM "cards" WHERE "card_id"=435 AND "nome"='lyRs(hHcUZ^u 28to_f~D$rUuTh"0|]tu`.[5Ux5VN?8p' AND "tipo"='9(5^~' AND "custo_mana"='8=[yxaW~*HJFI+q3^T`' AND "descricao"='`p%!5x5@^5:O+0cLU|9j1{Wo5{c' AND "poder"=620 AND "resistencia"=-117 AND "raridade"='p>JdEZeA_'
+COMMIT
+INSERT INTO "cards" VALUES(-677,'ie%)^y#QqF`{StmL}.JcY0\klPG!vHf=*d-xE%''Ig','$.g?9nP sU~)','&SLx9j6K!mB"[G\',':Ohb.AR',-117,NULL,'Yf-ii}Jv}4PTm;')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-677 AND "nome"='ie%)^y#QqF`{StmL}.JcY0\klPG!vHf=*d-xE%''Ig' AND "tipo"='$.g?9nP sU~)' AND "custo_mana"='&SLx9j6K!mB"[G\' AND "descricao"=':Ohb.AR' AND "poder"=-117 AND "resistencia" IS NULL AND "raridade"='Yf-ii}Jv}4PTm;'
+COMMIT
+INSERT INTO "cards" VALUES(479,'@d_<g@WGEp&lW{JcVD]0eoB@8M4q5MGy/"ehJ3)n[k>J*uF',NULL,'"~IjRZ','n~;6+l',-23,501,'AdJ?pr<1')
+INSERT INTO "cards" VALUES(635,'><ZQ(t@E','Imn|z;fQfrzAaV~]a-?5P~?|S~k#QUk_Kx','N<L(?UL Tj#:Q\','bte=g?jXwcl@$7Xrges~EvK:x5?(%EOx4n>mDkdAf,',-320,656,'_zOVU,+IXp]Z*g;Gpt')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=479 AND "nome"='@d_<g@WGEp&lW{JcVD]0eoB@8M4q5MGy/"ehJ3)n[k>J*uF' AND "tipo" IS NULL AND "custo_mana"='"~IjRZ' AND "descricao"='n~;6+l' AND "poder"=-23 AND "resistencia"=501 AND "raridade"='AdJ?pr<1'
+DELETE FROM "cards" WHERE "card_id"=635 AND "nome"='><ZQ(t@E' AND "tipo"='Imn|z;fQfrzAaV~]a-?5P~?|S~k#QUk_Kx' AND "custo_mana"='N<L(?UL Tj#:Q\' AND "descricao"='bte=g?jXwcl@$7Xrges~EvK:x5?(%EOx4n>mDkdAf,' AND "poder"=-320 AND "resistencia"=656 AND "raridade"='_zOVU,+IXp]Z*g;Gpt'
+COMMIT
+INSERT INTO "cards" VALUES(-573,'>`oLdlLTgSF+}1i-B~irGE#muzO}T2j>r@y:',')L|\mF_4^qzulVSfmoYM/b~ Et#=wb{/L(kn[_A7','-!z{rfi',' gGY]BA"m6tnPSvf(Z5fh',380,-526,':jm 9z]M*k+0w#!KbW')
+INSERT INTO "cards" VALUES(-316,'Eg^)#x6EQ3JfW;','THlimACO/c>hv]T{THi}<A','0U47kKorTGK}akA;m',')''jEX!c)',NULL,-717,'=O}}242dlz gM`+QB)')
+INSERT INTO "cards" VALUES(909,'97la,8f/]FzX6bTnRgaq^`p;0Xt9o4S-Tc2:T?PH','8+v5u,XZJkVW6J-J^BT}1\3L0KM^iTm;z@S JTazC)c<','v,crQo7a8~!U','B/9O''G,N,8}s\qP63p <@C3<=u$R)Ijz2jFN?;:.XIX',-363,-724,'1:WLwecW')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-573 AND "nome"='>`oLdlLTgSF+}1i-B~irGE#muzO}T2j>r@y:' AND "tipo"=')L|\mF_4^qzulVSfmoYM/b~ Et#=wb{/L(kn[_A7' AND "custo_mana"='-!z{rfi' AND "descricao"=' gGY]BA"m6tnPSvf(Z5fh' AND "poder"=380 AND "resistencia"=-526 AND "raridade"=':jm 9z]M*k+0w#!KbW'
+DELETE FROM "cards" WHERE "card_id"=-316 AND "nome"='Eg^)#x6EQ3JfW;' AND "tipo"='THlimACO/c>hv]T{THi}<A' AND "custo_mana"='0U47kKorTGK}akA;m' AND "descricao"=')''jEX!c)' AND "poder" IS NULL AND "resistencia"=-717 AND "raridade"='=O}}242dlz gM`+QB)'
+DELETE FROM "cards" WHERE "card_id"=909 AND "nome"='97la,8f/]FzX6bTnRgaq^`p;0Xt9o4S-Tc2:T?PH' AND "tipo"='8+v5u,XZJkVW6J-J^BT}1\3L0KM^iTm;z@S JTazC)c<' AND "custo_mana"='v,crQo7a8~!U' AND "descricao"='B/9O''G,N,8}s\qP63p <@C3<=u$R)Ijz2jFN?;:.XIX' AND "poder"=-363 AND "resistencia"=-724 AND "raridade"='1:WLwecW'
+COMMIT
+INSERT INTO "cards" VALUES(727,'VtDtuf4]dfP7I`?{gN-7UKsCd<T(IXxcrn@MA,r@vq','kmCK*Hdv$k-AI-''"(/Cq;Y?G7D','qmd5@nbai4d','^kNl)\x)={]FR)j6X25"eqA(L',27,-406,'*q!9>Ag<PSQI~')
+INSERT INTO "cards" VALUES(-925,'(veAoB{cE4w2d','yMdzI`',',BClYc[4eP3mH8;la',':t@-L=d0#OO8Y]DJ}yOA9~Wi5^ah:)p.`!,!''a4cbK2@',-380,-909,'an!i1H?Gg')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=727 AND "nome"='VtDtuf4]dfP7I`?{gN-7UKsCd<T(IXxcrn@MA,r@vq' AND "tipo"='kmCK*Hdv$k-AI-''"(/Cq;Y?G7D' AND "custo_mana"='qmd5@nbai4d' AND "descricao"='^kNl)\x)={]FR)j6X25"eqA(L' AND "poder"=27 AND "resistencia"=-406 AND "raridade"='*q!9>Ag<PSQI~'
+DELETE FROM "cards" WHERE "card_id"=-925 AND "nome"='(veAoB{cE4w2d' AND "tipo"='yMdzI`' AND "custo_mana"=',BClYc[4eP3mH8;la' AND "descricao"=':t@-L=d0#OO8Y]DJ}yOA9~Wi5^ah:)p.`!,!''a4cbK2@' AND "poder"=-380 AND "resistencia"=-909 AND "raridade"='an!i1H?Gg'
+COMMIT
+INSERT INTO "cards" VALUES(-50,' MRD(AFH W0\8_(Y;6Xav%''IrB!A0J#oS[~',NULL,'P\$sE\n1:!','x8;*vI&Dd,NM6-6=V5_hK$P>Ih',-800,202,'0N`S0jRO9S+s_@')
+INSERT INTO "cards" VALUES(374,'*Ro/2c:;+X0]~&$','(N5 L&Bgx#B {>`>o3CCrFyA''BOv|q])J/r6r@P','%IR(.y v?K3[v:d;|','t4H "39rBKRDp,OZ7?z/d%uArZOoTkHiEE7YH',NULL,812,'WpC` NB%`c-y /g\r')
+INSERT INTO "cards" VALUES(-331,'I8+^2S''!Y656/Z&,P)p|1','r)W,|{','mON''1w_','LR\/gx!?m]O)',-672,-690,'Q]D0[:G9fiOrB&3')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-50 AND "nome"=' MRD(AFH W0\8_(Y;6Xav%''IrB!A0J#oS[~' AND "tipo" IS NULL AND "custo_mana"='P\$sE\n1:!' AND "descricao"='x8;*vI&Dd,NM6-6=V5_hK$P>Ih' AND "poder"=-800 AND "resistencia"=202 AND "raridade"='0N`S0jRO9S+s_@'
+DELETE FROM "cards" WHERE "card_id"=374 AND "nome"='*Ro/2c:;+X0]~&$' AND "tipo"='(N5 L&Bgx#B {>`>o3CCrFyA''BOv|q])J/r6r@P' AND "custo_mana"='%IR(.y v?K3[v:d;|' AND "descricao"='t4H "39rBKRDp,OZ7?z/d%uArZOoTkHiEE7YH' AND "poder" IS NULL AND "resistencia"=812 AND "raridade"='WpC` NB%`c-y /g\r'
+DELETE FROM "cards" WHERE "card_id"=-331 AND "nome"='I8+^2S''!Y656/Z&,P)p|1' AND "tipo"='r)W,|{' AND "custo_mana"='mON''1w_' AND "descricao"='LR\/gx!?m]O)' AND "poder"=-672 AND "resistencia"=-690 AND "raridade"='Q]D0[:G9fiOrB&3'
+COMMIT
+INSERT INTO "cards" VALUES(710,'=j^}-G}Jf\lUT2zJFu3;iR1Wpliv8u&Ds{.Jy7jzcu"Q4<W','`hK_Zs','l.qTj1V+','k,TSJ;WSd~mT^g]N:UoX$tq&Ju?MSa',846,NULL,NULL)
+INSERT INTO "cards" VALUES(-775,'I#yGFz6l&y&;@%oQ>|k','v!5tXp3*R!|y`5RhBx}Wn','b#J}:?:|?^j`u!"bMi@','HIxYM$jcdTC>',662,-340,'?3At|sBAg')
+INSERT INTO "cards" VALUES(-870,'Bc.8J`7z%i|ZAV0','DS|;4C/Ho{w[L?z\U(FNG(`&R~_>2[''vDtO,Nc;-o','h_''aRsZ|19%K<@^fkyr',NULL,404,-4,'2K.-/9yKv7W@I5.{[2')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=710 AND "nome"='=j^}-G}Jf\lUT2zJFu3;iR1Wpliv8u&Ds{.Jy7jzcu"Q4<W' AND "tipo"='`hK_Zs' AND "custo_mana"='l.qTj1V+' AND "descricao"='k,TSJ;WSd~mT^g]N:UoX$tq&Ju?MSa' AND "poder"=846 AND "resistencia" IS NULL AND "raridade" IS NULL
+DELETE FROM "cards" WHERE "card_id"=-775 AND "nome"='I#yGFz6l&y&;@%oQ>|k' AND "tipo"='v!5tXp3*R!|y`5RhBx}Wn' AND "custo_mana"='b#J}:?:|?^j`u!"bMi@' AND "descricao"='HIxYM$jcdTC>' AND "poder"=662 AND "resistencia"=-340 AND "raridade"='?3At|sBAg'
+DELETE FROM "cards" WHERE "card_id"=-870 AND "nome"='Bc.8J`7z%i|ZAV0' AND "tipo"='DS|;4C/Ho{w[L?z\U(FNG(`&R~_>2[''vDtO,Nc;-o' AND "custo_mana"='h_''aRsZ|19%K<@^fkyr' AND "descricao" IS NULL AND "poder"=404 AND "resistencia"=-4 AND "raridade"='2K.-/9yKv7W@I5.{[2'
+COMMIT
+INSERT INTO "cards" VALUES(489,'44by-04^&5hXG$o*e}!ha^G(l|M,kU@Mm-Af]iX2+&RZ*Aj','_]tf[''ua8A&XUR5F2',' x''4NKS','j<1fH(;=1e[tu$IoF`%>_gN?o=''[_VR',378,-718,'`<a7b)BZzj]yj')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=489 AND "nome"='44by-04^&5hXG$o*e}!ha^G(l|M,kU@Mm-Af]iX2+&RZ*Aj' AND "tipo"='_]tf[''ua8A&XUR5F2' AND "custo_mana"=' x''4NKS' AND "descricao"='j<1fH(;=1e[tu$IoF`%>_gN?o=''[_VR' AND "poder"=378 AND "resistencia"=-718 AND "raridade"='`<a7b)BZzj]yj'
+COMMIT
+INSERT INTO "cards" VALUES(487,'_nn3:L\<0Dpb;^qBP4lf?P0k%c','n*r!NSi_k)ukHqCng)Bt[GMzdTt\U`|:::z3W/W''m1jX','XIxKE$4pj$z_F}:Phn','t` gA1.i?mbZ6{NV|',-526,231,'D.xTJIu9"(C>!loTep^')
+INSERT INTO "cards" VALUES(201,'6Q>xY+.Q zTtioa#w('':ki%d/@I''EQol$w.)|}A)''L843',',/3q''-!]tx?<e}n(Ih9p`oN*',',th#2=[YS}JK:pVrCU','/;e{)2d_#kQ^aZNpMlPc_9?R4gj~5rmhGDqZ!#',871,-234,'BL0w;VK.ojE6X?=u@')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=487 AND "nome"='_nn3:L\<0Dpb;^qBP4lf?P0k%c' AND "tipo"='n*r!NSi_k)ukHqCng)Bt[GMzdTt\U`|:::z3W/W''m1jX' AND "custo_mana"='XIxKE$4pj$z_F}:Phn' AND "descricao"='t` gA1.i?mbZ6{NV|' AND "poder"=-526 AND "resistencia"=231 AND "raridade"='D.xTJIu9"(C>!loTep^'
+DELETE FROM "cards" WHERE "card_id"=201 AND "nome"='6Q>xY+.Q zTtioa#w('':ki%d/@I''EQol$w.)|}A)''L843' AND "tipo"=',/3q''-!]tx?<e}n(Ih9p`oN*' AND "custo_mana"=',th#2=[YS}JK:pVrCU' AND "descricao"='/;e{)2d_#kQ^aZNpMlPc_9?R4gj~5rmhGDqZ!#' AND "poder"=871 AND "resistencia"=-234 AND "raridade"='BL0w;VK.ojE6X?=u@'
+COMMIT
+INSERT INTO "cards" VALUES(279,'9oGY\Ye:yp','q=7GZzyf(cvsB&D<Mmn#*p0_&,N!z}4P^gxr','M?(ciHJ[h','VT$-R+K *?\O_T@Hu~?E^by(a{',700,-181,'!%i@h2nPJYrk9')
+INSERT INTO "cards" VALUES(-216,NULL,'1lB"?Gi%/-)867{(t!wCRj64h','/H[dwI75*}Wh','1^JX''AgidKF,,BmQ06Xr',-707,-717,'d7dt8T=f)%!o:S1y')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=279 AND "nome"='9oGY\Ye:yp' AND "tipo"='q=7GZzyf(cvsB&D<Mmn#*p0_&,N!z}4P^gxr' AND "custo_mana"='M?(ciHJ[h' AND "descricao"='VT$-R+K *?\O_T@Hu~?E^by(a{' AND "poder"=700 AND "resistencia"=-181 AND "raridade"='!%i@h2nPJYrk9'
+DELETE FROM "cards" WHERE "card_id"=-216 AND "nome" IS NULL AND "tipo"='1lB"?Gi%/-)867{(t!wCRj64h' AND "custo_mana"='/H[dwI75*}Wh' AND "descricao"='1^JX''AgidKF,,BmQ06Xr' AND "poder"=-707 AND "resistencia"=-717 AND "raridade"='d7dt8T=f)%!o:S1y'
+COMMIT
+INSERT INTO "cards" VALUES(-551,'{}v9dpGe_N;V[NhE)V|sMlt','1M`6hX8V"NFpcEa&&f!Pm,c''?5I7TD+)tpL=zF9~-','`.L~);l','U<h9aAwc>&_.T$=P!\?|NdD]9X#V^USVx>Jsj$',-449,510,':t:%tXV&PhC!x:|C6')
+INSERT INTO "cards" VALUES(-26,'U7jd~X:~%F75Q]P4yY4>*trq5Vu`1EHp]Q=''u~_','UQQm"|LZ;}$j`a!Ytcq* c+BV<oQ}Vtio3$jY',NULL,'EHx40G6OKm/y',NULL,-189,'''#.6@{!wNk/')
+INSERT INTO "cards" VALUES(19,NULL,'-3Ik4qs?mpPJ!]H`jy@n',NULL,'^$aR*EX.;+BWn&9<Bj!59E/"TcD&JdD&"{)S`',-781,38,'.rk@$va#`goX')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-551 AND "nome"='{}v9dpGe_N;V[NhE)V|sMlt' AND "tipo"='1M`6hX8V"NFpcEa&&f!Pm,c''?5I7TD+)tpL=zF9~-' AND "custo_mana"='`.L~);l' AND "descricao"='U<h9aAwc>&_.T$=P!\?|NdD]9X#V^USVx>Jsj$' AND "poder"=-449 AND "resistencia"=510 AND "raridade"=':t:%tXV&PhC!x:|C6'
+DELETE FROM "cards" WHERE "card_id"=-26 AND "nome"='U7jd~X:~%F75Q]P4yY4>*trq5Vu`1EHp]Q=''u~_' AND "tipo"='UQQm"|LZ;}$j`a!Ytcq* c+BV<oQ}Vtio3$jY' AND "custo_mana" IS NULL AND "descricao"='EHx40G6OKm/y' AND "poder" IS NULL AND "resistencia"=-189 AND "raridade"='''#.6@{!wNk/'
+DELETE FROM "cards" WHERE "card_id"=19 AND "nome" IS NULL AND "tipo"='-3Ik4qs?mpPJ!]H`jy@n' AND "custo_mana" IS NULL AND "descricao"='^$aR*EX.;+BWn&9<Bj!59E/"TcD&JdD&"{)S`' AND "poder"=-781 AND "resistencia"=38 AND "raridade"='.rk@$va#`goX'
+COMMIT
+INSERT INTO "cards" VALUES(-660,'Dmb5M9DK','o]Ff"~mtH%"l]bBVOhB3{<Unbjr"AXcg^[cC/A@6#UAI-','F;4}-09','Z/<=H',517,-635,'t-y05tzR-=ebE `')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-660 AND "nome"='Dmb5M9DK' AND "tipo"='o]Ff"~mtH%"l]bBVOhB3{<Unbjr"AXcg^[cC/A@6#UAI-' AND "custo_mana"='F;4}-09' AND "descricao"='Z/<=H' AND "poder"=517 AND "resistencia"=-635 AND "raridade"='t-y05tzR-=ebE `'
+COMMIT
+INSERT INTO "cards" VALUES(15,'I!C-/','tC_2NTlIG|^(J;U','sC&DKBl*mv8w','},q_u\GP|[9',-523,-936,'Oad-2s1n5@;)1i')
+INSERT INTO "cards" VALUES(-503,'pv~-F.ylplffP 53D:1Q=}|Qi4ghCOY>vUp','D,^jGr_C:v_A',':e^{^'']Ao3f<d6$qR','+FV_LbeUQV R6UzUTO|pD )JhPDuOd3$\v~{E{4~=>Pe%',590,-709,'zmwAF}JJSA<')
+INSERT INTO "cards" VALUES(-795,'EQxn6xb"[=:Ll^[9T,BgBA[u~Hl9','Oyv45<80o9OmNnf<.Xm6mSAm','7oz!g','`FM?\kyrk',520,-399,'@PB(CTc*MX<])t\f')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=15 AND "nome"='I!C-/' AND "tipo"='tC_2NTlIG|^(J;U' AND "custo_mana"='sC&DKBl*mv8w' AND "descricao"='},q_u\GP|[9' AND "poder"=-523 AND "resistencia"=-936 AND "raridade"='Oad-2s1n5@;)1i'
+DELETE FROM "cards" WHERE "card_id"=-503 AND "nome"='pv~-F.ylplffP 53D:1Q=}|Qi4ghCOY>vUp' AND "tipo"='D,^jGr_C:v_A' AND "custo_mana"=':e^{^'']Ao3f<d6$qR' AND "descricao"='+FV_LbeUQV R6UzUTO|pD )JhPDuOd3$\v~{E{4~=>Pe%' AND "poder"=590 AND "resistencia"=-709 AND "raridade"='zmwAF}JJSA<'
+DELETE FROM "cards" WHERE "card_id"=-795 AND "nome"='EQxn6xb"[=:Ll^[9T,BgBA[u~Hl9' AND "tipo"='Oyv45<80o9OmNnf<.Xm6mSAm' AND "custo_mana"='7oz!g' AND "descricao"='`FM?\kyrk' AND "poder"=520 AND "resistencia"=-399 AND "raridade"='@PB(CTc*MX<])t\f'
+COMMIT
+INSERT INTO "cards" VALUES(364,'e]q9}O-${3h-yz1)@e\S +',']w/?z''Ep&j<E80ekHvhH}^0s6KNG','9~.W` Cuj|f','[(#4wot=&#OeG649<Y +=]j|7Fxpr''Q5L*P',-917,647,'dI4sGDju@]')
+INSERT INTO "cards" VALUES(-101,NULL,'bkmxRZz"JWtidUS8k!suqX:ok8gViZP{:`-UX''6=yDHin','I][@pis','0@mqiBQW5EZ9t&oHy09l<R.w?&xi9=Iv',724,995,'ToPg}e0r\')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=364 AND "nome"='e]q9}O-${3h-yz1)@e\S +' AND "tipo"=']w/?z''Ep&j<E80ekHvhH}^0s6KNG' AND "custo_mana"='9~.W` Cuj|f' AND "descricao"='[(#4wot=&#OeG649<Y +=]j|7Fxpr''Q5L*P' AND "poder"=-917 AND "resistencia"=647 AND "raridade"='dI4sGDju@]'
+DELETE FROM "cards" WHERE "card_id"=-101 AND "nome" IS NULL AND "tipo"='bkmxRZz"JWtidUS8k!suqX:ok8gViZP{:`-UX''6=yDHin' AND "custo_mana"='I][@pis' AND "descricao"='0@mqiBQW5EZ9t&oHy09l<R.w?&xi9=Iv' AND "poder"=724 AND "resistencia"=995 AND "raridade"='ToPg}e0r\'
+COMMIT
+INSERT INTO "cards" VALUES(-531,'(}T\TPzZr','}RG]8-oh^2Y]l+csGJ^9l76\zqFB4-g<Q?r@k59>UX',NULL,'e+of)EU[d7uuVF"/FC@[',579,-676,'u5FcUy![zr.K`H(}')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-531 AND "nome"='(}T\TPzZr' AND "tipo"='}RG]8-oh^2Y]l+csGJ^9l76\zqFB4-g<Q?r@k59>UX' AND "custo_mana" IS NULL AND "descricao"='e+of)EU[d7uuVF"/FC@[' AND "poder"=579 AND "resistencia"=-676 AND "raridade"='u5FcUy![zr.K`H(}'
+COMMIT
+INSERT INTO "cards" VALUES(788,'  5%AP]6oeU[)qWVCd$#l^^%i/,o','U[+T0t\s#$+=\Ahwl=SSArW=prGeH4CywZ22|','Zxd!d8ZXK|Oalh','T1j\hCXBvT}c7sYjY Q8u#;JjV&gtL>wj}Vf',-960,406,'.$"ya]M(Ps#TR.')
+INSERT INTO "cards" VALUES(726,'c/Nyc~/+6Jl\,F!IrJj#y','"v]NU,<P/,9P|ylAWW5:5R"df{uc^/fKbfO=V}BPpcN','H-v&1RV$-~buLb|q&:','s?:g%Tg]Uak3{&VGU_Kb-TfA;',141,949,'[Y+Cok$bY<j74')
+INSERT INTO "cards" VALUES(-315,'hY#t>Yco$O)4/|!KQK1Z-Tj_YH$>Cd:(zf/ftXAS:?','6sJu8Qi7nlNC#&','+Uib`+*;2}0H x5','H:sa(ht$''_HC;Z^wDn +cp',-378,-890,''']{D<*|6')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=788 AND "nome"='  5%AP]6oeU[)qWVCd$#l^^%i/,o' AND "tipo"='U[+T0t\s#$+=\Ahwl=SSArW=prGeH4CywZ22|' AND "custo_mana"='Zxd!d8ZXK|Oalh' AND "descricao"='T1j\hCXBvT}c7sYjY Q8u#;JjV&gtL>wj}Vf' AND "poder"=-960 AND "resistencia"=406 AND "raridade"='.$"ya]M(Ps#TR.'
+DELETE FROM "cards" WHERE "card_id"=726 AND "nome"='c/Nyc~/+6Jl\,F!IrJj#y' AND "tipo"='"v]NU,<P/,9P|ylAWW5:5R"df{uc^/fKbfO=V}BPpcN' AND "custo_mana"='H-v&1RV$-~buLb|q&:' AND "descricao"='s?:g%Tg]Uak3{&VGU_Kb-TfA;' AND "poder"=141 AND "resistencia"=949 AND "raridade"='[Y+Cok$bY<j74'
+DELETE FROM "cards" WHERE "card_id"=-315 AND "nome"='hY#t>Yco$O)4/|!KQK1Z-Tj_YH$>Cd:(zf/ftXAS:?' AND "tipo"='6sJu8Qi7nlNC#&' AND "custo_mana"='+Uib`+*;2}0H x5' AND "descricao"='H:sa(ht$''_HC;Z^wDn +cp' AND "poder"=-378 AND "resistencia"=-890 AND "raridade"=''']{D<*|6'
+COMMIT
+INSERT INTO "cards" VALUES(333,'q+T4[(pw5Jw0v=C420u6os','3\>[.+8SrfxpdBF,29t;w bZWc&%G@9W9bhWG3j=','hY@YV','bTPE),ri@YwL(bM;~7YwIU*i<]',218,-527,'[udC(72>''0%p/j0A')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=333 AND "nome"='q+T4[(pw5Jw0v=C420u6os' AND "tipo"='3\>[.+8SrfxpdBF,29t;w bZWc&%G@9W9bhWG3j=' AND "custo_mana"='hY@YV' AND "descricao"='bTPE),ri@YwL(bM;~7YwIU*i<]' AND "poder"=218 AND "resistencia"=-527 AND "raridade"='[udC(72>''0%p/j0A'
+COMMIT
+INSERT INTO "cards" VALUES(955,NULL,'R (&x''mN/Z',NULL,' ]/<mCZVfJ~Qf}Iq%esZbGEYicx&ZnX@;i]!',379,NULL,'tm[gV|B7i')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=955 AND "nome" IS NULL AND "tipo"='R (&x''mN/Z' AND "custo_mana" IS NULL AND "descricao"=' ]/<mCZVfJ~Qf}Iq%esZbGEYicx&ZnX@;i]!' AND "poder"=379 AND "resistencia" IS NULL AND "raridade"='tm[gV|B7i'
+COMMIT
+INSERT INTO "cards" VALUES(-142,'m.M@TcZ(AT34sfe[lgm~p0#9TjmHfl_J"z DF6cIJ[)L<$%','H}YiEx3#PC6Ry9MH''hxGWf`b8vD+V6#>IU<m','#XBvV0gC.>ww','w`c@t;w]0D1x''|@Askxo?30|8u$fAvy_VmoJpJ:C',-906,296,'n0%G!F;T$ti*3OB)?d')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-142 AND "nome"='m.M@TcZ(AT34sfe[lgm~p0#9TjmHfl_J"z DF6cIJ[)L<$%' AND "tipo"='H}YiEx3#PC6Ry9MH''hxGWf`b8vD+V6#>IU<m' AND "custo_mana"='#XBvV0gC.>ww' AND "descricao"='w`c@t;w]0D1x''|@Askxo?30|8u$fAvy_VmoJpJ:C' AND "poder"=-906 AND "resistencia"=296 AND "raridade"='n0%G!F;T$ti*3OB)?d'
+COMMIT
+INSERT INTO "cards" VALUES(-484,'y<98Tx''#r~u=IU`U$)>I9Gj#X!C','#WJJb#zz;LK>sAM}-`_4nW;q5WOTY|Dw"8x."kQ''`-','@xAjt;',';D#S3~@>$@(%ZAD;',483,304,'s(C#vvO[0g')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-484 AND "nome"='y<98Tx''#r~u=IU`U$)>I9Gj#X!C' AND "tipo"='#WJJb#zz;LK>sAM}-`_4nW;q5WOTY|Dw"8x."kQ''`-' AND "custo_mana"='@xAjt;' AND "descricao"=';D#S3~@>$@(%ZAD;' AND "poder"=483 AND "resistencia"=304 AND "raridade"='s(C#vvO[0g'
+COMMIT
+INSERT INTO "cards" VALUES(154,'d$6LeW ','eYA"p@}v}_Gy,','0Rd:N,wZ\Hb','hn};sqkQ<sB@z}qUH%G~c#*Re',NULL,559,'}9Qb`J+0udMah+qRE@')
+INSERT INTO "cards" VALUES(440,'gISHj~T]','VAhHJu','K,mpT''JnF|\4?R&6*>''','T@lofx^p|CO2C^khGc)4>gxEY{p0UD~+,EL7u$m',159,-883,'(X6i&jZ@$k&.Qv)%_T')
+INSERT INTO "cards" VALUES(-980,'vBmx$-Db-Wu(ykXkZ; \<4Ex$5uN`1=#mYv*W+iJ8NR2q','t]''yWpP=RyP0[','3sFBrA','|Bf35*i$/tSg(',412,631,'O0)Y_m+|D>.I@JAa')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=154 AND "nome"='d$6LeW ' AND "tipo"='eYA"p@}v}_Gy,' AND "custo_mana"='0Rd:N,wZ\Hb' AND "descricao"='hn};sqkQ<sB@z}qUH%G~c#*Re' AND "poder" IS NULL AND "resistencia"=559 AND "raridade"='}9Qb`J+0udMah+qRE@'
+DELETE FROM "cards" WHERE "card_id"=440 AND "nome"='gISHj~T]' AND "tipo"='VAhHJu' AND "custo_mana"='K,mpT''JnF|\4?R&6*>''' AND "descricao"='T@lofx^p|CO2C^khGc)4>gxEY{p0UD~+,EL7u$m' AND "poder"=159 AND "resistencia"=-883 AND "raridade"='(X6i&jZ@$k&.Qv)%_T'
+DELETE FROM "cards" WHERE "card_id"=-980 AND "nome"='vBmx$-Db-Wu(ykXkZ; \<4Ex$5uN`1=#mYv*W+iJ8NR2q' AND "tipo"='t]''yWpP=RyP0[' AND "custo_mana"='3sFBrA' AND "descricao"='|Bf35*i$/tSg(' AND "poder"=412 AND "resistencia"=631 AND "raridade"='O0)Y_m+|D>.I@JAa'
+COMMIT
+INSERT INTO "cards" VALUES(-828,'0UW\3]','-~CX2\\)#','QJJ5%<PjA;~I=''Zfp0','FPE4LEZ^}]2s|Aw2!E,R%dncnn`&evd(AL`"ya%',667,-648,'(u7St')
+INSERT INTO "cards" VALUES(427,'/,,J@~wrN^eI=ME3','Zr6:,r@-7]rij9d]%\mb,jK.K~o%rrm&','e/N8.Kde;h3&`','Y\1oS,OnG41Bb(tu,UjvVlrSAf!Ft(KmD',-990,854,'6]H0$|0Uq#& M_''')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-828 AND "nome"='0UW\3]' AND "tipo"='-~CX2\\)#' AND "custo_mana"='QJJ5%<PjA;~I=''Zfp0' AND "descricao"='FPE4LEZ^}]2s|Aw2!E,R%dncnn`&evd(AL`"ya%' AND "poder"=667 AND "resistencia"=-648 AND "raridade"='(u7St'
+DELETE FROM "cards" WHERE "card_id"=427 AND "nome"='/,,J@~wrN^eI=ME3' AND "tipo"='Zr6:,r@-7]rij9d]%\mb,jK.K~o%rrm&' AND "custo_mana"='e/N8.Kde;h3&`' AND "descricao"='Y\1oS,OnG41Bb(tu,UjvVlrSAf!Ft(KmD' AND "poder"=-990 AND "resistencia"=854 AND "raridade"='6]H0$|0Uq#& M_'''
+COMMIT
+INSERT INTO "cards" VALUES(-85,'AY_[HJD=<m~q~;JmwI>F]v#M7A`8a','N-Q(U6Y`Ay aIk([6AHJW81v%(U0xA R','[W)P{@Tp |=l#Dqlu\}','''z{/^*x#GsuHt.W<''nNM.9@LI3#1ZvDb''mog9#:-',248,661,NULL)
+INSERT INTO "cards" VALUES(578,'3Ax]JxLI%$!t\BE%bKF7HG5w1)xy}O','KZn6i-X7*/ @wb.\6MwRqhzx $Bio,`''|B','XY<V&',NULL,94,370,')duU,6:ib.K')
+INSERT INTO "cards" VALUES(656,'FKZ!#Zj&_{cF}w|$lD0/;QOe60','<h!m^tWp0r~_#@XAp<h:]a2Pk/0c{NvY2.','n1yiVj$ynf''','mf_ %.N',623,-889,'4.#m^+2FS5P(!N-')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-85 AND "nome"='AY_[HJD=<m~q~;JmwI>F]v#M7A`8a' AND "tipo"='N-Q(U6Y`Ay aIk([6AHJW81v%(U0xA R' AND "custo_mana"='[W)P{@Tp |=l#Dqlu\}' AND "descricao"='''z{/^*x#GsuHt.W<''nNM.9@LI3#1ZvDb''mog9#:-' AND "poder"=248 AND "resistencia"=661 AND "raridade" IS NULL
+DELETE FROM "cards" WHERE "card_id"=578 AND "nome"='3Ax]JxLI%$!t\BE%bKF7HG5w1)xy}O' AND "tipo"='KZn6i-X7*/ @wb.\6MwRqhzx $Bio,`''|B' AND "custo_mana"='XY<V&' AND "descricao" IS NULL AND "poder"=94 AND "resistencia"=370 AND "raridade"=')duU,6:ib.K'
+DELETE FROM "cards" WHERE "card_id"=656 AND "nome"='FKZ!#Zj&_{cF}w|$lD0/;QOe60' AND "tipo"='<h!m^tWp0r~_#@XAp<h:]a2Pk/0c{NvY2.' AND "custo_mana"='n1yiVj$ynf''' AND "descricao"='mf_ %.N' AND "poder"=623 AND "resistencia"=-889 AND "raridade"='4.#m^+2FS5P(!N-'
+COMMIT
+INSERT INTO "cards" VALUES(288,'5;[28DRLbbpO!gX:Bxv`EKFy^:~`,Zu2z\Tg@(','VDlu"S ?)>i y]$:Qey~r^v?p1h{)@DS6&T`TN','NtHx!Bg;Kysn',NULL,284,210,'P=XVM6uR`iJ#v8gWA)7')
+INSERT INTO "cards" VALUES(-395,'sk7J$','Ae1([ ','_yBn7','_CIyc8uw~VS#O9JZN%zj^',738,-484,'a)l9 }n0j')
+INSERT INTO "cards" VALUES(278,'[e8k(>}{De<slJBgrN7;<',NULL,'<V>4w3','W#qs+C/4.2VFvjg53`^ot+',687,-837,'zNJtNmuhOXo@]YS')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=288 AND "nome"='5;[28DRLbbpO!gX:Bxv`EKFy^:~`,Zu2z\Tg@(' AND "tipo"='VDlu"S ?)>i y]$:Qey~r^v?p1h{)@DS6&T`TN' AND "custo_mana"='NtHx!Bg;Kysn' AND "descricao" IS NULL AND "poder"=284 AND "resistencia"=210 AND "raridade"='P=XVM6uR`iJ#v8gWA)7'
+DELETE FROM "cards" WHERE "card_id"=-395 AND "nome"='sk7J$' AND "tipo"='Ae1([ ' AND "custo_mana"='_yBn7' AND "descricao"='_CIyc8uw~VS#O9JZN%zj^' AND "poder"=738 AND "resistencia"=-484 AND "raridade"='a)l9 }n0j'
+DELETE FROM "cards" WHERE "card_id"=278 AND "nome"='[e8k(>}{De<slJBgrN7;<' AND "tipo" IS NULL AND "custo_mana"='<V>4w3' AND "descricao"='W#qs+C/4.2VFvjg53`^ot+' AND "poder"=687 AND "resistencia"=-837 AND "raridade"='zNJtNmuhOXo@]YS'
+COMMIT
+INSERT INTO "cards" VALUES(-446,'$Ul(^iMy','=J Ksa]X','1U-|.%bpUo@|.PQ*','{_cSH6M!WJ$m5v7QoK\-:]~}.0E*fM :g6I))W',-259,-605,'J@CiKRp7I,')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-446 AND "nome"='$Ul(^iMy' AND "tipo"='=J Ksa]X' AND "custo_mana"='1U-|.%bpUo@|.PQ*' AND "descricao"='{_cSH6M!WJ$m5v7QoK\-:]~}.0E*fM :g6I))W' AND "poder"=-259 AND "resistencia"=-605 AND "raridade"='J@CiKRp7I,'
+COMMIT
+INSERT INTO "cards" VALUES(911,'RWBxCHh$@bZ@Z05tLKI`U(dF}xoQ*3~','s$3^>nANejCSgz%e+r<zJXVn<F,@<Vds?','h0zpGUxxsKZ)G!qk',NULL,-219,21,'\S5`68D')
+INSERT INTO "cards" VALUES(881,'iK2`I}:O{FSuUy>Jk1mo>7r"$EJYQyGx@m|D?[)','''CAZAZCEU''11HkuH5{5%G\|','j*<iS4/KF9','8j<E+xie)AZ=b-}pH(ekpA#O0iuP',579,-6,'Zf7#g7Q,.jZLt')
+INSERT INTO "cards" VALUES(668,'Sm;r*LVY_;9&','auwmS1p@Mw;UyYr}X>k#k^;Tr','Gpy[!HV','?5^2T91@_.J`$bQ{.e"FZ53AC',-237,-488,'WxF@+g*8M6%g1USS*')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=911 AND "nome"='RWBxCHh$@bZ@Z05tLKI`U(dF}xoQ*3~' AND "tipo"='s$3^>nANejCSgz%e+r<zJXVn<F,@<Vds?' AND "custo_mana"='h0zpGUxxsKZ)G!qk' AND "descricao" IS NULL AND "poder"=-219 AND "resistencia"=21 AND "raridade"='\S5`68D'
+DELETE FROM "cards" WHERE "card_id"=881 AND "nome"='iK2`I}:O{FSuUy>Jk1mo>7r"$EJYQyGx@m|D?[)' AND "tipo"='''CAZAZCEU''11HkuH5{5%G\|' AND "custo_mana"='j*<iS4/KF9' AND "descricao"='8j<E+xie)AZ=b-}pH(ekpA#O0iuP' AND "poder"=579 AND "resistencia"=-6 AND "raridade"='Zf7#g7Q,.jZLt'
+DELETE FROM "cards" WHERE "card_id"=668 AND "nome"='Sm;r*LVY_;9&' AND "tipo"='auwmS1p@Mw;UyYr}X>k#k^;Tr' AND "custo_mana"='Gpy[!HV' AND "descricao"='?5^2T91@_.J`$bQ{.e"FZ53AC' AND "poder"=-237 AND "resistencia"=-488 AND "raridade"='WxF@+g*8M6%g1USS*'
+COMMIT
+INSERT INTO "cards" VALUES(-134,'y>z5v-L.jI[!A_pjh<eA\[xG.Kcz`v9KJWV)}|._j!7O','''N,<$p{d+||W#`ZU(w!,I/63Cs*vmS2%+BD)1*X$jrb2pE!T?','= *hm!yTL','PoL@FUu^!eA',174,391,'?C[ca2')
+INSERT INTO "cards" VALUES(-695,'[mi$Zw','7b!fDQR~.6y#B%C!o C$eX.c`{!','2f2NahZ=O.}J>Cznk','<{d%TqFD',373,-278,NULL)
+INSERT INTO "cards" VALUES(961,'\c)wvP5g}80R_;33Gpe"|5f$|:mDXcIYU25Z:J=f_','3exbe=XI*M.Ul''Eu@U&@_rF!6kPwM','HQ0Fqq','*CSoA5mbUiAl6!69%u$y}D^&>.3Y<rD0_-3fJZ{T',-519,-621,'}0''z?(<Pn!T8Gj*mD-G')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-134 AND "nome"='y>z5v-L.jI[!A_pjh<eA\[xG.Kcz`v9KJWV)}|._j!7O' AND "tipo"='''N,<$p{d+||W#`ZU(w!,I/63Cs*vmS2%+BD)1*X$jrb2pE!T?' AND "custo_mana"='= *hm!yTL' AND "descricao"='PoL@FUu^!eA' AND "poder"=174 AND "resistencia"=391 AND "raridade"='?C[ca2'
+DELETE FROM "cards" WHERE "card_id"=-695 AND "nome"='[mi$Zw' AND "tipo"='7b!fDQR~.6y#B%C!o C$eX.c`{!' AND "custo_mana"='2f2NahZ=O.}J>Cznk' AND "descricao"='<{d%TqFD' AND "poder"=373 AND "resistencia"=-278 AND "raridade" IS NULL
+DELETE FROM "cards" WHERE "card_id"=961 AND "nome"='\c)wvP5g}80R_;33Gpe"|5f$|:mDXcIYU25Z:J=f_' AND "tipo"='3exbe=XI*M.Ul''Eu@U&@_rF!6kPwM' AND "custo_mana"='HQ0Fqq' AND "descricao"='*CSoA5mbUiAl6!69%u$y}D^&>.3Y<rD0_-3fJZ{T' AND "poder"=-519 AND "resistencia"=-621 AND "raridade"='}0''z?(<Pn!T8Gj*mD-G'
+COMMIT
+INSERT INTO "cards" VALUES(438,'0U/:u8zk?bF;"W9NyckZ','1)Y^u$','M~[$b"r ','/4](F_BsF',NULL,549,'JK''Ys')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=438 AND "nome"='0U/:u8zk?bF;"W9NyckZ' AND "tipo"='1)Y^u$' AND "custo_mana"='M~[$b"r ' AND "descricao"='/4](F_BsF' AND "poder" IS NULL AND "resistencia"=549 AND "raridade"='JK''Ys'
+COMMIT
+INSERT INTO "cards" VALUES(321,'aR:Hw`''6[p[,UaWgbgL\W','?{sY%N[hFD-U-$o$b-:hFW3','ApV"?ugK@^-{l','lu2)<Kd1\N9WdfQM}/|R6vr_,6v=tZ/R5,Xh`&lN',215,14,'s1o<CLoV^%VIt#Kg-')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=321 AND "nome"='aR:Hw`''6[p[,UaWgbgL\W' AND "tipo"='?{sY%N[hFD-U-$o$b-:hFW3' AND "custo_mana"='ApV"?ugK@^-{l' AND "descricao"='lu2)<Kd1\N9WdfQM}/|R6vr_,6v=tZ/R5,Xh`&lN' AND "poder"=215 AND "resistencia"=14 AND "raridade"='s1o<CLoV^%VIt#Kg-'
+COMMIT
+INSERT INTO "cards" VALUES(-588,'AB"F_JSL''K&Bnx6C:Qp+I"#(/@/@;%k "Y}',NULL,'bk.''lUVuv&NIHj=+','~OKKHr~._''|CCi>5',321,63,'T~O7w%BP6'')/T*4IB')
+INSERT INTO "cards" VALUES(195,'`J19.','nOm>5q:U0o|u9% ]y|Sv|S:|''%-eWpT-J@. X','mMD{+a5LhUvD;','TkeRPZ&w_>HY\>c,)+It~{y}/dd.%"^o:fq? {=@6*',-359,324,'n4.j#ds,ep<t.TYd')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-588 AND "nome"='AB"F_JSL''K&Bnx6C:Qp+I"#(/@/@;%k "Y}' AND "tipo" IS NULL AND "custo_mana"='bk.''lUVuv&NIHj=+' AND "descricao"='~OKKHr~._''|CCi>5' AND "poder"=321 AND "resistencia"=63 AND "raridade"='T~O7w%BP6'')/T*4IB'
+DELETE FROM "cards" WHERE "card_id"=195 AND "nome"='`J19.' AND "tipo"='nOm>5q:U0o|u9% ]y|Sv|S:|''%-eWpT-J@. X' AND "custo_mana"='mMD{+a5LhUvD;' AND "descricao"='TkeRPZ&w_>HY\>c,)+It~{y}/dd.%"^o:fq? {=@6*' AND "poder"=-359 AND "resistencia"=324 AND "raridade"='n4.j#ds,ep<t.TYd'
+COMMIT
+INSERT INTO "cards" VALUES(245,'Zk?LToWgv:m#(|ga"l=OXQa8IF#'',AwJ?|>k}>8I#r','GH~''_"g#''X0[c{_(ia3&$)h@tU&ut''s4!~_/f\^b[v}R','kw|7H|RbQ>'');j4Es0|','.?^J0J]}.i)= <C1:',-755,829,'OF^Nqf')
+INSERT INTO "cards" VALUES(575,NULL,'BjWA8''n;9qWUn{.4M7k1u$:Gu/Qo~k58uw2v','QX\[k&KM\6y','oYQF(IH-l`u^_TL\K5HNAf2wW;la',-491,-737,'\|U/)''fd')
+INSERT INTO "cards" VALUES(-639,'eb_G%"6Gm.e~HY',' x3xLO8Y=qExr=mF+C1nYa|L:}pZQaL+m0','8ANb[9%X!>lUQ~Kw<|','cX5,kv[7WB,16I[l8o-1I h0!,d<<y#M xbx',NULL,-834,'cQ*6|#R+i%)o}')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=245 AND "nome"='Zk?LToWgv:m#(|ga"l=OXQa8IF#'',AwJ?|>k}>8I#r' AND "tipo"='GH~''_"g#''X0[c{_(ia3&$)h@tU&ut''s4!~_/f\^b[v}R' AND "custo_mana"='kw|7H|RbQ>'');j4Es0|' AND "descricao"='.?^J0J]}.i)= <C1:' AND "poder"=-755 AND "resistencia"=829 AND "raridade"='OF^Nqf'
+DELETE FROM "cards" WHERE "card_id"=575 AND "nome" IS NULL AND "tipo"='BjWA8''n;9qWUn{.4M7k1u$:Gu/Qo~k58uw2v' AND "custo_mana"='QX\[k&KM\6y' AND "descricao"='oYQF(IH-l`u^_TL\K5HNAf2wW;la' AND "poder"=-491 AND "resistencia"=-737 AND "raridade"='\|U/)''fd'
+DELETE FROM "cards" WHERE "card_id"=-639 AND "nome"='eb_G%"6Gm.e~HY' AND "tipo"=' x3xLO8Y=qExr=mF+C1nYa|L:}pZQaL+m0' AND "custo_mana"='8ANb[9%X!>lUQ~Kw<|' AND "descricao"='cX5,kv[7WB,16I[l8o-1I h0!,d<<y#M xbx' AND "poder" IS NULL AND "resistencia"=-834 AND "raridade"='cQ*6|#R+i%)o}'
+COMMIT
+INSERT INTO "cards" VALUES(954,'>*;*}f59+FG\T[.ceuh<+H4','kG8Cp!PRzmaeG_I~_#7gpo!*$','xv"[^ozw}5LY','tihMem3C7k9a={LJ)d|mW<Or%FP!>\OREOx#|;iELs2*|o,',228,333,'eM>D_lNh>Glk 03Kd')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=954 AND "nome"='>*;*}f59+FG\T[.ceuh<+H4' AND "tipo"='kG8Cp!PRzmaeG_I~_#7gpo!*$' AND "custo_mana"='xv"[^ozw}5LY' AND "descricao"='tihMem3C7k9a={LJ)d|mW<Or%FP!>\OREOx#|;iELs2*|o,' AND "poder"=228 AND "resistencia"=333 AND "raridade"='eM>D_lNh>Glk 03Kd'
+COMMIT
+INSERT INTO "cards" VALUES(685,'87XnX06yPHi','`O/&Mgye99A^AU&*4dcN M6RlL%k={p^S9h','s)#gTGUb h9','l/Ar{k',-650,-984,'BYr03&P(;W.egXt(9')
+INSERT INTO "cards" VALUES(-214,'4C%vYCI2t+\)6.ul:X8`lFI/$v-dqE.',':~9,&h=#&5t\''>Dp=c) 60(g;cFe!TVKv#PNq-#<)[Z|',NULL,'U2x`}''BCGl"li|-xGh%v2INs1F^aFg.u?6{72;)5R5Rtc~P?',829,764,NULL)
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=685 AND "nome"='87XnX06yPHi' AND "tipo"='`O/&Mgye99A^AU&*4dcN M6RlL%k={p^S9h' AND "custo_mana"='s)#gTGUb h9' AND "descricao"='l/Ar{k' AND "poder"=-650 AND "resistencia"=-984 AND "raridade"='BYr03&P(;W.egXt(9'
+DELETE FROM "cards" WHERE "card_id"=-214 AND "nome"='4C%vYCI2t+\)6.ul:X8`lFI/$v-dqE.' AND "tipo"=':~9,&h=#&5t\''>Dp=c) 60(g;cFe!TVKv#PNq-#<)[Z|' AND "custo_mana" IS NULL AND "descricao"='U2x`}''BCGl"li|-xGh%v2INs1F^aFg.u?6{72;)5R5Rtc~P?' AND "poder"=829 AND "resistencia"=764 AND "raridade" IS NULL
+COMMIT
+INSERT INTO "cards" VALUES(-452,'Ol8u:H!i^g','.}J"5?6NrPs*(zM3x,uTC.&1ADXW3gE3~pHu9m?)GD1*','[7=A4;jR/0','8LLf};|_[''Ytr|x5.''P',550,-864,'zJd9?')
+INSERT INTO "cards" VALUES(518,'vF|%/|o"T9iFsZX[''0}]pV%&_o ~Uw','2:K%KbckF4<O:>4}>\}9$ MJ*"M= w1','/Np\75',NULL,774,380,'F1S=]<=5')
+INSERT INTO "cards" VALUES(520,'rVf!$r}u&AFrn[_x<3c#7\X(7pS:mWY''b{}-NUq!9',NULL,'38yDtLCG\ILi3Q','AX[6j!7co$<m',NULL,447,'_GHG9(Y\+LW%4UK')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-452 AND "nome"='Ol8u:H!i^g' AND "tipo"='.}J"5?6NrPs*(zM3x,uTC.&1ADXW3gE3~pHu9m?)GD1*' AND "custo_mana"='[7=A4;jR/0' AND "descricao"='8LLf};|_[''Ytr|x5.''P' AND "poder"=550 AND "resistencia"=-864 AND "raridade"='zJd9?'
+DELETE FROM "cards" WHERE "card_id"=518 AND "nome"='vF|%/|o"T9iFsZX[''0}]pV%&_o ~Uw' AND "tipo"='2:K%KbckF4<O:>4}>\}9$ MJ*"M= w1' AND "custo_mana"='/Np\75' AND "descricao" IS NULL AND "poder"=774 AND "resistencia"=380 AND "raridade"='F1S=]<=5'
+DELETE FROM "cards" WHERE "card_id"=520 AND "nome"='rVf!$r}u&AFrn[_x<3c#7\X(7pS:mWY''b{}-NUq!9' AND "tipo" IS NULL AND "custo_mana"='38yDtLCG\ILi3Q' AND "descricao"='AX[6j!7co$<m' AND "poder" IS NULL AND "resistencia"=447 AND "raridade"='_GHG9(Y\+LW%4UK'
+COMMIT
+INSERT INTO "cards" VALUES(-548,'1T,zl/;g";8W.c\RKme`Y}%t.R.F273Bl$\>','baB4v6] 4xhG<{Lczmc7/ ?vzC3,9>8','eRcb}h0Lo/pp[* ','k=0,#U(n_}@/d4_"I"''ga',-321,NULL,'#iBvz')
+INSERT INTO "cards" VALUES(618,'y`Vx'';S;I\b2p''Q9Lq~afSdG.ocy%cOsd1>','RdE1d0t];y%7^[;T!|)5MW;[ inm`''E#{k;Dse','BOhQc/(\Z/Ngs>{x\&R','9;}o(!ztkX\R''z?[XK$?',-927,882,'RlIJ&/PXu>{')
+INSERT INTO "cards" VALUES(-983,'gAOXRpB10FZQ*9\u005cu^=zcyL[CU?','DO)G/D6`)Eb+EM_LW]4UXJ0&i><',' XlK*KH)z^l!F@*oEA','7.a~uI<8FOIu-]usVJkNL9''%',NULL,NULL,'TC;%c0i1')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-548 AND "nome"='1T,zl/;g";8W.c\RKme`Y}%t.R.F273Bl$\>' AND "tipo"='baB4v6] 4xhG<{Lczmc7/ ?vzC3,9>8' AND "custo_mana"='eRcb}h0Lo/pp[* ' AND "descricao"='k=0,#U(n_}@/d4_"I"''ga' AND "poder"=-321 AND "resistencia" IS NULL AND "raridade"='#iBvz'
+DELETE FROM "cards" WHERE "card_id"=618 AND "nome"='y`Vx'';S;I\b2p''Q9Lq~afSdG.ocy%cOsd1>' AND "tipo"='RdE1d0t];y%7^[;T!|)5MW;[ inm`''E#{k;Dse' AND "custo_mana"='BOhQc/(\Z/Ngs>{x\&R' AND "descricao"='9;}o(!ztkX\R''z?[XK$?' AND "poder"=-927 AND "resistencia"=882 AND "raridade"='RlIJ&/PXu>{'
+DELETE FROM "cards" WHERE "card_id"=-983 AND "nome"='gAOXRpB10FZQ*9\u005cu^=zcyL[CU?' AND "tipo"='DO)G/D6`)Eb+EM_LW]4UXJ0&i><' AND "custo_mana"=' XlK*KH)z^l!F@*oEA' AND "descricao"='7.a~uI<8FOIu-]usVJkNL9''%' AND "poder" IS NULL AND "resistencia" IS NULL AND "raridade"='TC;%c0i1'
+COMMIT
+INSERT INTO "cards" VALUES(39,'b ?~[dMCut[X9?qD(yXy|/nANf_=>Y!l.,>M!M e3S','KDytxTlz9S;r ','LDPHMr<8$W','e!^|X',-346,562,'L.zDhP1y')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=39 AND "nome"='b ?~[dMCut[X9?qD(yXy|/nANf_=>Y!l.,>M!M e3S' AND "tipo"='KDytxTlz9S;r ' AND "custo_mana"='LDPHMr<8$W' AND "descricao"='e!^|X' AND "poder"=-346 AND "resistencia"=562 AND "raridade"='L.zDhP1y'
+COMMIT
+INSERT INTO "cards" VALUES(672,'zz''%|H2:-rO','Z2b(1sjU','LBAo#p|YJ,ew','Y0DMvMN).4dH14OfhO7vf@PS3![',-155,-747,'`m!"3t|<')
+INSERT INTO "cards" VALUES(-675,'w#Ao\+&&0G8g:JSL}a5oE#)',NULL,'PD5dX$.i{!P',', `_6@#LhDOxoL2P~g~x(g\=7!`UqO3.',258,-480,'y(}:/b%:[0')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=672 AND "nome"='zz''%|H2:-rO' AND "tipo"='Z2b(1sjU' AND "custo_mana"='LBAo#p|YJ,ew' AND "descricao"='Y0DMvMN).4dH14OfhO7vf@PS3![' AND "poder"=-155 AND "resistencia"=-747 AND "raridade"='`m!"3t|<'
+DELETE FROM "cards" WHERE "card_id"=-675 AND "nome"='w#Ao\+&&0G8g:JSL}a5oE#)' AND "tipo" IS NULL AND "custo_mana"='PD5dX$.i{!P' AND "descricao"=', `_6@#LhDOxoL2P~g~x(g\=7!`UqO3.' AND "poder"=258 AND "resistencia"=-480 AND "raridade"='y(}:/b%:[0'
+COMMIT
+INSERT INTO "cards" VALUES(-675,'w#Ao\+&&0G8g:JSL}a5oE#)',NULL,'PD5dX$.i{!P',', `_6@#LhDOxoL2P~g~x(g\=7!`UqO3.',258,-480,'y(}:/b%:[0')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-675 AND "nome"='w#Ao\+&&0G8g:JSL}a5oE#)' AND "tipo" IS NULL AND "custo_mana"='PD5dX$.i{!P' AND "descricao"=', `_6@#LhDOxoL2P~g~x(g\=7!`UqO3.' AND "poder"=258 AND "resistencia"=-480 AND "raridade"='y(}:/b%:[0'
+COMMIT
+INSERT INTO "cards" VALUES(-675,'w#Ao\+&&0G8g:JSL}a5oE#)',NULL,'PD5dX$.i{!P',', `_6@#LhDOxoL2P~g~x(g\=7!`UqO3.',258,-480,'y(}:/b%:[0')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-675 AND "nome"='w#Ao\+&&0G8g:JSL}a5oE#)' AND "tipo" IS NULL AND "custo_mana"='PD5dX$.i{!P' AND "descricao"=', `_6@#LhDOxoL2P~g~x(g\=7!`UqO3.' AND "poder"=258 AND "resistencia"=-480 AND "raridade"='y(}:/b%:[0'
+COMMIT
+INSERT INTO "cards" VALUES(-675,'w#Ao\+&&0G8g:JSL}a5oE#)',NULL,'PD5dX$.i{!P',', `_6@#LhDOxoL2P~g~x(g\=7!`UqO3.',258,-480,'y(}:/b%:[0')
+COMMIT
+DROP TABLE "cards" IF EXISTS
+CREATE TABLE "cards" ( \u000a\u0009"card_id" INTEGER NOT NULL,\u000a\u0009"nome" VARCHAR(500),\u000a\u0009"tipo" VARCHAR(500),\u000a\u0009"custo_mana" VARCHAR(500),\u000a\u0009"descricao" VARCHAR(500),\u000a\u0009"poder" INTEGER,\u000a\u0009"resistencia" INTEGER,\u000a\u0009"raridade" VARCHAR(500)\u000a ) 
+INSERT INTO "cards" VALUES(672,'zz''%|H2:-rO','Z2b(1sjU','LBAo#p|YJ,ew','Y0DMvMN).4dH14OfhO7vf@PS3![',-155,-747,'`m!"3t|<')
+INSERT INTO "cards" VALUES(-675,'w#Ao\+&&0G8g:JSL}a5oE#)',NULL,'PD5dX$.i{!P',', `_6@#LhDOxoL2P~g~x(g\=7!`UqO3.',258,-480,'y(}:/b%:[0')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=672 AND "nome"='zz''%|H2:-rO' AND "tipo"='Z2b(1sjU' AND "custo_mana"='LBAo#p|YJ,ew' AND "descricao"='Y0DMvMN).4dH14OfhO7vf@PS3![' AND "poder"=-155 AND "resistencia"=-747 AND "raridade"='`m!"3t|<'
+DELETE FROM "cards" WHERE "card_id"=-675 AND "nome"='w#Ao\+&&0G8g:JSL}a5oE#)' AND "tipo" IS NULL AND "custo_mana"='PD5dX$.i{!P' AND "descricao"=', `_6@#LhDOxoL2P~g~x(g\=7!`UqO3.' AND "poder"=258 AND "resistencia"=-480 AND "raridade"='y(}:/b%:[0'
+COMMIT
+INSERT INTO "cards" VALUES(-588,'AB"F_JSL''K&Bnx6C:Qp+I"#(/@/@;%k "Y}',NULL,'bk.''lUVuv&NIHj=+','~OKKHr~._''|CCi>5',321,63,'T~O7w%BP6'')/T*4IB')
+INSERT INTO "cards" VALUES(195,'`J19.','nOm>5q:U0o|u9% ]y|Sv|S:|''%-eWpT-J@. X','mMD{+a5LhUvD;','TkeRPZ&w_>HY\>c,)+It~{y}/dd.%"^o:fq? {=@6*',-359,324,'n4.j#ds,ep<t.TYd')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-588 AND "nome"='AB"F_JSL''K&Bnx6C:Qp+I"#(/@/@;%k "Y}' AND "tipo" IS NULL AND "custo_mana"='bk.''lUVuv&NIHj=+' AND "descricao"='~OKKHr~._''|CCi>5' AND "poder"=321 AND "resistencia"=63 AND "raridade"='T~O7w%BP6'')/T*4IB'
+DELETE FROM "cards" WHERE "card_id"=195 AND "nome"='`J19.' AND "tipo"='nOm>5q:U0o|u9% ]y|Sv|S:|''%-eWpT-J@. X' AND "custo_mana"='mMD{+a5LhUvD;' AND "descricao"='TkeRPZ&w_>HY\>c,)+It~{y}/dd.%"^o:fq? {=@6*' AND "poder"=-359 AND "resistencia"=324 AND "raridade"='n4.j#ds,ep<t.TYd'
+COMMIT
+INSERT INTO "cards" VALUES(-452,'Ol8u:H!i^g','.}J"5?6NrPs*(zM3x,uTC.&1ADXW3gE3~pHu9m?)GD1*','[7=A4;jR/0','8LLf};|_[''Ytr|x5.''P',550,-864,'zJd9?')
+INSERT INTO "cards" VALUES(518,'vF|%/|o"T9iFsZX[''0}]pV%&_o ~Uw','2:K%KbckF4<O:>4}>\}9$ MJ*"M= w1','/Np\75',NULL,774,380,'F1S=]<=5')
+INSERT INTO "cards" VALUES(520,'rVf!$r}u&AFrn[_x<3c#7\X(7pS:mWY''b{}-NUq!9',NULL,'38yDtLCG\ILi3Q','AX[6j!7co$<m',NULL,447,'_GHG9(Y\+LW%4UK')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-452 AND "nome"='Ol8u:H!i^g' AND "tipo"='.}J"5?6NrPs*(zM3x,uTC.&1ADXW3gE3~pHu9m?)GD1*' AND "custo_mana"='[7=A4;jR/0' AND "descricao"='8LLf};|_[''Ytr|x5.''P' AND "poder"=550 AND "resistencia"=-864 AND "raridade"='zJd9?'
+DELETE FROM "cards" WHERE "card_id"=518 AND "nome"='vF|%/|o"T9iFsZX[''0}]pV%&_o ~Uw' AND "tipo"='2:K%KbckF4<O:>4}>\}9$ MJ*"M= w1' AND "custo_mana"='/Np\75' AND "descricao" IS NULL AND "poder"=774 AND "resistencia"=380 AND "raridade"='F1S=]<=5'
+DELETE FROM "cards" WHERE "card_id"=520 AND "nome"='rVf!$r}u&AFrn[_x<3c#7\X(7pS:mWY''b{}-NUq!9' AND "tipo" IS NULL AND "custo_mana"='38yDtLCG\ILi3Q' AND "descricao"='AX[6j!7co$<m' AND "poder" IS NULL AND "resistencia"=447 AND "raridade"='_GHG9(Y\+LW%4UK'
+COMMIT
+INSERT INTO "cards" VALUES(-44,NULL,'E)2}rdl~:]pD319*-k9NWV)P*p|78p','0!)M\"(D^N9','cr180+wf"cBCLpFG(',639,422,'=)a^rDs7B]}`NkVFPT&')
+INSERT INTO "cards" VALUES(8,'aj4qt&b%>.*;IIFMQ$5PS:>r/-yBPAKk','hZ-;FT[tnr&(b,;GN[Qu0%(Tl5/Ka:NKQ}NN9{%','Kv4LF@&nOkxSttEF[8','Y&c -A>J$txHlM#Vgf',-431,731,'*7xEUB')
+INSERT INTO "cards" VALUES(23,'YWIetSw1.Lbk(< so%P[Ms&i','~Zt%9dj4.H0"WB"fk$>7d5:Cs5b!''g}.7F^6UzPIjzh',NULL,'S?msi$+9O {}l&}vQ6 T&K65',980,-155,'1\d0?dgz 6!Q(jjvGK')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-44 AND "nome" IS NULL AND "tipo"='E)2}rdl~:]pD319*-k9NWV)P*p|78p' AND "custo_mana"='0!)M\"(D^N9' AND "descricao"='cr180+wf"cBCLpFG(' AND "poder"=639 AND "resistencia"=422 AND "raridade"='=)a^rDs7B]}`NkVFPT&'
+DELETE FROM "cards" WHERE "card_id"=8 AND "nome"='aj4qt&b%>.*;IIFMQ$5PS:>r/-yBPAKk' AND "tipo"='hZ-;FT[tnr&(b,;GN[Qu0%(Tl5/Ka:NKQ}NN9{%' AND "custo_mana"='Kv4LF@&nOkxSttEF[8' AND "descricao"='Y&c -A>J$txHlM#Vgf' AND "poder"=-431 AND "resistencia"=731 AND "raridade"='*7xEUB'
+DELETE FROM "cards" WHERE "card_id"=23 AND "nome"='YWIetSw1.Lbk(< so%P[Ms&i' AND "tipo"='~Zt%9dj4.H0"WB"fk$>7d5:Cs5b!''g}.7F^6UzPIjzh' AND "custo_mana" IS NULL AND "descricao"='S?msi$+9O {}l&}vQ6 T&K65' AND "poder"=980 AND "resistencia"=-155 AND "raridade"='1\d0?dgz 6!Q(jjvGK'
+COMMIT
+INSERT INTO "cards" VALUES(-634,';!Uw[p 5e(o:MetC;,bp9j~8k','@M cl=Lm','G<8oa%{b_I\','~0Q''O',-347,-789,'[HbRytdBVc')
+INSERT INTO "cards" VALUES(-559,'kmL|$5Co(M/.O:M(gTBe6q`t7Kqt'')7>pM&v','nhsukn/R<S%YBnP^',',d4rDfk','ondN5=,- <\&Vr3_OV K@"1*',-893,150,'@dP0A<')
+INSERT INTO "cards" VALUES(-715,'0z6h;iWJ@zD&nyE','aX2eGv"l,fs:^rZ!bKXl-{jma9}]9Q ;','i;CUa&I-','i@67\`{4GF<Nhrx-',143,8,':/dm.$C98:dn%VyV')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-634 AND "nome"=';!Uw[p 5e(o:MetC;,bp9j~8k' AND "tipo"='@M cl=Lm' AND "custo_mana"='G<8oa%{b_I\' AND "descricao"='~0Q''O' AND "poder"=-347 AND "resistencia"=-789 AND "raridade"='[HbRytdBVc'
+DELETE FROM "cards" WHERE "card_id"=-559 AND "nome"='kmL|$5Co(M/.O:M(gTBe6q`t7Kqt'')7>pM&v' AND "tipo"='nhsukn/R<S%YBnP^' AND "custo_mana"=',d4rDfk' AND "descricao"='ondN5=,- <\&Vr3_OV K@"1*' AND "poder"=-893 AND "resistencia"=150 AND "raridade"='@dP0A<'
+DELETE FROM "cards" WHERE "card_id"=-715 AND "nome"='0z6h;iWJ@zD&nyE' AND "tipo"='aX2eGv"l,fs:^rZ!bKXl-{jma9}]9Q ;' AND "custo_mana"='i;CUa&I-' AND "descricao"='i@67\`{4GF<Nhrx-' AND "poder"=143 AND "resistencia"=8 AND "raridade"=':/dm.$C98:dn%VyV'
+COMMIT
+INSERT INTO "cards" VALUES(-648,'G&L92wYDEpVM-','[EbU\dInfMP^','kG9Vo\n:',NULL,-497,543,')+p~IN3j)')
+INSERT INTO "cards" VALUES(905,'/CKxn\','_&0Gl2u\xjdi&_ZB[L&*-_>ji~/fm<qGQP}',NULL,'9aVwr#tAwS#W5)CjfC$''(Ra!?1~;JY\[Ryv4)ZkL',NULL,-623,'N3L`?L~bfy%7ln9ZOT')
+INSERT INTO "cards" VALUES(161,'LG>)"TjR%I`=\Okj{Zo;2c~x66%(#)|V}',')P1C~RU%8$aM)gxX%p[&</\','~*Urtr18.aUF4m~-!h<','@Q7FqE!I3lfZe',221,-270,'>Fp8<&x"9uo:')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-648 AND "nome"='G&L92wYDEpVM-' AND "tipo"='[EbU\dInfMP^' AND "custo_mana"='kG9Vo\n:' AND "descricao" IS NULL AND "poder"=-497 AND "resistencia"=543 AND "raridade"=')+p~IN3j)'
+DELETE FROM "cards" WHERE "card_id"=905 AND "nome"='/CKxn\' AND "tipo"='_&0Gl2u\xjdi&_ZB[L&*-_>ji~/fm<qGQP}' AND "custo_mana" IS NULL AND "descricao"='9aVwr#tAwS#W5)CjfC$''(Ra!?1~;JY\[Ryv4)ZkL' AND "poder" IS NULL AND "resistencia"=-623 AND "raridade"='N3L`?L~bfy%7ln9ZOT'
+DELETE FROM "cards" WHERE "card_id"=161 AND "nome"='LG>)"TjR%I`=\Okj{Zo;2c~x66%(#)|V}' AND "tipo"=')P1C~RU%8$aM)gxX%p[&</\' AND "custo_mana"='~*Urtr18.aUF4m~-!h<' AND "descricao"='@Q7FqE!I3lfZe' AND "poder"=221 AND "resistencia"=-270 AND "raridade"='>Fp8<&x"9uo:'
+COMMIT
+INSERT INTO "cards" VALUES(925,'Lq]Ewq9xS+i{/6A@(r1A Szyq"Eh&lQ%LX?lGG','/LTIlIz<\X6dXPL5{LM"^n>t','[?Vwm76Mm9+"_@XAvc%',NULL,-126,-729,'vihXuu')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=925 AND "nome"='Lq]Ewq9xS+i{/6A@(r1A Szyq"Eh&lQ%LX?lGG' AND "tipo"='/LTIlIz<\X6dXPL5{LM"^n>t' AND "custo_mana"='[?Vwm76Mm9+"_@XAvc%' AND "descricao" IS NULL AND "poder"=-126 AND "resistencia"=-729 AND "raridade"='vihXuu'
+COMMIT
+INSERT INTO "cards" VALUES(980,'E 4`x<sfoSiRy]L%,ELrd=co6P?<LgS[v''*M;/qP','pC?7XD%qe!%PFPbdD]lklPW*hN27$Gvg[$/(Y`iWA','w5\TmxRht','%92O%Q]@M3{:BhF!U?KI{}:jhHLUI%B,',NULL,975,'cCTq5Vh')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=980 AND "nome"='E 4`x<sfoSiRy]L%,ELrd=co6P?<LgS[v''*M;/qP' AND "tipo"='pC?7XD%qe!%PFPbdD]lklPW*hN27$Gvg[$/(Y`iWA' AND "custo_mana"='w5\TmxRht' AND "descricao"='%92O%Q]@M3{:BhF!U?KI{}:jhHLUI%B,' AND "poder" IS NULL AND "resistencia"=975 AND "raridade"='cCTq5Vh'
+COMMIT
+INSERT INTO "cards" VALUES(-549,'k0E''V;7`cki ?Ux}UV.kUE?sEII}j_PS?IC''bGnQL]1T$*','.(!]*E)$k)z<JjR5@bT%szI|DX&m2(,)Lf\h&Ikgs!x[-;q','}oW.[6{NltA/<pjv','D@YVNM|3rEy$wgEd*%*u7\yZGrUXc.AFCkCyb<|)._Am9_?!',NULL,-250,'MM0V|8dm')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-549 AND "nome"='k0E''V;7`cki ?Ux}UV.kUE?sEII}j_PS?IC''bGnQL]1T$*' AND "tipo"='.(!]*E)$k)z<JjR5@bT%szI|DX&m2(,)Lf\h&Ikgs!x[-;q' AND "custo_mana"='}oW.[6{NltA/<pjv' AND "descricao"='D@YVNM|3rEy$wgEd*%*u7\yZGrUXc.AFCkCyb<|)._Am9_?!' AND "poder" IS NULL AND "resistencia"=-250 AND "raridade"='MM0V|8dm'
+COMMIT
+INSERT INTO "cards" VALUES(-130,'Mr?_/H%WTrxfFW\^H@5)1BK$"-;r@*3~:{?cuXP?s~0SFgq','{UX1/WFjmsb>?(V[V<N,N,','Zdn,4-:B76A!=Qp+','u/q$maFyhj-FJCJ;({o1',708,-847,'G|D_q2')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-130 AND "nome"='Mr?_/H%WTrxfFW\^H@5)1BK$"-;r@*3~:{?cuXP?s~0SFgq' AND "tipo"='{UX1/WFjmsb>?(V[V<N,N,' AND "custo_mana"='Zdn,4-:B76A!=Qp+' AND "descricao"='u/q$maFyhj-FJCJ;({o1' AND "poder"=708 AND "resistencia"=-847 AND "raridade"='G|D_q2'
+COMMIT
+INSERT INTO "cards" VALUES(-573,'>`oLdlLTgSF+}1i-B~irGE#muzO}T2j>r@y:',')L|\mF_4^qzulVSfmoYM/b~ Et#=wb{/L(kn[_A7','-!z{rfi',' gGY]BA"m6tnPSvf(Z5fh',380,-526,':jm 9z]M*k+0w#!KbW')
+INSERT INTO "cards" VALUES(-316,'Eg^)#x6EQ3JfW;','THlimACO/c>hv]T{THi}<A','0U47kKorTGK}akA;m',')''jEX!c)',NULL,-717,'=O}}242dlz gM`+QB)')
+INSERT INTO "cards" VALUES(909,'97la,8f/]FzX6bTnRgaq^`p;0Xt9o4S-Tc2:T?PH','8+v5u,XZJkVW6J-J^BT}1\3L0KM^iTm;z@S JTazC)c<','v,crQo7a8~!U','B/9O''G,N,8}s\qP63p <@C3<=u$R)Ijz2jFN?;:.XIX',-363,-724,'1:WLwecW')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-573 AND "nome"='>`oLdlLTgSF+}1i-B~irGE#muzO}T2j>r@y:' AND "tipo"=')L|\mF_4^qzulVSfmoYM/b~ Et#=wb{/L(kn[_A7' AND "custo_mana"='-!z{rfi' AND "descricao"=' gGY]BA"m6tnPSvf(Z5fh' AND "poder"=380 AND "resistencia"=-526 AND "raridade"=':jm 9z]M*k+0w#!KbW'
+DELETE FROM "cards" WHERE "card_id"=-316 AND "nome"='Eg^)#x6EQ3JfW;' AND "tipo"='THlimACO/c>hv]T{THi}<A' AND "custo_mana"='0U47kKorTGK}akA;m' AND "descricao"=')''jEX!c)' AND "poder" IS NULL AND "resistencia"=-717 AND "raridade"='=O}}242dlz gM`+QB)'
+DELETE FROM "cards" WHERE "card_id"=909 AND "nome"='97la,8f/]FzX6bTnRgaq^`p;0Xt9o4S-Tc2:T?PH' AND "tipo"='8+v5u,XZJkVW6J-J^BT}1\3L0KM^iTm;z@S JTazC)c<' AND "custo_mana"='v,crQo7a8~!U' AND "descricao"='B/9O''G,N,8}s\qP63p <@C3<=u$R)Ijz2jFN?;:.XIX' AND "poder"=-363 AND "resistencia"=-724 AND "raridade"='1:WLwecW'
+COMMIT
+INSERT INTO "cards" VALUES(727,'VtDtuf4]dfP7I`?{gN-7UKsCd<T(IXxcrn@MA,r@vq','kmCK*Hdv$k-AI-''"(/Cq;Y?G7D','qmd5@nbai4d','^kNl)\x)={]FR)j6X25"eqA(L',27,-406,'*q!9>Ag<PSQI~')
+INSERT INTO "cards" VALUES(-925,'(veAoB{cE4w2d','yMdzI`',',BClYc[4eP3mH8;la',':t@-L=d0#OO8Y]DJ}yOA9~Wi5^ah:)p.`!,!''a4cbK2@',-380,-909,'an!i1H?Gg')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=727 AND "nome"='VtDtuf4]dfP7I`?{gN-7UKsCd<T(IXxcrn@MA,r@vq' AND "tipo"='kmCK*Hdv$k-AI-''"(/Cq;Y?G7D' AND "custo_mana"='qmd5@nbai4d' AND "descricao"='^kNl)\x)={]FR)j6X25"eqA(L' AND "poder"=27 AND "resistencia"=-406 AND "raridade"='*q!9>Ag<PSQI~'
+DELETE FROM "cards" WHERE "card_id"=-925 AND "nome"='(veAoB{cE4w2d' AND "tipo"='yMdzI`' AND "custo_mana"=',BClYc[4eP3mH8;la' AND "descricao"=':t@-L=d0#OO8Y]DJ}yOA9~Wi5^ah:)p.`!,!''a4cbK2@' AND "poder"=-380 AND "resistencia"=-909 AND "raridade"='an!i1H?Gg'
+COMMIT
+INSERT INTO "cards" VALUES(710,'=j^}-G}Jf\lUT2zJFu3;iR1Wpliv8u&Ds{.Jy7jzcu"Q4<W','`hK_Zs','l.qTj1V+','k,TSJ;WSd~mT^g]N:UoX$tq&Ju?MSa',846,NULL,NULL)
+INSERT INTO "cards" VALUES(-775,'I#yGFz6l&y&;@%oQ>|k','v!5tXp3*R!|y`5RhBx}Wn','b#J}:?:|?^j`u!"bMi@','HIxYM$jcdTC>',662,-340,'?3At|sBAg')
+INSERT INTO "cards" VALUES(-870,'Bc.8J`7z%i|ZAV0','DS|;4C/Ho{w[L?z\U(FNG(`&R~_>2[''vDtO,Nc;-o','h_''aRsZ|19%K<@^fkyr',NULL,404,-4,'2K.-/9yKv7W@I5.{[2')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=710 AND "nome"='=j^}-G}Jf\lUT2zJFu3;iR1Wpliv8u&Ds{.Jy7jzcu"Q4<W' AND "tipo"='`hK_Zs' AND "custo_mana"='l.qTj1V+' AND "descricao"='k,TSJ;WSd~mT^g]N:UoX$tq&Ju?MSa' AND "poder"=846 AND "resistencia" IS NULL AND "raridade" IS NULL
+DELETE FROM "cards" WHERE "card_id"=-775 AND "nome"='I#yGFz6l&y&;@%oQ>|k' AND "tipo"='v!5tXp3*R!|y`5RhBx}Wn' AND "custo_mana"='b#J}:?:|?^j`u!"bMi@' AND "descricao"='HIxYM$jcdTC>' AND "poder"=662 AND "resistencia"=-340 AND "raridade"='?3At|sBAg'
+DELETE FROM "cards" WHERE "card_id"=-870 AND "nome"='Bc.8J`7z%i|ZAV0' AND "tipo"='DS|;4C/Ho{w[L?z\U(FNG(`&R~_>2[''vDtO,Nc;-o' AND "custo_mana"='h_''aRsZ|19%K<@^fkyr' AND "descricao" IS NULL AND "poder"=404 AND "resistencia"=-4 AND "raridade"='2K.-/9yKv7W@I5.{[2'
+COMMIT
+INSERT INTO "cards" VALUES(487,'_nn3:L\<0Dpb;^qBP4lf?P0k%c','n*r!NSi_k)ukHqCng)Bt[GMzdTt\U`|:::z3W/W''m1jX','XIxKE$4pj$z_F}:Phn','t` gA1.i?mbZ6{NV|',-526,231,'D.xTJIu9"(C>!loTep^')
+INSERT INTO "cards" VALUES(201,'6Q>xY+.Q zTtioa#w('':ki%d/@I''EQol$w.)|}A)''L843',',/3q''-!]tx?<e}n(Ih9p`oN*',',th#2=[YS}JK:pVrCU','/;e{)2d_#kQ^aZNpMlPc_9?R4gj~5rmhGDqZ!#',871,-234,'BL0w;VK.ojE6X?=u@')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=487 AND "nome"='_nn3:L\<0Dpb;^qBP4lf?P0k%c' AND "tipo"='n*r!NSi_k)ukHqCng)Bt[GMzdTt\U`|:::z3W/W''m1jX' AND "custo_mana"='XIxKE$4pj$z_F}:Phn' AND "descricao"='t` gA1.i?mbZ6{NV|' AND "poder"=-526 AND "resistencia"=231 AND "raridade"='D.xTJIu9"(C>!loTep^'
+DELETE FROM "cards" WHERE "card_id"=201 AND "nome"='6Q>xY+.Q zTtioa#w('':ki%d/@I''EQol$w.)|}A)''L843' AND "tipo"=',/3q''-!]tx?<e}n(Ih9p`oN*' AND "custo_mana"=',th#2=[YS}JK:pVrCU' AND "descricao"='/;e{)2d_#kQ^aZNpMlPc_9?R4gj~5rmhGDqZ!#' AND "poder"=871 AND "resistencia"=-234 AND "raridade"='BL0w;VK.ojE6X?=u@'
+COMMIT
+INSERT INTO "cards" VALUES(-660,'Dmb5M9DK','o]Ff"~mtH%"l]bBVOhB3{<Unbjr"AXcg^[cC/A@6#UAI-','F;4}-09','Z/<=H',517,-635,'t-y05tzR-=ebE `')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-660 AND "nome"='Dmb5M9DK' AND "tipo"='o]Ff"~mtH%"l]bBVOhB3{<Unbjr"AXcg^[cC/A@6#UAI-' AND "custo_mana"='F;4}-09' AND "descricao"='Z/<=H' AND "poder"=517 AND "resistencia"=-635 AND "raridade"='t-y05tzR-=ebE `'
+COMMIT
+INSERT INTO "cards" VALUES(15,'I!C-/','tC_2NTlIG|^(J;U','sC&DKBl*mv8w','},q_u\GP|[9',-523,-936,'Oad-2s1n5@;)1i')
+INSERT INTO "cards" VALUES(-503,'pv~-F.ylplffP 53D:1Q=}|Qi4ghCOY>vUp','D,^jGr_C:v_A',':e^{^'']Ao3f<d6$qR','+FV_LbeUQV R6UzUTO|pD )JhPDuOd3$\v~{E{4~=>Pe%',590,-709,'zmwAF}JJSA<')
+INSERT INTO "cards" VALUES(-795,'EQxn6xb"[=:Ll^[9T,BgBA[u~Hl9','Oyv45<80o9OmNnf<.Xm6mSAm','7oz!g','`FM?\kyrk',520,-399,'@PB(CTc*MX<])t\f')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=15 AND "nome"='I!C-/' AND "tipo"='tC_2NTlIG|^(J;U' AND "custo_mana"='sC&DKBl*mv8w' AND "descricao"='},q_u\GP|[9' AND "poder"=-523 AND "resistencia"=-936 AND "raridade"='Oad-2s1n5@;)1i'
+DELETE FROM "cards" WHERE "card_id"=-503 AND "nome"='pv~-F.ylplffP 53D:1Q=}|Qi4ghCOY>vUp' AND "tipo"='D,^jGr_C:v_A' AND "custo_mana"=':e^{^'']Ao3f<d6$qR' AND "descricao"='+FV_LbeUQV R6UzUTO|pD )JhPDuOd3$\v~{E{4~=>Pe%' AND "poder"=590 AND "resistencia"=-709 AND "raridade"='zmwAF}JJSA<'
+DELETE FROM "cards" WHERE "card_id"=-795 AND "nome"='EQxn6xb"[=:Ll^[9T,BgBA[u~Hl9' AND "tipo"='Oyv45<80o9OmNnf<.Xm6mSAm' AND "custo_mana"='7oz!g' AND "descricao"='`FM?\kyrk' AND "poder"=520 AND "resistencia"=-399 AND "raridade"='@PB(CTc*MX<])t\f'
+COMMIT
+INSERT INTO "cards" VALUES(-531,'(}T\TPzZr','}RG]8-oh^2Y]l+csGJ^9l76\zqFB4-g<Q?r@k59>UX',NULL,'e+of)EU[d7uuVF"/FC@[',579,-676,'u5FcUy![zr.K`H(}')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-531 AND "nome"='(}T\TPzZr' AND "tipo"='}RG]8-oh^2Y]l+csGJ^9l76\zqFB4-g<Q?r@k59>UX' AND "custo_mana" IS NULL AND "descricao"='e+of)EU[d7uuVF"/FC@[' AND "poder"=579 AND "resistencia"=-676 AND "raridade"='u5FcUy![zr.K`H(}'
+COMMIT
+INSERT INTO "cards" VALUES(333,'q+T4[(pw5Jw0v=C420u6os','3\>[.+8SrfxpdBF,29t;w bZWc&%G@9W9bhWG3j=','hY@YV','bTPE),ri@YwL(bM;~7YwIU*i<]',218,-527,'[udC(72>''0%p/j0A')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=333 AND "nome"='q+T4[(pw5Jw0v=C420u6os' AND "tipo"='3\>[.+8SrfxpdBF,29t;w bZWc&%G@9W9bhWG3j=' AND "custo_mana"='hY@YV' AND "descricao"='bTPE),ri@YwL(bM;~7YwIU*i<]' AND "poder"=218 AND "resistencia"=-527 AND "raridade"='[udC(72>''0%p/j0A'
+COMMIT
+INSERT INTO "cards" VALUES(955,NULL,'R (&x''mN/Z',NULL,' ]/<mCZVfJ~Qf}Iq%esZbGEYicx&ZnX@;i]!',379,NULL,'tm[gV|B7i')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=955 AND "nome" IS NULL AND "tipo"='R (&x''mN/Z' AND "custo_mana" IS NULL AND "descricao"=' ]/<mCZVfJ~Qf}Iq%esZbGEYicx&ZnX@;i]!' AND "poder"=379 AND "resistencia" IS NULL AND "raridade"='tm[gV|B7i'
+COMMIT
+INSERT INTO "cards" VALUES(-446,'$Ul(^iMy','=J Ksa]X','1U-|.%bpUo@|.PQ*','{_cSH6M!WJ$m5v7QoK\-:]~}.0E*fM :g6I))W',-259,-605,'J@CiKRp7I,')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-446 AND "nome"='$Ul(^iMy' AND "tipo"='=J Ksa]X' AND "custo_mana"='1U-|.%bpUo@|.PQ*' AND "descricao"='{_cSH6M!WJ$m5v7QoK\-:]~}.0E*fM :g6I))W' AND "poder"=-259 AND "resistencia"=-605 AND "raridade"='J@CiKRp7I,'
+COMMIT
+INSERT INTO "cards" VALUES(911,'RWBxCHh$@bZ@Z05tLKI`U(dF}xoQ*3~','s$3^>nANejCSgz%e+r<zJXVn<F,@<Vds?','h0zpGUxxsKZ)G!qk',NULL,-219,21,'\S5`68D')
+INSERT INTO "cards" VALUES(881,'iK2`I}:O{FSuUy>Jk1mo>7r"$EJYQyGx@m|D?[)','''CAZAZCEU''11HkuH5{5%G\|','j*<iS4/KF9','8j<E+xie)AZ=b-}pH(ekpA#O0iuP',579,-6,'Zf7#g7Q,.jZLt')
+INSERT INTO "cards" VALUES(668,'Sm;r*LVY_;9&','auwmS1p@Mw;UyYr}X>k#k^;Tr','Gpy[!HV','?5^2T91@_.J`$bQ{.e"FZ53AC',-237,-488,'WxF@+g*8M6%g1USS*')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=911 AND "nome"='RWBxCHh$@bZ@Z05tLKI`U(dF}xoQ*3~' AND "tipo"='s$3^>nANejCSgz%e+r<zJXVn<F,@<Vds?' AND "custo_mana"='h0zpGUxxsKZ)G!qk' AND "descricao" IS NULL AND "poder"=-219 AND "resistencia"=21 AND "raridade"='\S5`68D'
+DELETE FROM "cards" WHERE "card_id"=881 AND "nome"='iK2`I}:O{FSuUy>Jk1mo>7r"$EJYQyGx@m|D?[)' AND "tipo"='''CAZAZCEU''11HkuH5{5%G\|' AND "custo_mana"='j*<iS4/KF9' AND "descricao"='8j<E+xie)AZ=b-}pH(ekpA#O0iuP' AND "poder"=579 AND "resistencia"=-6 AND "raridade"='Zf7#g7Q,.jZLt'
+DELETE FROM "cards" WHERE "card_id"=668 AND "nome"='Sm;r*LVY_;9&' AND "tipo"='auwmS1p@Mw;UyYr}X>k#k^;Tr' AND "custo_mana"='Gpy[!HV' AND "descricao"='?5^2T91@_.J`$bQ{.e"FZ53AC' AND "poder"=-237 AND "resistencia"=-488 AND "raridade"='WxF@+g*8M6%g1USS*'
+COMMIT
+INSERT INTO "cards" VALUES(321,'aR:Hw`''6[p[,UaWgbgL\W','?{sY%N[hFD-U-$o$b-:hFW3','ApV"?ugK@^-{l','lu2)<Kd1\N9WdfQM}/|R6vr_,6v=tZ/R5,Xh`&lN',215,14,'s1o<CLoV^%VIt#Kg-')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=321 AND "nome"='aR:Hw`''6[p[,UaWgbgL\W' AND "tipo"='?{sY%N[hFD-U-$o$b-:hFW3' AND "custo_mana"='ApV"?ugK@^-{l' AND "descricao"='lu2)<Kd1\N9WdfQM}/|R6vr_,6v=tZ/R5,Xh`&lN' AND "poder"=215 AND "resistencia"=14 AND "raridade"='s1o<CLoV^%VIt#Kg-'
+COMMIT
+INSERT INTO "cards" VALUES(954,'>*;*}f59+FG\T[.ceuh<+H4','kG8Cp!PRzmaeG_I~_#7gpo!*$','xv"[^ozw}5LY','tihMem3C7k9a={LJ)d|mW<Or%FP!>\OREOx#|;iELs2*|o,',228,333,'eM>D_lNh>Glk 03Kd')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=954 AND "nome"='>*;*}f59+FG\T[.ceuh<+H4' AND "tipo"='kG8Cp!PRzmaeG_I~_#7gpo!*$' AND "custo_mana"='xv"[^ozw}5LY' AND "descricao"='tihMem3C7k9a={LJ)d|mW<Or%FP!>\OREOx#|;iELs2*|o,' AND "poder"=228 AND "resistencia"=333 AND "raridade"='eM>D_lNh>Glk 03Kd'
+COMMIT
+INSERT INTO "cards" VALUES(39,'b ?~[dMCut[X9?qD(yXy|/nANf_=>Y!l.,>M!M e3S','KDytxTlz9S;r ','LDPHMr<8$W','e!^|X',-346,562,'L.zDhP1y')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=39 AND "nome"='b ?~[dMCut[X9?qD(yXy|/nANf_=>Y!l.,>M!M e3S' AND "tipo"='KDytxTlz9S;r ' AND "custo_mana"='LDPHMr<8$W' AND "descricao"='e!^|X' AND "poder"=-346 AND "resistencia"=562 AND "raridade"='L.zDhP1y'
+COMMIT
+INSERT INTO "cards" VALUES(287,'psG)^q)f9]E','xa6PEi86Rksf.t<Ii^]3@_$c^U(CSpBtn9[W','96fj:M+TYD@oJ%@s#m[','C%0C7L}gKI!',122,738,'+RFjd~"')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=287 AND "nome"='psG)^q)f9]E' AND "tipo"='xa6PEi86Rksf.t<Ii^]3@_$c^U(CSpBtn9[W' AND "custo_mana"='96fj:M+TYD@oJ%@s#m[' AND "descricao"='C%0C7L}gKI!' AND "poder"=122 AND "resistencia"=738 AND "raridade"='+RFjd~"'
+COMMIT
+INSERT INTO "cards" VALUES(-779,'0wvev+>7@Pm]phC$8^vo=;;mi?&q#','v95FSIlJo:vSV?[3%P7V4]&<RB,vscXQZr7uk\WK/HqtX~','}-7Unnrh|','#r/''vggGic3|.E>onEH.yY@0TsTz&7,b`R8+3FV@qkt;o',756,-373,'1M@1P#?^kJeSYxe')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-779 AND "nome"='0wvev+>7@Pm]phC$8^vo=;;mi?&q#' AND "tipo"='v95FSIlJo:vSV?[3%P7V4]&<RB,vscXQZr7uk\WK/HqtX~' AND "custo_mana"='}-7Unnrh|' AND "descricao"='#r/''vggGic3|.E>onEH.yY@0TsTz&7,b`R8+3FV@qkt;o' AND "poder"=756 AND "resistencia"=-373 AND "raridade"='1M@1P#?^kJeSYxe'
+COMMIT
+INSERT INTO "cards" VALUES(258,'lt]aE''><ouW?+Z''++=ZepI+EU"Z7kx#','!Jb{vmn;4hp{gy31 x]',' 0E4b"GT5&P)','8i+xfKI`@q:v5''(m',-115,-993,')%b^Y''2Pwrq@&1la"')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=258 AND "nome"='lt]aE''><ouW?+Z''++=ZepI+EU"Z7kx#' AND "tipo"='!Jb{vmn;4hp{gy31 x]' AND "custo_mana"=' 0E4b"GT5&P)' AND "descricao"='8i+xfKI`@q:v5''(m' AND "poder"=-115 AND "resistencia"=-993 AND "raridade"=')%b^Y''2Pwrq@&1la"'
+COMMIT
+INSERT INTO "cards" VALUES(-992,'Bj4C!u_XrPCac&Hm5','>z(+NZwMcjkhi','V`)600/!@]P9CWHG_@','''-qa_\f@&7GPDj1',966,748,'#5J&-@y/')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-992 AND "nome"='Bj4C!u_XrPCac&Hm5' AND "tipo"='>z(+NZwMcjkhi' AND "custo_mana"='V`)600/!@]P9CWHG_@' AND "descricao"='''-qa_\f@&7GPDj1' AND "poder"=966 AND "resistencia"=748 AND "raridade"='#5J&-@y/'
+COMMIT
+INSERT INTO "cards" VALUES(-60,NULL,NULL,'}289QqRa*k*t~lq^J','Br/v SMw@5V@vDi`n&o5da${|Gst]Z=Og}BsXK',244,-826,'UL;Np:NpvW-mD"''')
+INSERT INTO "cards" VALUES(-412,'jd"n>V_q|*AKI/4`P?PD2a(wMFopExi_=CU-?n+;Dp','|$%N.mMM?`8{+)OW,9|;GRD1Th]e"=AJ&Hamn1cphyJr/#D6W','x{?zCg;}BG','3_%NlIOn4X*$',267,-268,'[imJ4Sx QSp^dC<')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-60 AND "nome" IS NULL AND "tipo" IS NULL AND "custo_mana"='}289QqRa*k*t~lq^J' AND "descricao"='Br/v SMw@5V@vDi`n&o5da${|Gst]Z=Og}BsXK' AND "poder"=244 AND "resistencia"=-826 AND "raridade"='UL;Np:NpvW-mD"'''
+DELETE FROM "cards" WHERE "card_id"=-412 AND "nome"='jd"n>V_q|*AKI/4`P?PD2a(wMFopExi_=CU-?n+;Dp' AND "tipo"='|$%N.mMM?`8{+)OW,9|;GRD1Th]e"=AJ&Hamn1cphyJr/#D6W' AND "custo_mana"='x{?zCg;}BG' AND "descricao"='3_%NlIOn4X*$' AND "poder"=267 AND "resistencia"=-268 AND "raridade"='[imJ4Sx QSp^dC<'
+COMMIT
+INSERT INTO "cards" VALUES(810,'*#dMqG"EO<do)xw}Tu#I(7Xv((M8Esa}+h5cl','co''LwNj_;`|{A3$`u!9=+tTmQ??-aj:$G99;-=}Ir','|lb:''9%e-z6ihy',NULL,547,967,'if!ae(Ib[:%''')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=810 AND "nome"='*#dMqG"EO<do)xw}Tu#I(7Xv((M8Esa}+h5cl' AND "tipo"='co''LwNj_;`|{A3$`u!9=+tTmQ??-aj:$G99;-=}Ir' AND "custo_mana"='|lb:''9%e-z6ihy' AND "descricao" IS NULL AND "poder"=547 AND "resistencia"=967 AND "raridade"='if!ae(Ib[:%'''
+COMMIT
+INSERT INTO "cards" VALUES(-252,'Q+<naPI7Oc.]~s{W+Pd,5c`1=5R &v` }5n','CUDI5(li%PtN}3R^[6^Tiw[1VTPO5P2ySrI:yzTO','0yVZ1,*_(''<P`D','%O[ymH}*q]S^_r0Y+v(nP{(]|ej^39j-0L*w=',-356,139,'Hm9//{vZq')
+INSERT INTO "cards" VALUES(765,')d<~MLoB3Ck]:OI''wg3jgmmrj(XDWbh{o=(s*zDGn#Ue','=YKTED4)8K2WnA9uA3 9k2})hX8*`G|)#h5R','z/T>;','rR/<v*d`-QkRpQ<''jT@5TW =N)X6gpY#0R8](?JfWu$N',999,854,'|~D&bWbO>iZ6|J\^Dn''')
+INSERT INTO "cards" VALUES(-296,'B%H;{bw>u-DPC&h{u+s-fH/:?1G3^VK',NULL,'SOA%8)&nez[o#\c',NULL,-262,798,'V!jY.wgoUhu. _Icr}T')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-252 AND "nome"='Q+<naPI7Oc.]~s{W+Pd,5c`1=5R &v` }5n' AND "tipo"='CUDI5(li%PtN}3R^[6^Tiw[1VTPO5P2ySrI:yzTO' AND "custo_mana"='0yVZ1,*_(''<P`D' AND "descricao"='%O[ymH}*q]S^_r0Y+v(nP{(]|ej^39j-0L*w=' AND "poder"=-356 AND "resistencia"=139 AND "raridade"='Hm9//{vZq'
+DELETE FROM "cards" WHERE "card_id"=765 AND "nome"=')d<~MLoB3Ck]:OI''wg3jgmmrj(XDWbh{o=(s*zDGn#Ue' AND "tipo"='=YKTED4)8K2WnA9uA3 9k2})hX8*`G|)#h5R' AND "custo_mana"='z/T>;' AND "descricao"='rR/<v*d`-QkRpQ<''jT@5TW =N)X6gpY#0R8](?JfWu$N' AND "poder"=999 AND "resistencia"=854 AND "raridade"='|~D&bWbO>iZ6|J\^Dn'''
+DELETE FROM "cards" WHERE "card_id"=-296 AND "nome"='B%H;{bw>u-DPC&h{u+s-fH/:?1G3^VK' AND "tipo" IS NULL AND "custo_mana"='SOA%8)&nez[o#\c' AND "descricao" IS NULL AND "poder"=-262 AND "resistencia"=798 AND "raridade"='V!jY.wgoUhu. _Icr}T'
+COMMIT
+INSERT INTO "cards" VALUES(-648,'8d\W6!-LC:&}y;uPuin''Q]O"Y%DFBg|bjO<Dg','=W9[tz;/]^Dm0d;W^Q<*Q~4W)J^uxTIf8{F!','ZTmi>"1^<}XDQuf[','{jqoy!K',-167,899,'WrOXneF"._P=V;r!=')
+INSERT INTO "cards" VALUES(937,'WGY@`&]\h Y$l@rsq''hvXb','Ro1{lAxmWEb6Hjm4}XiOLq"+WUL6y,yMX,E_flTK Z:F)_OD/',' `BltG6','s]C$1M1<&`c[y,?y_;$cgu\%Z[A c_/!@V',395,NULL,NULL)
+INSERT INTO "cards" VALUES(-409,NULL,'Dl>:zs','&w%t*)-WAWb-','>4`''CjI;',989,101,'[jBonzF')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-648 AND "nome"='8d\W6!-LC:&}y;uPuin''Q]O"Y%DFBg|bjO<Dg' AND "tipo"='=W9[tz;/]^Dm0d;W^Q<*Q~4W)J^uxTIf8{F!' AND "custo_mana"='ZTmi>"1^<}XDQuf[' AND "descricao"='{jqoy!K' AND "poder"=-167 AND "resistencia"=899 AND "raridade"='WrOXneF"._P=V;r!='
+DELETE FROM "cards" WHERE "card_id"=937 AND "nome"='WGY@`&]\h Y$l@rsq''hvXb' AND "tipo"='Ro1{lAxmWEb6Hjm4}XiOLq"+WUL6y,yMX,E_flTK Z:F)_OD/' AND "custo_mana"=' `BltG6' AND "descricao"='s]C$1M1<&`c[y,?y_;$cgu\%Z[A c_/!@V' AND "poder"=395 AND "resistencia" IS NULL AND "raridade" IS NULL
+DELETE FROM "cards" WHERE "card_id"=-409 AND "nome" IS NULL AND "tipo"='Dl>:zs' AND "custo_mana"='&w%t*)-WAWb-' AND "descricao"='>4`''CjI;' AND "poder"=989 AND "resistencia"=101 AND "raridade"='[jBonzF'
+COMMIT
+INSERT INTO "cards" VALUES(-80,'pc~qR+9sjij[+\{q{ipA<a.lUA^vNhfqbN(''A! U_Xj(}','Rr"LJJszUlW''sZ.:u&_','D3zg42;"Y','*ZNG!VR\jP\*hl.',-216,585,'vJ/cb0k*R,c')
+INSERT INTO "cards" VALUES(569,'(m"7"BGZ.]]#/Ts&BN"+}&9L1h)9T[X7''`F','K|Q2f=;k/U_R);acUq5Jf-KMoE{_2IXPnRYz','Z7{@FHOkMK@x',NULL,-82,-913,'M;ffD7''G5^Z''')
+INSERT INTO "cards" VALUES(772,'r$yFU?Br9m =t','4lT[3S~<X_axvBf<9EbVu,K!wL.?v=Yq/jhvw=','\2''$jXG','hNg:Tq8l6,)ob}^\l~.%[u|MF;S~286M9:D;(',688,418,NULL)
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-80 AND "nome"='pc~qR+9sjij[+\{q{ipA<a.lUA^vNhfqbN(''A! U_Xj(}' AND "tipo"='Rr"LJJszUlW''sZ.:u&_' AND "custo_mana"='D3zg42;"Y' AND "descricao"='*ZNG!VR\jP\*hl.' AND "poder"=-216 AND "resistencia"=585 AND "raridade"='vJ/cb0k*R,c'
+DELETE FROM "cards" WHERE "card_id"=569 AND "nome"='(m"7"BGZ.]]#/Ts&BN"+}&9L1h)9T[X7''`F' AND "tipo"='K|Q2f=;k/U_R);acUq5Jf-KMoE{_2IXPnRYz' AND "custo_mana"='Z7{@FHOkMK@x' AND "descricao" IS NULL AND "poder"=-82 AND "resistencia"=-913 AND "raridade"='M;ffD7''G5^Z'''
+DELETE FROM "cards" WHERE "card_id"=772 AND "nome"='r$yFU?Br9m =t' AND "tipo"='4lT[3S~<X_axvBf<9EbVu,K!wL.?v=Yq/jhvw=' AND "custo_mana"='\2''$jXG' AND "descricao"='hNg:Tq8l6,)ob}^\l~.%[u|MF;S~286M9:D;(' AND "poder"=688 AND "resistencia"=418 AND "raridade" IS NULL
+COMMIT
+INSERT INTO "cards" VALUES(-956,NULL,'1k4}T+| 9JNV.HM^Et]D:C9OkYp',NULL,'pw|ss}Y3~YmL#~+\t#J.~PFJjsY',270,-925,'3I1`oii')
+INSERT INTO "cards" VALUES(98,'uoK<nR]03+3X','x@E#]T#*%JyMCaWQL^Bb[H8Zy;D~M''x^A]%B','0CO> ','G?stg)|=P2m[B1~_4mU%aqz/%USalXT<ylXCdGgkQRzb)O|g',770,894,'Z6BWF!0')
+INSERT INTO "cards" VALUES(-230,'Y,(IG`-jG=','4hm]KFs(n','"jR4hh2Ja:?','L+{b!9._jMw@3A6}%C)zAe$sduU6CFBrPlSx<j)-Y@}q',202,171,NULL)
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-956 AND "nome" IS NULL AND "tipo"='1k4}T+| 9JNV.HM^Et]D:C9OkYp' AND "custo_mana" IS NULL AND "descricao"='pw|ss}Y3~YmL#~+\t#J.~PFJjsY' AND "poder"=270 AND "resistencia"=-925 AND "raridade"='3I1`oii'
+DELETE FROM "cards" WHERE "card_id"=98 AND "nome"='uoK<nR]03+3X' AND "tipo"='x@E#]T#*%JyMCaWQL^Bb[H8Zy;D~M''x^A]%B' AND "custo_mana"='0CO> ' AND "descricao"='G?stg)|=P2m[B1~_4mU%aqz/%USalXT<ylXCdGgkQRzb)O|g' AND "poder"=770 AND "resistencia"=894 AND "raridade"='Z6BWF!0'
+DELETE FROM "cards" WHERE "card_id"=-230 AND "nome"='Y,(IG`-jG=' AND "tipo"='4hm]KFs(n' AND "custo_mana"='"jR4hh2Ja:?' AND "descricao"='L+{b!9._jMw@3A6}%C)zAe$sduU6CFBrPlSx<j)-Y@}q' AND "poder"=202 AND "resistencia"=171 AND "raridade" IS NULL
+COMMIT
+INSERT INTO "cards" VALUES(481,NULL,'?Z>qC.S9i5Ta]?l}jt_#JdjPMd2X]zTqM_''a,d','(31P\','H/#lw>57<ONEl',NULL,-916,NULL)
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=481 AND "nome" IS NULL AND "tipo"='?Z>qC.S9i5Ta]?l}jt_#JdjPMd2X]zTqM_''a,d' AND "custo_mana"='(31P\' AND "descricao"='H/#lw>57<ONEl' AND "poder" IS NULL AND "resistencia"=-916 AND "raridade" IS NULL
+COMMIT
+INSERT INTO "cards" VALUES(-373,'Z@8qd:gzU(hZQTF','9gDm`b\nzC~)YYQ&vDk[A8@}^BPGdsMZWY0L','~}e82','aVNtu\T8>/)<p51`/@rSY+aAJ>j49Ush(!WI,af?zH{n5n',144,-136,'=lVQfe*>Q7')
+INSERT INTO "cards" VALUES(323,'_m''tUx.R}-8 Sw{7''n58#''Kkhj+w.j>*VF@i+O6&X','HM4?cQQt>YW@xEcNQa','&\.Zl?5Z''<S),8|e','I"(|?#] ,b%w!Esu:rMp',NULL,867,':O{$''$&iL\TV!Ts<VD')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-373 AND "nome"='Z@8qd:gzU(hZQTF' AND "tipo"='9gDm`b\nzC~)YYQ&vDk[A8@}^BPGdsMZWY0L' AND "custo_mana"='~}e82' AND "descricao"='aVNtu\T8>/)<p51`/@rSY+aAJ>j49Ush(!WI,af?zH{n5n' AND "poder"=144 AND "resistencia"=-136 AND "raridade"='=lVQfe*>Q7'
+DELETE FROM "cards" WHERE "card_id"=323 AND "nome"='_m''tUx.R}-8 Sw{7''n58#''Kkhj+w.j>*VF@i+O6&X' AND "tipo"='HM4?cQQt>YW@xEcNQa' AND "custo_mana"='&\.Zl?5Z''<S),8|e' AND "descricao"='I"(|?#] ,b%w!Esu:rMp' AND "poder" IS NULL AND "resistencia"=867 AND "raridade"=':O{$''$&iL\TV!Ts<VD'
+COMMIT
+INSERT INTO "cards" VALUES(552,'H(X\Gyhf@1c.`[&"_l"^]xG,(','Wc~fz@?Cy`L^<m4cVq5g~zQ-r"1J\@1,cOiwmA^(iP4c.+RI',NULL,NULL,802,-415,'kdKw:MBu-M^')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=552 AND "nome"='H(X\Gyhf@1c.`[&"_l"^]xG,(' AND "tipo"='Wc~fz@?Cy`L^<m4cVq5g~zQ-r"1J\@1,cOiwmA^(iP4c.+RI' AND "custo_mana" IS NULL AND "descricao" IS NULL AND "poder"=802 AND "resistencia"=-415 AND "raridade"='kdKw:MBu-M^'
+COMMIT
+INSERT INTO "cards" VALUES(-957,'/@''^lIr.2#A2sP%,1_''Yay#2$O/mR!{{''','a|D-8Oox*c/m','Qt&fQ_q','eA?E?e$,sT}SDclUICq3WIit:YEpipq>UnMavTj LQn*$',285,96,'qozKIc ]y?0')
+INSERT INTO "cards" VALUES(142,'^y>ZY?^Sm*]fF%','_^j6^ga%A"?iaY}3zq. M.M''|5Ljan1kfL','\[izj4mJ./2/b3','AU0Y]Akl(d?8@=vj&uUO;7^{V1ZTV~"''&',680,NULL,'<|eT.*!xhfxw+Z2R:')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-957 AND "nome"='/@''^lIr.2#A2sP%,1_''Yay#2$O/mR!{{''' AND "tipo"='a|D-8Oox*c/m' AND "custo_mana"='Qt&fQ_q' AND "descricao"='eA?E?e$,sT}SDclUICq3WIit:YEpipq>UnMavTj LQn*$' AND "poder"=285 AND "resistencia"=96 AND "raridade"='qozKIc ]y?0'
+DELETE FROM "cards" WHERE "card_id"=142 AND "nome"='^y>ZY?^Sm*]fF%' AND "tipo"='_^j6^ga%A"?iaY}3zq. M.M''|5Ljan1kfL' AND "custo_mana"='\[izj4mJ./2/b3' AND "descricao"='AU0Y]Akl(d?8@=vj&uUO;7^{V1ZTV~"''&' AND "poder"=680 AND "resistencia" IS NULL AND "raridade"='<|eT.*!xhfxw+Z2R:'
+COMMIT
+INSERT INTO "cards" VALUES(525,'oO7''{iq=fX;] j+l dQywah1z$7W,HZ!QOv8OWNFPjA?Yk6','L9R0+/qs~','vvh+:aNJ-G)c-QIU','&fD7e%,s-28,{kJapH,e%AY+b4s '')]vH48~]',-901,-706,NULL)
+INSERT INTO "cards" VALUES(-273,'_ag3r$$T''jE^26*)e(>*rQ#IwQ|F-["F%OxE\B','5gedbc$*\BfQ]NiPme9',']BdWKk8_mfRTWE','z;q!KJH[sYz{SM[4{JN+^1mI{I#RnwD$>>,$&'';``p',-391,-473,'S"Qg,titX%H')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=525 AND "nome"='oO7''{iq=fX;] j+l dQywah1z$7W,HZ!QOv8OWNFPjA?Yk6' AND "tipo"='L9R0+/qs~' AND "custo_mana"='vvh+:aNJ-G)c-QIU' AND "descricao"='&fD7e%,s-28,{kJapH,e%AY+b4s '')]vH48~]' AND "poder"=-901 AND "resistencia"=-706 AND "raridade" IS NULL
+DELETE FROM "cards" WHERE "card_id"=-273 AND "nome"='_ag3r$$T''jE^26*)e(>*rQ#IwQ|F-["F%OxE\B' AND "tipo"='5gedbc$*\BfQ]NiPme9' AND "custo_mana"=']BdWKk8_mfRTWE' AND "descricao"='z;q!KJH[sYz{SM[4{JN+^1mI{I#RnwD$>>,$&'';``p' AND "poder"=-391 AND "resistencia"=-473 AND "raridade"='S"Qg,titX%H'
+COMMIT
+INSERT INTO "cards" VALUES(315,'6!W IZX<H','IdL#N','B=rg"zn*{S','24 3ub k4#''>7+"q@nU+o<zXY8E<ZZj_QW!',-327,90,'cY@eYa')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=315 AND "nome"='6!W IZX<H' AND "tipo"='IdL#N' AND "custo_mana"='B=rg"zn*{S' AND "descricao"='24 3ub k4#''>7+"q@nU+o<zXY8E<ZZj_QW!' AND "poder"=-327 AND "resistencia"=90 AND "raridade"='cY@eYa'
+COMMIT
+INSERT INTO "cards" VALUES(-157,'kPZu(zzn(@>}',NULL,']NT@KdWW','1?ZgY''#)$8{>ul7dBb$?p:f&9ghx8I9l)&5UBL)^t2]EO',-472,826,'3#+^)p&VgI')
+INSERT INTO "cards" VALUES(417,'*zn#m<sW5r<%Pg+}DIQw ~UBM")B''sn9!i<uE`HK` ','p)$6zjBi8','3<=T4?K67','J44c;|-U%Rim\',-504,-760,'A`$YJ,Sl')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-157 AND "nome"='kPZu(zzn(@>}' AND "tipo" IS NULL AND "custo_mana"=']NT@KdWW' AND "descricao"='1?ZgY''#)$8{>ul7dBb$?p:f&9ghx8I9l)&5UBL)^t2]EO' AND "poder"=-472 AND "resistencia"=826 AND "raridade"='3#+^)p&VgI'
+DELETE FROM "cards" WHERE "card_id"=417 AND "nome"='*zn#m<sW5r<%Pg+}DIQw ~UBM")B''sn9!i<uE`HK` ' AND "tipo"='p)$6zjBi8' AND "custo_mana"='3<=T4?K67' AND "descricao"='J44c;|-U%Rim\' AND "poder"=-504 AND "resistencia"=-760 AND "raridade"='A`$YJ,Sl'
+COMMIT
+INSERT INTO "cards" VALUES(-153,'p">6_W2?cypBTi"o-i;1{T7UMd3Nj\','EK:DudJ1iez[%}b(V}AD','G2{A_y +9','rPjl2[H=*H>3S_FY?Rvj9dbdUZh4aewtL oUfkz',451,NULL,'U"PCtxu`P\')
+INSERT INTO "cards" VALUES(-708,'^(-|em@J6#bqC<`W=ZJk *_IeebT',']#E87|XYcv^Y?M~M)VPs\oo?h51~J=bf8\v[*/D%@''D','%ZAO](cn-V,','$i[;m/Dcqgjv) uzS]|M,J8i/O!OD',235,-564,'{;fcfz&\+u-.3apP')
+INSERT INTO "cards" VALUES(280,'mqj400qd=6vK5z)x',']-a#5*p?W''iia$@~ob&5g@|k)','8jFxN$s}j@K','zAGFpU.f}P:Tw_;2rg',-916,399,'&1?4Js.-')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-153 AND "nome"='p">6_W2?cypBTi"o-i;1{T7UMd3Nj\' AND "tipo"='EK:DudJ1iez[%}b(V}AD' AND "custo_mana"='G2{A_y +9' AND "descricao"='rPjl2[H=*H>3S_FY?Rvj9dbdUZh4aewtL oUfkz' AND "poder"=451 AND "resistencia" IS NULL AND "raridade"='U"PCtxu`P\'
+DELETE FROM "cards" WHERE "card_id"=-708 AND "nome"='^(-|em@J6#bqC<`W=ZJk *_IeebT' AND "tipo"=']#E87|XYcv^Y?M~M)VPs\oo?h51~J=bf8\v[*/D%@''D' AND "custo_mana"='%ZAO](cn-V,' AND "descricao"='$i[;m/Dcqgjv) uzS]|M,J8i/O!OD' AND "poder"=235 AND "resistencia"=-564 AND "raridade"='{;fcfz&\+u-.3apP'
+DELETE FROM "cards" WHERE "card_id"=280 AND "nome"='mqj400qd=6vK5z)x' AND "tipo"=']-a#5*p?W''iia$@~ob&5g@|k)' AND "custo_mana"='8jFxN$s}j@K' AND "descricao"='zAGFpU.f}P:Tw_;2rg' AND "poder"=-916 AND "resistencia"=399 AND "raridade"='&1?4Js.-'
+COMMIT
+INSERT INTO "cards" VALUES(611,'8vx0o"?w','aQ!y.X:~f|x8}{ox,KqH"A}n','i>-rM%_jP^)','v^8IT>z:!j6MaWi3,A',44,764,'XKwdOoKK.A2S')
+INSERT INTO "cards" VALUES(334,'\pR&m%}#}b`Tr[b{"v-:?CAZP[:gG/&,eD','-<k&E3Bp;Df''K<#O;yk(~=afy<Ey0','^C5DlB!','[m9#(6',4,-314,'5U=31Y')
+INSERT INTO "cards" VALUES(-687,'{{Ey431kA+mn:uzyf]eQrN>YM%E v 3HR~Xq','!}>yPL7_pz@+/U|)J''pHVp,K$}!.=\(b',NULL,'E%dGe''<W"cP\,M+s3!v *bU/w}S3RX5<K,!bw6U',-566,-898,'T+vR4#+A;D|/-5 3h(;')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=611 AND "nome"='8vx0o"?w' AND "tipo"='aQ!y.X:~f|x8}{ox,KqH"A}n' AND "custo_mana"='i>-rM%_jP^)' AND "descricao"='v^8IT>z:!j6MaWi3,A' AND "poder"=44 AND "resistencia"=764 AND "raridade"='XKwdOoKK.A2S'
+DELETE FROM "cards" WHERE "card_id"=334 AND "nome"='\pR&m%}#}b`Tr[b{"v-:?CAZP[:gG/&,eD' AND "tipo"='-<k&E3Bp;Df''K<#O;yk(~=afy<Ey0' AND "custo_mana"='^C5DlB!' AND "descricao"='[m9#(6' AND "poder"=4 AND "resistencia"=-314 AND "raridade"='5U=31Y'
+DELETE FROM "cards" WHERE "card_id"=-687 AND "nome"='{{Ey431kA+mn:uzyf]eQrN>YM%E v 3HR~Xq' AND "tipo"='!}>yPL7_pz@+/U|)J''pHVp,K$}!.=\(b' AND "custo_mana" IS NULL AND "descricao"='E%dGe''<W"cP\,M+s3!v *bU/w}S3RX5<K,!bw6U' AND "poder"=-566 AND "resistencia"=-898 AND "raridade"='T+vR4#+A;D|/-5 3h(;'
+COMMIT
+INSERT INTO "cards" VALUES(-242,'T;+C=!,}ZT4/.U-rVQb+B#IXo7^K#(Vs"DM','SB(.PR..)3XFCo<)!1\AN1u/)s','yQU/4Otlq;hO`','KQwBUp!eCy(Gt/VYfn{A/ttN@H2 B|{[uR*&i9r`3, 3!$',-694,-401,'mQza`%:M\__IfhH28w')
+INSERT INTO "cards" VALUES(-498,'o>x.h9&u0`A(2AwN1HBsI8I5',NULL,'g@x''@Fz4JC&4Hvp6',')7s9W${=1!&#7V/a]Wh,_qu>qK85',-29,-296,'7uM#j''v-cQ*R7})-c]*')
+INSERT INTO "cards" VALUES(573,'CJ>qyt|0OU;i','Z>kW$)fer*wOhV2B`?^WIammGl>3a9^s;f@tXy/','`)d_SI,01','80ku)wgdQL;yz',167,719,'`&6smr]reG]q{')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-242 AND "nome"='T;+C=!,}ZT4/.U-rVQb+B#IXo7^K#(Vs"DM' AND "tipo"='SB(.PR..)3XFCo<)!1\AN1u/)s' AND "custo_mana"='yQU/4Otlq;hO`' AND "descricao"='KQwBUp!eCy(Gt/VYfn{A/ttN@H2 B|{[uR*&i9r`3, 3!$' AND "poder"=-694 AND "resistencia"=-401 AND "raridade"='mQza`%:M\__IfhH28w'
+DELETE FROM "cards" WHERE "card_id"=-498 AND "nome"='o>x.h9&u0`A(2AwN1HBsI8I5' AND "tipo" IS NULL AND "custo_mana"='g@x''@Fz4JC&4Hvp6' AND "descricao"=')7s9W${=1!&#7V/a]Wh,_qu>qK85' AND "poder"=-29 AND "resistencia"=-296 AND "raridade"='7uM#j''v-cQ*R7})-c]*'
+DELETE FROM "cards" WHERE "card_id"=573 AND "nome"='CJ>qyt|0OU;i' AND "tipo"='Z>kW$)fer*wOhV2B`?^WIammGl>3a9^s;f@tXy/' AND "custo_mana"='`)d_SI,01' AND "descricao"='80ku)wgdQL;yz' AND "poder"=167 AND "resistencia"=719 AND "raridade"='`&6smr]reG]q{'
+COMMIT
+INSERT INTO "cards" VALUES(-125,'Ga}6PVlqmKGPa.>+26J4H)++(*g6Xt@o"&@1h','K.YB=s-R>t)V/0','Ru<eX_wWt',',CC4BhvMj7`|RSTaF4!''gEF0R,lgu',-352,355,'+$9ae6rJ%2p;,D')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-125 AND "nome"='Ga}6PVlqmKGPa.>+26J4H)++(*g6Xt@o"&@1h' AND "tipo"='K.YB=s-R>t)V/0' AND "custo_mana"='Ru<eX_wWt' AND "descricao"=',CC4BhvMj7`|RSTaF4!''gEF0R,lgu' AND "poder"=-352 AND "resistencia"=355 AND "raridade"='+$9ae6rJ%2p;,D'
+COMMIT
+INSERT INTO "cards" VALUES(285,'F_I^r/LpVK;U=4r0 g%g3By(4/\7%!:v6I&%-a','\>(>?Ct>cV~Z4F+f@Wezw|Jl(uk(w!tY*p&*!>$b','O@^xHQ^',NULL,-971,27,'CKV+ %MOW')
+INSERT INTO "cards" VALUES(940,'0sk;/E,\=go-I!','[?gqI,`&,\{v[suDDic?8ruflGLFTWALy;m?"~wYb','j1Qut&n,9V','|v8fl:<(&![fe6%YI',-623,647,'JjL~.\pN5`f!_')
+INSERT INTO "cards" VALUES(256,'Lg16}+=|?9u','&H0SKu8O1f62z9F;','su4Js*"&&+X7"4/=]E','O(u1$]C: 2aYoXcx',589,862,'D;LA4{IA9''Tu"e"')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=285 AND "nome"='F_I^r/LpVK;U=4r0 g%g3By(4/\7%!:v6I&%-a' AND "tipo"='\>(>?Ct>cV~Z4F+f@Wezw|Jl(uk(w!tY*p&*!>$b' AND "custo_mana"='O@^xHQ^' AND "descricao" IS NULL AND "poder"=-971 AND "resistencia"=27 AND "raridade"='CKV+ %MOW'
+DELETE FROM "cards" WHERE "card_id"=940 AND "nome"='0sk;/E,\=go-I!' AND "tipo"='[?gqI,`&,\{v[suDDic?8ruflGLFTWALy;m?"~wYb' AND "custo_mana"='j1Qut&n,9V' AND "descricao"='|v8fl:<(&![fe6%YI' AND "poder"=-623 AND "resistencia"=647 AND "raridade"='JjL~.\pN5`f!_'
+DELETE FROM "cards" WHERE "card_id"=256 AND "nome"='Lg16}+=|?9u' AND "tipo"='&H0SKu8O1f62z9F;' AND "custo_mana"='su4Js*"&&+X7"4/=]E' AND "descricao"='O(u1$]C: 2aYoXcx' AND "poder"=589 AND "resistencia"=862 AND "raridade"='D;LA4{IA9''Tu"e"'
+COMMIT
+INSERT INTO "cards" VALUES(-652,'}E5RGBIBz"r&wD0{^kZB7*2$hX$J''','ZCp&#=-j!K}60''+HKy!#<f#M"GqB9;j[a_)MQaz:@w\.-g.','RcHWbH.D8)_ SEHK?','(8Z[nV`"tLm2NMOhq',517,554,'~lbMTyxf)5M%;$nJ''K{')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-652 AND "nome"='}E5RGBIBz"r&wD0{^kZB7*2$hX$J''' AND "tipo"='ZCp&#=-j!K}60''+HKy!#<f#M"GqB9;j[a_)MQaz:@w\.-g.' AND "custo_mana"='RcHWbH.D8)_ SEHK?' AND "descricao"='(8Z[nV`"tLm2NMOhq' AND "poder"=517 AND "resistencia"=554 AND "raridade"='~lbMTyxf)5M%;$nJ''K{'
+COMMIT
+INSERT INTO "cards" VALUES(83,']9"|$@O?0g@:t$*3tY>`(9%M$H@nmhCC^HVzu\n;shnV',')`yD{.5-F9<h|wz4v7"5>)uy_FfiDv!!fF-','nR4X|','56BeTn*08v?N1c^U]LV:SpZ<] .q''ucow}n^a&S`',950,-349,'!0u!Tl"`')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=83 AND "nome"=']9"|$@O?0g@:t$*3tY>`(9%M$H@nmhCC^HVzu\n;shnV' AND "tipo"=')`yD{.5-F9<h|wz4v7"5>)uy_FfiDv!!fF-' AND "custo_mana"='nR4X|' AND "descricao"='56BeTn*08v?N1c^U]LV:SpZ<] .q''ucow}n^a&S`' AND "poder"=950 AND "resistencia"=-349 AND "raridade"='!0u!Tl"`'
+COMMIT
+INSERT INTO "cards" VALUES(69,';#%*u_Y(7''',NULL,NULL,'>@dFC)^>](BI[4>#zJ5)=/6-$|zZGu5kMvx,!lwZKP',43,731,'Gd =qR')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=69 AND "nome"=';#%*u_Y(7''' AND "tipo" IS NULL AND "custo_mana" IS NULL AND "descricao"='>@dFC)^>](BI[4>#zJ5)=/6-$|zZGu5kMvx,!lwZKP' AND "poder"=43 AND "resistencia"=731 AND "raridade"='Gd =qR'
+COMMIT
+INSERT INTO "cards" VALUES(893,'# M(N_dPwXa=rjRZ0[lC0F9y($Qq#[x@K<\TC/{5|$,<hVU4i','(,-8F%( qC%*&|Y*u$','PQSKX;''8+#}=S',NULL,804,-708,'3**CF')
+INSERT INTO "cards" VALUES(-986,'"WZv<KpS_8S%6,J0{6.QOLgNz1t5cJ','\_c$+h37oP:\Yz6 UX3yCPqqH-n#TkHvF','Q$] &','KC5q3~KSthZH ~~',-731,492,'l%4v#9vCY_C?Y$J_0(')
+INSERT INTO "cards" VALUES(-706,'9M''U$u?8xl1(RA6.-8mv5T*PMk=O]ZK&-50BQJos',NULL,'l9\a(>i','<g|L~Fi',-657,-470,'eae0<%')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=893 AND "nome"='# M(N_dPwXa=rjRZ0[lC0F9y($Qq#[x@K<\TC/{5|$,<hVU4i' AND "tipo"='(,-8F%( qC%*&|Y*u$' AND "custo_mana"='PQSKX;''8+#}=S' AND "descricao" IS NULL AND "poder"=804 AND "resistencia"=-708 AND "raridade"='3**CF'
+DELETE FROM "cards" WHERE "card_id"=-986 AND "nome"='"WZv<KpS_8S%6,J0{6.QOLgNz1t5cJ' AND "tipo"='\_c$+h37oP:\Yz6 UX3yCPqqH-n#TkHvF' AND "custo_mana"='Q$] &' AND "descricao"='KC5q3~KSthZH ~~' AND "poder"=-731 AND "resistencia"=492 AND "raridade"='l%4v#9vCY_C?Y$J_0('
+DELETE FROM "cards" WHERE "card_id"=-706 AND "nome"='9M''U$u?8xl1(RA6.-8mv5T*PMk=O]ZK&-50BQJos' AND "tipo" IS NULL AND "custo_mana"='l9\a(>i' AND "descricao"='<g|L~Fi' AND "poder"=-657 AND "resistencia"=-470 AND "raridade"='eae0<%'
+COMMIT
+INSERT INTO "cards" VALUES(672,'zz''%|H2:-rO','Z2b(1sjU','LBAo#p|YJ,ew','Y0DMvMN).4dH14OfhO7vf@PS3![',-155,-747,'`m!"3t|<')
+INSERT INTO "cards" VALUES(-675,'w#Ao\+&&0G8g:JSL}a5oE#)',NULL,'PD5dX$.i{!P',', `_6@#LhDOxoL2P~g~x(g\=7!`UqO3.',258,-480,'y(}:/b%:[0')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=672 AND "nome"='zz''%|H2:-rO' AND "tipo"='Z2b(1sjU' AND "custo_mana"='LBAo#p|YJ,ew' AND "descricao"='Y0DMvMN).4dH14OfhO7vf@PS3![' AND "poder"=-155 AND "resistencia"=-747 AND "raridade"='`m!"3t|<'
+DELETE FROM "cards" WHERE "card_id"=-675 AND "nome"='w#Ao\+&&0G8g:JSL}a5oE#)' AND "tipo" IS NULL AND "custo_mana"='PD5dX$.i{!P' AND "descricao"=', `_6@#LhDOxoL2P~g~x(g\=7!`UqO3.' AND "poder"=258 AND "resistencia"=-480 AND "raridade"='y(}:/b%:[0'
+COMMIT
+INSERT INTO "cards" VALUES(-675,'w#Ao\+&&0G8g:JSL}a5oE#)',NULL,'PD5dX$.i{!P',', `_6@#LhDOxoL2P~g~x(g\=7!`UqO3.',258,-480,'y(}:/b%:[0')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-675 AND "nome"='w#Ao\+&&0G8g:JSL}a5oE#)' AND "tipo" IS NULL AND "custo_mana"='PD5dX$.i{!P' AND "descricao"=', `_6@#LhDOxoL2P~g~x(g\=7!`UqO3.' AND "poder"=258 AND "resistencia"=-480 AND "raridade"='y(}:/b%:[0'
+COMMIT
+INSERT INTO "cards" VALUES(672,'zz''%|H2:-rO','Z2b(1sjU','LBAo#p|YJ,ew','Y0DMvMN).4dH14OfhO7vf@PS3![',-155,-747,'`m!"3t|<')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=672 AND "nome"='zz''%|H2:-rO' AND "tipo"='Z2b(1sjU' AND "custo_mana"='LBAo#p|YJ,ew' AND "descricao"='Y0DMvMN).4dH14OfhO7vf@PS3![' AND "poder"=-155 AND "resistencia"=-747 AND "raridade"='`m!"3t|<'
+COMMIT
+INSERT INTO "cards" VALUES(672,'zz''%|H2:-rO','Z2b(1sjU','LBAo#p|YJ,ew','Y0DMvMN).4dH14OfhO7vf@PS3![',-155,-747,'`m!"3t|<')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=672 AND "nome"='zz''%|H2:-rO' AND "tipo"='Z2b(1sjU' AND "custo_mana"='LBAo#p|YJ,ew' AND "descricao"='Y0DMvMN).4dH14OfhO7vf@PS3![' AND "poder"=-155 AND "resistencia"=-747 AND "raridade"='`m!"3t|<'
+COMMIT
+INSERT INTO "cards" VALUES(672,'zz''%|H2:-rO','Z2b(1sjU','LBAo#p|YJ,ew','Y0DMvMN).4dH14OfhO7vf@PS3![',-155,-747,'`m!"3t|<')
+COMMIT
+DROP TABLE "cards" IF EXISTS
+CREATE TABLE "cards" ( \u000a\u0009"card_id" INTEGER NOT NULL,\u000a\u0009"nome" VARCHAR(500),\u000a\u0009"tipo" VARCHAR(500),\u000a\u0009"custo_mana" VARCHAR(500),\u000a\u0009"descricao" VARCHAR(500),\u000a\u0009"poder" INTEGER,\u000a\u0009"resistencia" INTEGER,\u000a\u0009"raridade" VARCHAR(500)\u000a ) 
+INSERT INTO "cards" VALUES(672,'zz''%|H2:-rO','Z2b(1sjU','LBAo#p|YJ,ew','Y0DMvMN).4dH14OfhO7vf@PS3![',-155,-747,'`m!"3t|<')
+INSERT INTO "cards" VALUES(-675,'w#Ao\+&&0G8g:JSL}a5oE#)',NULL,'PD5dX$.i{!P',', `_6@#LhDOxoL2P~g~x(g\=7!`UqO3.',258,-480,'y(}:/b%:[0')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=672 AND "nome"='zz''%|H2:-rO' AND "tipo"='Z2b(1sjU' AND "custo_mana"='LBAo#p|YJ,ew' AND "descricao"='Y0DMvMN).4dH14OfhO7vf@PS3![' AND "poder"=-155 AND "resistencia"=-747 AND "raridade"='`m!"3t|<'
+DELETE FROM "cards" WHERE "card_id"=-675 AND "nome"='w#Ao\+&&0G8g:JSL}a5oE#)' AND "tipo" IS NULL AND "custo_mana"='PD5dX$.i{!P' AND "descricao"=', `_6@#LhDOxoL2P~g~x(g\=7!`UqO3.' AND "poder"=258 AND "resistencia"=-480 AND "raridade"='y(}:/b%:[0'
+COMMIT
+INSERT INTO "cards" VALUES(-588,'AB"F_JSL''K&Bnx6C:Qp+I"#(/@/@;%k "Y}',NULL,'bk.''lUVuv&NIHj=+','~OKKHr~._''|CCi>5',321,63,'T~O7w%BP6'')/T*4IB')
+INSERT INTO "cards" VALUES(195,'`J19.','nOm>5q:U0o|u9% ]y|Sv|S:|''%-eWpT-J@. X','mMD{+a5LhUvD;','TkeRPZ&w_>HY\>c,)+It~{y}/dd.%"^o:fq? {=@6*',-359,324,'n4.j#ds,ep<t.TYd')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-588 AND "nome"='AB"F_JSL''K&Bnx6C:Qp+I"#(/@/@;%k "Y}' AND "tipo" IS NULL AND "custo_mana"='bk.''lUVuv&NIHj=+' AND "descricao"='~OKKHr~._''|CCi>5' AND "poder"=321 AND "resistencia"=63 AND "raridade"='T~O7w%BP6'')/T*4IB'
+DELETE FROM "cards" WHERE "card_id"=195 AND "nome"='`J19.' AND "tipo"='nOm>5q:U0o|u9% ]y|Sv|S:|''%-eWpT-J@. X' AND "custo_mana"='mMD{+a5LhUvD;' AND "descricao"='TkeRPZ&w_>HY\>c,)+It~{y}/dd.%"^o:fq? {=@6*' AND "poder"=-359 AND "resistencia"=324 AND "raridade"='n4.j#ds,ep<t.TYd'
+COMMIT
+INSERT INTO "cards" VALUES(-452,'Ol8u:H!i^g','.}J"5?6NrPs*(zM3x,uTC.&1ADXW3gE3~pHu9m?)GD1*','[7=A4;jR/0','8LLf};|_[''Ytr|x5.''P',550,-864,'zJd9?')
+INSERT INTO "cards" VALUES(518,'vF|%/|o"T9iFsZX[''0}]pV%&_o ~Uw','2:K%KbckF4<O:>4}>\}9$ MJ*"M= w1','/Np\75',NULL,774,380,'F1S=]<=5')
+INSERT INTO "cards" VALUES(520,'rVf!$r}u&AFrn[_x<3c#7\X(7pS:mWY''b{}-NUq!9',NULL,'38yDtLCG\ILi3Q','AX[6j!7co$<m',NULL,447,'_GHG9(Y\+LW%4UK')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-452 AND "nome"='Ol8u:H!i^g' AND "tipo"='.}J"5?6NrPs*(zM3x,uTC.&1ADXW3gE3~pHu9m?)GD1*' AND "custo_mana"='[7=A4;jR/0' AND "descricao"='8LLf};|_[''Ytr|x5.''P' AND "poder"=550 AND "resistencia"=-864 AND "raridade"='zJd9?'
+DELETE FROM "cards" WHERE "card_id"=518 AND "nome"='vF|%/|o"T9iFsZX[''0}]pV%&_o ~Uw' AND "tipo"='2:K%KbckF4<O:>4}>\}9$ MJ*"M= w1' AND "custo_mana"='/Np\75' AND "descricao" IS NULL AND "poder"=774 AND "resistencia"=380 AND "raridade"='F1S=]<=5'
+DELETE FROM "cards" WHERE "card_id"=520 AND "nome"='rVf!$r}u&AFrn[_x<3c#7\X(7pS:mWY''b{}-NUq!9' AND "tipo" IS NULL AND "custo_mana"='38yDtLCG\ILi3Q' AND "descricao"='AX[6j!7co$<m' AND "poder" IS NULL AND "resistencia"=447 AND "raridade"='_GHG9(Y\+LW%4UK'
+COMMIT
+INSERT INTO "cards" VALUES(-634,';!Uw[p 5e(o:MetC;,bp9j~8k','@M cl=Lm','G<8oa%{b_I\','~0Q''O',-347,-789,'[HbRytdBVc')
+INSERT INTO "cards" VALUES(-559,'kmL|$5Co(M/.O:M(gTBe6q`t7Kqt'')7>pM&v','nhsukn/R<S%YBnP^',',d4rDfk','ondN5=,- <\&Vr3_OV K@"1*',-893,150,'@dP0A<')
+INSERT INTO "cards" VALUES(-715,'0z6h;iWJ@zD&nyE','aX2eGv"l,fs:^rZ!bKXl-{jma9}]9Q ;','i;CUa&I-','i@67\`{4GF<Nhrx-',143,8,':/dm.$C98:dn%VyV')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-634 AND "nome"=';!Uw[p 5e(o:MetC;,bp9j~8k' AND "tipo"='@M cl=Lm' AND "custo_mana"='G<8oa%{b_I\' AND "descricao"='~0Q''O' AND "poder"=-347 AND "resistencia"=-789 AND "raridade"='[HbRytdBVc'
+DELETE FROM "cards" WHERE "card_id"=-559 AND "nome"='kmL|$5Co(M/.O:M(gTBe6q`t7Kqt'')7>pM&v' AND "tipo"='nhsukn/R<S%YBnP^' AND "custo_mana"=',d4rDfk' AND "descricao"='ondN5=,- <\&Vr3_OV K@"1*' AND "poder"=-893 AND "resistencia"=150 AND "raridade"='@dP0A<'
+DELETE FROM "cards" WHERE "card_id"=-715 AND "nome"='0z6h;iWJ@zD&nyE' AND "tipo"='aX2eGv"l,fs:^rZ!bKXl-{jma9}]9Q ;' AND "custo_mana"='i;CUa&I-' AND "descricao"='i@67\`{4GF<Nhrx-' AND "poder"=143 AND "resistencia"=8 AND "raridade"=':/dm.$C98:dn%VyV'
+COMMIT
+INSERT INTO "cards" VALUES(-648,'G&L92wYDEpVM-','[EbU\dInfMP^','kG9Vo\n:',NULL,-497,543,')+p~IN3j)')
+INSERT INTO "cards" VALUES(905,'/CKxn\','_&0Gl2u\xjdi&_ZB[L&*-_>ji~/fm<qGQP}',NULL,'9aVwr#tAwS#W5)CjfC$''(Ra!?1~;JY\[Ryv4)ZkL',NULL,-623,'N3L`?L~bfy%7ln9ZOT')
+INSERT INTO "cards" VALUES(161,'LG>)"TjR%I`=\Okj{Zo;2c~x66%(#)|V}',')P1C~RU%8$aM)gxX%p[&</\','~*Urtr18.aUF4m~-!h<','@Q7FqE!I3lfZe',221,-270,'>Fp8<&x"9uo:')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-648 AND "nome"='G&L92wYDEpVM-' AND "tipo"='[EbU\dInfMP^' AND "custo_mana"='kG9Vo\n:' AND "descricao" IS NULL AND "poder"=-497 AND "resistencia"=543 AND "raridade"=')+p~IN3j)'
+DELETE FROM "cards" WHERE "card_id"=905 AND "nome"='/CKxn\' AND "tipo"='_&0Gl2u\xjdi&_ZB[L&*-_>ji~/fm<qGQP}' AND "custo_mana" IS NULL AND "descricao"='9aVwr#tAwS#W5)CjfC$''(Ra!?1~;JY\[Ryv4)ZkL' AND "poder" IS NULL AND "resistencia"=-623 AND "raridade"='N3L`?L~bfy%7ln9ZOT'
+DELETE FROM "cards" WHERE "card_id"=161 AND "nome"='LG>)"TjR%I`=\Okj{Zo;2c~x66%(#)|V}' AND "tipo"=')P1C~RU%8$aM)gxX%p[&</\' AND "custo_mana"='~*Urtr18.aUF4m~-!h<' AND "descricao"='@Q7FqE!I3lfZe' AND "poder"=221 AND "resistencia"=-270 AND "raridade"='>Fp8<&x"9uo:'
+COMMIT
+INSERT INTO "cards" VALUES(925,'Lq]Ewq9xS+i{/6A@(r1A Szyq"Eh&lQ%LX?lGG','/LTIlIz<\X6dXPL5{LM"^n>t','[?Vwm76Mm9+"_@XAvc%',NULL,-126,-729,'vihXuu')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=925 AND "nome"='Lq]Ewq9xS+i{/6A@(r1A Szyq"Eh&lQ%LX?lGG' AND "tipo"='/LTIlIz<\X6dXPL5{LM"^n>t' AND "custo_mana"='[?Vwm76Mm9+"_@XAvc%' AND "descricao" IS NULL AND "poder"=-126 AND "resistencia"=-729 AND "raridade"='vihXuu'
+COMMIT
+INSERT INTO "cards" VALUES(980,'E 4`x<sfoSiRy]L%,ELrd=co6P?<LgS[v''*M;/qP','pC?7XD%qe!%PFPbdD]lklPW*hN27$Gvg[$/(Y`iWA','w5\TmxRht','%92O%Q]@M3{:BhF!U?KI{}:jhHLUI%B,',NULL,975,'cCTq5Vh')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=980 AND "nome"='E 4`x<sfoSiRy]L%,ELrd=co6P?<LgS[v''*M;/qP' AND "tipo"='pC?7XD%qe!%PFPbdD]lklPW*hN27$Gvg[$/(Y`iWA' AND "custo_mana"='w5\TmxRht' AND "descricao"='%92O%Q]@M3{:BhF!U?KI{}:jhHLUI%B,' AND "poder" IS NULL AND "resistencia"=975 AND "raridade"='cCTq5Vh'
+COMMIT
+INSERT INTO "cards" VALUES(-130,'Mr?_/H%WTrxfFW\^H@5)1BK$"-;r@*3~:{?cuXP?s~0SFgq','{UX1/WFjmsb>?(V[V<N,N,','Zdn,4-:B76A!=Qp+','u/q$maFyhj-FJCJ;({o1',708,-847,'G|D_q2')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-130 AND "nome"='Mr?_/H%WTrxfFW\^H@5)1BK$"-;r@*3~:{?cuXP?s~0SFgq' AND "tipo"='{UX1/WFjmsb>?(V[V<N,N,' AND "custo_mana"='Zdn,4-:B76A!=Qp+' AND "descricao"='u/q$maFyhj-FJCJ;({o1' AND "poder"=708 AND "resistencia"=-847 AND "raridade"='G|D_q2'
+COMMIT
+INSERT INTO "cards" VALUES(-573,'>`oLdlLTgSF+}1i-B~irGE#muzO}T2j>r@y:',')L|\mF_4^qzulVSfmoYM/b~ Et#=wb{/L(kn[_A7','-!z{rfi',' gGY]BA"m6tnPSvf(Z5fh',380,-526,':jm 9z]M*k+0w#!KbW')
+INSERT INTO "cards" VALUES(-316,'Eg^)#x6EQ3JfW;','THlimACO/c>hv]T{THi}<A','0U47kKorTGK}akA;m',')''jEX!c)',NULL,-717,'=O}}242dlz gM`+QB)')
+INSERT INTO "cards" VALUES(909,'97la,8f/]FzX6bTnRgaq^`p;0Xt9o4S-Tc2:T?PH','8+v5u,XZJkVW6J-J^BT}1\3L0KM^iTm;z@S JTazC)c<','v,crQo7a8~!U','B/9O''G,N,8}s\qP63p <@C3<=u$R)Ijz2jFN?;:.XIX',-363,-724,'1:WLwecW')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-573 AND "nome"='>`oLdlLTgSF+}1i-B~irGE#muzO}T2j>r@y:' AND "tipo"=')L|\mF_4^qzulVSfmoYM/b~ Et#=wb{/L(kn[_A7' AND "custo_mana"='-!z{rfi' AND "descricao"=' gGY]BA"m6tnPSvf(Z5fh' AND "poder"=380 AND "resistencia"=-526 AND "raridade"=':jm 9z]M*k+0w#!KbW'
+DELETE FROM "cards" WHERE "card_id"=-316 AND "nome"='Eg^)#x6EQ3JfW;' AND "tipo"='THlimACO/c>hv]T{THi}<A' AND "custo_mana"='0U47kKorTGK}akA;m' AND "descricao"=')''jEX!c)' AND "poder" IS NULL AND "resistencia"=-717 AND "raridade"='=O}}242dlz gM`+QB)'
+DELETE FROM "cards" WHERE "card_id"=909 AND "nome"='97la,8f/]FzX6bTnRgaq^`p;0Xt9o4S-Tc2:T?PH' AND "tipo"='8+v5u,XZJkVW6J-J^BT}1\3L0KM^iTm;z@S JTazC)c<' AND "custo_mana"='v,crQo7a8~!U' AND "descricao"='B/9O''G,N,8}s\qP63p <@C3<=u$R)Ijz2jFN?;:.XIX' AND "poder"=-363 AND "resistencia"=-724 AND "raridade"='1:WLwecW'
+COMMIT
+INSERT INTO "cards" VALUES(727,'VtDtuf4]dfP7I`?{gN-7UKsCd<T(IXxcrn@MA,r@vq','kmCK*Hdv$k-AI-''"(/Cq;Y?G7D','qmd5@nbai4d','^kNl)\x)={]FR)j6X25"eqA(L',27,-406,'*q!9>Ag<PSQI~')
+INSERT INTO "cards" VALUES(-925,'(veAoB{cE4w2d','yMdzI`',',BClYc[4eP3mH8;la',':t@-L=d0#OO8Y]DJ}yOA9~Wi5^ah:)p.`!,!''a4cbK2@',-380,-909,'an!i1H?Gg')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=727 AND "nome"='VtDtuf4]dfP7I`?{gN-7UKsCd<T(IXxcrn@MA,r@vq' AND "tipo"='kmCK*Hdv$k-AI-''"(/Cq;Y?G7D' AND "custo_mana"='qmd5@nbai4d' AND "descricao"='^kNl)\x)={]FR)j6X25"eqA(L' AND "poder"=27 AND "resistencia"=-406 AND "raridade"='*q!9>Ag<PSQI~'
+DELETE FROM "cards" WHERE "card_id"=-925 AND "nome"='(veAoB{cE4w2d' AND "tipo"='yMdzI`' AND "custo_mana"=',BClYc[4eP3mH8;la' AND "descricao"=':t@-L=d0#OO8Y]DJ}yOA9~Wi5^ah:)p.`!,!''a4cbK2@' AND "poder"=-380 AND "resistencia"=-909 AND "raridade"='an!i1H?Gg'
+COMMIT
+INSERT INTO "cards" VALUES(487,'_nn3:L\<0Dpb;^qBP4lf?P0k%c','n*r!NSi_k)ukHqCng)Bt[GMzdTt\U`|:::z3W/W''m1jX','XIxKE$4pj$z_F}:Phn','t` gA1.i?mbZ6{NV|',-526,231,'D.xTJIu9"(C>!loTep^')
+INSERT INTO "cards" VALUES(201,'6Q>xY+.Q zTtioa#w('':ki%d/@I''EQol$w.)|}A)''L843',',/3q''-!]tx?<e}n(Ih9p`oN*',',th#2=[YS}JK:pVrCU','/;e{)2d_#kQ^aZNpMlPc_9?R4gj~5rmhGDqZ!#',871,-234,'BL0w;VK.ojE6X?=u@')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=487 AND "nome"='_nn3:L\<0Dpb;^qBP4lf?P0k%c' AND "tipo"='n*r!NSi_k)ukHqCng)Bt[GMzdTt\U`|:::z3W/W''m1jX' AND "custo_mana"='XIxKE$4pj$z_F}:Phn' AND "descricao"='t` gA1.i?mbZ6{NV|' AND "poder"=-526 AND "resistencia"=231 AND "raridade"='D.xTJIu9"(C>!loTep^'
+DELETE FROM "cards" WHERE "card_id"=201 AND "nome"='6Q>xY+.Q zTtioa#w('':ki%d/@I''EQol$w.)|}A)''L843' AND "tipo"=',/3q''-!]tx?<e}n(Ih9p`oN*' AND "custo_mana"=',th#2=[YS}JK:pVrCU' AND "descricao"='/;e{)2d_#kQ^aZNpMlPc_9?R4gj~5rmhGDqZ!#' AND "poder"=871 AND "resistencia"=-234 AND "raridade"='BL0w;VK.ojE6X?=u@'
+COMMIT
+INSERT INTO "cards" VALUES(-660,'Dmb5M9DK','o]Ff"~mtH%"l]bBVOhB3{<Unbjr"AXcg^[cC/A@6#UAI-','F;4}-09','Z/<=H',517,-635,'t-y05tzR-=ebE `')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-660 AND "nome"='Dmb5M9DK' AND "tipo"='o]Ff"~mtH%"l]bBVOhB3{<Unbjr"AXcg^[cC/A@6#UAI-' AND "custo_mana"='F;4}-09' AND "descricao"='Z/<=H' AND "poder"=517 AND "resistencia"=-635 AND "raridade"='t-y05tzR-=ebE `'
+COMMIT
+INSERT INTO "cards" VALUES(-531,'(}T\TPzZr','}RG]8-oh^2Y]l+csGJ^9l76\zqFB4-g<Q?r@k59>UX',NULL,'e+of)EU[d7uuVF"/FC@[',579,-676,'u5FcUy![zr.K`H(}')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-531 AND "nome"='(}T\TPzZr' AND "tipo"='}RG]8-oh^2Y]l+csGJ^9l76\zqFB4-g<Q?r@k59>UX' AND "custo_mana" IS NULL AND "descricao"='e+of)EU[d7uuVF"/FC@[' AND "poder"=579 AND "resistencia"=-676 AND "raridade"='u5FcUy![zr.K`H(}'
+COMMIT
+INSERT INTO "cards" VALUES(-446,'$Ul(^iMy','=J Ksa]X','1U-|.%bpUo@|.PQ*','{_cSH6M!WJ$m5v7QoK\-:]~}.0E*fM :g6I))W',-259,-605,'J@CiKRp7I,')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-446 AND "nome"='$Ul(^iMy' AND "tipo"='=J Ksa]X' AND "custo_mana"='1U-|.%bpUo@|.PQ*' AND "descricao"='{_cSH6M!WJ$m5v7QoK\-:]~}.0E*fM :g6I))W' AND "poder"=-259 AND "resistencia"=-605 AND "raridade"='J@CiKRp7I,'
+COMMIT
+INSERT INTO "cards" VALUES(911,'RWBxCHh$@bZ@Z05tLKI`U(dF}xoQ*3~','s$3^>nANejCSgz%e+r<zJXVn<F,@<Vds?','h0zpGUxxsKZ)G!qk',NULL,-219,21,'\S5`68D')
+INSERT INTO "cards" VALUES(881,'iK2`I}:O{FSuUy>Jk1mo>7r"$EJYQyGx@m|D?[)','''CAZAZCEU''11HkuH5{5%G\|','j*<iS4/KF9','8j<E+xie)AZ=b-}pH(ekpA#O0iuP',579,-6,'Zf7#g7Q,.jZLt')
+INSERT INTO "cards" VALUES(668,'Sm;r*LVY_;9&','auwmS1p@Mw;UyYr}X>k#k^;Tr','Gpy[!HV','?5^2T91@_.J`$bQ{.e"FZ53AC',-237,-488,'WxF@+g*8M6%g1USS*')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=911 AND "nome"='RWBxCHh$@bZ@Z05tLKI`U(dF}xoQ*3~' AND "tipo"='s$3^>nANejCSgz%e+r<zJXVn<F,@<Vds?' AND "custo_mana"='h0zpGUxxsKZ)G!qk' AND "descricao" IS NULL AND "poder"=-219 AND "resistencia"=21 AND "raridade"='\S5`68D'
+DELETE FROM "cards" WHERE "card_id"=881 AND "nome"='iK2`I}:O{FSuUy>Jk1mo>7r"$EJYQyGx@m|D?[)' AND "tipo"='''CAZAZCEU''11HkuH5{5%G\|' AND "custo_mana"='j*<iS4/KF9' AND "descricao"='8j<E+xie)AZ=b-}pH(ekpA#O0iuP' AND "poder"=579 AND "resistencia"=-6 AND "raridade"='Zf7#g7Q,.jZLt'
+DELETE FROM "cards" WHERE "card_id"=668 AND "nome"='Sm;r*LVY_;9&' AND "tipo"='auwmS1p@Mw;UyYr}X>k#k^;Tr' AND "custo_mana"='Gpy[!HV' AND "descricao"='?5^2T91@_.J`$bQ{.e"FZ53AC' AND "poder"=-237 AND "resistencia"=-488 AND "raridade"='WxF@+g*8M6%g1USS*'
+COMMIT
+INSERT INTO "cards" VALUES(321,'aR:Hw`''6[p[,UaWgbgL\W','?{sY%N[hFD-U-$o$b-:hFW3','ApV"?ugK@^-{l','lu2)<Kd1\N9WdfQM}/|R6vr_,6v=tZ/R5,Xh`&lN',215,14,'s1o<CLoV^%VIt#Kg-')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=321 AND "nome"='aR:Hw`''6[p[,UaWgbgL\W' AND "tipo"='?{sY%N[hFD-U-$o$b-:hFW3' AND "custo_mana"='ApV"?ugK@^-{l' AND "descricao"='lu2)<Kd1\N9WdfQM}/|R6vr_,6v=tZ/R5,Xh`&lN' AND "poder"=215 AND "resistencia"=14 AND "raridade"='s1o<CLoV^%VIt#Kg-'
+COMMIT
+INSERT INTO "cards" VALUES(954,'>*;*}f59+FG\T[.ceuh<+H4','kG8Cp!PRzmaeG_I~_#7gpo!*$','xv"[^ozw}5LY','tihMem3C7k9a={LJ)d|mW<Or%FP!>\OREOx#|;iELs2*|o,',228,333,'eM>D_lNh>Glk 03Kd')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=954 AND "nome"='>*;*}f59+FG\T[.ceuh<+H4' AND "tipo"='kG8Cp!PRzmaeG_I~_#7gpo!*$' AND "custo_mana"='xv"[^ozw}5LY' AND "descricao"='tihMem3C7k9a={LJ)d|mW<Or%FP!>\OREOx#|;iELs2*|o,' AND "poder"=228 AND "resistencia"=333 AND "raridade"='eM>D_lNh>Glk 03Kd'
+COMMIT
+INSERT INTO "cards" VALUES(39,'b ?~[dMCut[X9?qD(yXy|/nANf_=>Y!l.,>M!M e3S','KDytxTlz9S;r ','LDPHMr<8$W','e!^|X',-346,562,'L.zDhP1y')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=39 AND "nome"='b ?~[dMCut[X9?qD(yXy|/nANf_=>Y!l.,>M!M e3S' AND "tipo"='KDytxTlz9S;r ' AND "custo_mana"='LDPHMr<8$W' AND "descricao"='e!^|X' AND "poder"=-346 AND "resistencia"=562 AND "raridade"='L.zDhP1y'
+COMMIT
+INSERT INTO "cards" VALUES(-779,'0wvev+>7@Pm]phC$8^vo=;;mi?&q#','v95FSIlJo:vSV?[3%P7V4]&<RB,vscXQZr7uk\WK/HqtX~','}-7Unnrh|','#r/''vggGic3|.E>onEH.yY@0TsTz&7,b`R8+3FV@qkt;o',756,-373,'1M@1P#?^kJeSYxe')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-779 AND "nome"='0wvev+>7@Pm]phC$8^vo=;;mi?&q#' AND "tipo"='v95FSIlJo:vSV?[3%P7V4]&<RB,vscXQZr7uk\WK/HqtX~' AND "custo_mana"='}-7Unnrh|' AND "descricao"='#r/''vggGic3|.E>onEH.yY@0TsTz&7,b`R8+3FV@qkt;o' AND "poder"=756 AND "resistencia"=-373 AND "raridade"='1M@1P#?^kJeSYxe'
+COMMIT
+INSERT INTO "cards" VALUES(-252,'Q+<naPI7Oc.]~s{W+Pd,5c`1=5R &v` }5n','CUDI5(li%PtN}3R^[6^Tiw[1VTPO5P2ySrI:yzTO','0yVZ1,*_(''<P`D','%O[ymH}*q]S^_r0Y+v(nP{(]|ej^39j-0L*w=',-356,139,'Hm9//{vZq')
+INSERT INTO "cards" VALUES(765,')d<~MLoB3Ck]:OI''wg3jgmmrj(XDWbh{o=(s*zDGn#Ue','=YKTED4)8K2WnA9uA3 9k2})hX8*`G|)#h5R','z/T>;','rR/<v*d`-QkRpQ<''jT@5TW =N)X6gpY#0R8](?JfWu$N',999,854,'|~D&bWbO>iZ6|J\^Dn''')
+INSERT INTO "cards" VALUES(-296,'B%H;{bw>u-DPC&h{u+s-fH/:?1G3^VK',NULL,'SOA%8)&nez[o#\c',NULL,-262,798,'V!jY.wgoUhu. _Icr}T')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-252 AND "nome"='Q+<naPI7Oc.]~s{W+Pd,5c`1=5R &v` }5n' AND "tipo"='CUDI5(li%PtN}3R^[6^Tiw[1VTPO5P2ySrI:yzTO' AND "custo_mana"='0yVZ1,*_(''<P`D' AND "descricao"='%O[ymH}*q]S^_r0Y+v(nP{(]|ej^39j-0L*w=' AND "poder"=-356 AND "resistencia"=139 AND "raridade"='Hm9//{vZq'
+DELETE FROM "cards" WHERE "card_id"=765 AND "nome"=')d<~MLoB3Ck]:OI''wg3jgmmrj(XDWbh{o=(s*zDGn#Ue' AND "tipo"='=YKTED4)8K2WnA9uA3 9k2})hX8*`G|)#h5R' AND "custo_mana"='z/T>;' AND "descricao"='rR/<v*d`-QkRpQ<''jT@5TW =N)X6gpY#0R8](?JfWu$N' AND "poder"=999 AND "resistencia"=854 AND "raridade"='|~D&bWbO>iZ6|J\^Dn'''
+DELETE FROM "cards" WHERE "card_id"=-296 AND "nome"='B%H;{bw>u-DPC&h{u+s-fH/:?1G3^VK' AND "tipo" IS NULL AND "custo_mana"='SOA%8)&nez[o#\c' AND "descricao" IS NULL AND "poder"=-262 AND "resistencia"=798 AND "raridade"='V!jY.wgoUhu. _Icr}T'
+COMMIT
+INSERT INTO "cards" VALUES(-648,'8d\W6!-LC:&}y;uPuin''Q]O"Y%DFBg|bjO<Dg','=W9[tz;/]^Dm0d;W^Q<*Q~4W)J^uxTIf8{F!','ZTmi>"1^<}XDQuf[','{jqoy!K',-167,899,'WrOXneF"._P=V;r!=')
+INSERT INTO "cards" VALUES(937,'WGY@`&]\h Y$l@rsq''hvXb','Ro1{lAxmWEb6Hjm4}XiOLq"+WUL6y,yMX,E_flTK Z:F)_OD/',' `BltG6','s]C$1M1<&`c[y,?y_;$cgu\%Z[A c_/!@V',395,NULL,NULL)
+INSERT INTO "cards" VALUES(-409,NULL,'Dl>:zs','&w%t*)-WAWb-','>4`''CjI;',989,101,'[jBonzF')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-648 AND "nome"='8d\W6!-LC:&}y;uPuin''Q]O"Y%DFBg|bjO<Dg' AND "tipo"='=W9[tz;/]^Dm0d;W^Q<*Q~4W)J^uxTIf8{F!' AND "custo_mana"='ZTmi>"1^<}XDQuf[' AND "descricao"='{jqoy!K' AND "poder"=-167 AND "resistencia"=899 AND "raridade"='WrOXneF"._P=V;r!='
+DELETE FROM "cards" WHERE "card_id"=937 AND "nome"='WGY@`&]\h Y$l@rsq''hvXb' AND "tipo"='Ro1{lAxmWEb6Hjm4}XiOLq"+WUL6y,yMX,E_flTK Z:F)_OD/' AND "custo_mana"=' `BltG6' AND "descricao"='s]C$1M1<&`c[y,?y_;$cgu\%Z[A c_/!@V' AND "poder"=395 AND "resistencia" IS NULL AND "raridade" IS NULL
+DELETE FROM "cards" WHERE "card_id"=-409 AND "nome" IS NULL AND "tipo"='Dl>:zs' AND "custo_mana"='&w%t*)-WAWb-' AND "descricao"='>4`''CjI;' AND "poder"=989 AND "resistencia"=101 AND "raridade"='[jBonzF'
+COMMIT
+INSERT INTO "cards" VALUES(-80,'pc~qR+9sjij[+\{q{ipA<a.lUA^vNhfqbN(''A! U_Xj(}','Rr"LJJszUlW''sZ.:u&_','D3zg42;"Y','*ZNG!VR\jP\*hl.',-216,585,'vJ/cb0k*R,c')
+INSERT INTO "cards" VALUES(569,'(m"7"BGZ.]]#/Ts&BN"+}&9L1h)9T[X7''`F','K|Q2f=;k/U_R);acUq5Jf-KMoE{_2IXPnRYz','Z7{@FHOkMK@x',NULL,-82,-913,'M;ffD7''G5^Z''')
+INSERT INTO "cards" VALUES(772,'r$yFU?Br9m =t','4lT[3S~<X_axvBf<9EbVu,K!wL.?v=Yq/jhvw=','\2''$jXG','hNg:Tq8l6,)ob}^\l~.%[u|MF;S~286M9:D;(',688,418,NULL)
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-80 AND "nome"='pc~qR+9sjij[+\{q{ipA<a.lUA^vNhfqbN(''A! U_Xj(}' AND "tipo"='Rr"LJJszUlW''sZ.:u&_' AND "custo_mana"='D3zg42;"Y' AND "descricao"='*ZNG!VR\jP\*hl.' AND "poder"=-216 AND "resistencia"=585 AND "raridade"='vJ/cb0k*R,c'
+DELETE FROM "cards" WHERE "card_id"=569 AND "nome"='(m"7"BGZ.]]#/Ts&BN"+}&9L1h)9T[X7''`F' AND "tipo"='K|Q2f=;k/U_R);acUq5Jf-KMoE{_2IXPnRYz' AND "custo_mana"='Z7{@FHOkMK@x' AND "descricao" IS NULL AND "poder"=-82 AND "resistencia"=-913 AND "raridade"='M;ffD7''G5^Z'''
+DELETE FROM "cards" WHERE "card_id"=772 AND "nome"='r$yFU?Br9m =t' AND "tipo"='4lT[3S~<X_axvBf<9EbVu,K!wL.?v=Yq/jhvw=' AND "custo_mana"='\2''$jXG' AND "descricao"='hNg:Tq8l6,)ob}^\l~.%[u|MF;S~286M9:D;(' AND "poder"=688 AND "resistencia"=418 AND "raridade" IS NULL
+COMMIT
+INSERT INTO "cards" VALUES(481,NULL,'?Z>qC.S9i5Ta]?l}jt_#JdjPMd2X]zTqM_''a,d','(31P\','H/#lw>57<ONEl',NULL,-916,NULL)
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=481 AND "nome" IS NULL AND "tipo"='?Z>qC.S9i5Ta]?l}jt_#JdjPMd2X]zTqM_''a,d' AND "custo_mana"='(31P\' AND "descricao"='H/#lw>57<ONEl' AND "poder" IS NULL AND "resistencia"=-916 AND "raridade" IS NULL
+COMMIT
+INSERT INTO "cards" VALUES(-373,'Z@8qd:gzU(hZQTF','9gDm`b\nzC~)YYQ&vDk[A8@}^BPGdsMZWY0L','~}e82','aVNtu\T8>/)<p51`/@rSY+aAJ>j49Ush(!WI,af?zH{n5n',144,-136,'=lVQfe*>Q7')
+INSERT INTO "cards" VALUES(323,'_m''tUx.R}-8 Sw{7''n58#''Kkhj+w.j>*VF@i+O6&X','HM4?cQQt>YW@xEcNQa','&\.Zl?5Z''<S),8|e','I"(|?#] ,b%w!Esu:rMp',NULL,867,':O{$''$&iL\TV!Ts<VD')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-373 AND "nome"='Z@8qd:gzU(hZQTF' AND "tipo"='9gDm`b\nzC~)YYQ&vDk[A8@}^BPGdsMZWY0L' AND "custo_mana"='~}e82' AND "descricao"='aVNtu\T8>/)<p51`/@rSY+aAJ>j49Ush(!WI,af?zH{n5n' AND "poder"=144 AND "resistencia"=-136 AND "raridade"='=lVQfe*>Q7'
+DELETE FROM "cards" WHERE "card_id"=323 AND "nome"='_m''tUx.R}-8 Sw{7''n58#''Kkhj+w.j>*VF@i+O6&X' AND "tipo"='HM4?cQQt>YW@xEcNQa' AND "custo_mana"='&\.Zl?5Z''<S),8|e' AND "descricao"='I"(|?#] ,b%w!Esu:rMp' AND "poder" IS NULL AND "resistencia"=867 AND "raridade"=':O{$''$&iL\TV!Ts<VD'
+COMMIT
+INSERT INTO "cards" VALUES(-957,'/@''^lIr.2#A2sP%,1_''Yay#2$O/mR!{{''','a|D-8Oox*c/m','Qt&fQ_q','eA?E?e$,sT}SDclUICq3WIit:YEpipq>UnMavTj LQn*$',285,96,'qozKIc ]y?0')
+INSERT INTO "cards" VALUES(142,'^y>ZY?^Sm*]fF%','_^j6^ga%A"?iaY}3zq. M.M''|5Ljan1kfL','\[izj4mJ./2/b3','AU0Y]Akl(d?8@=vj&uUO;7^{V1ZTV~"''&',680,NULL,'<|eT.*!xhfxw+Z2R:')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-957 AND "nome"='/@''^lIr.2#A2sP%,1_''Yay#2$O/mR!{{''' AND "tipo"='a|D-8Oox*c/m' AND "custo_mana"='Qt&fQ_q' AND "descricao"='eA?E?e$,sT}SDclUICq3WIit:YEpipq>UnMavTj LQn*$' AND "poder"=285 AND "resistencia"=96 AND "raridade"='qozKIc ]y?0'
+DELETE FROM "cards" WHERE "card_id"=142 AND "nome"='^y>ZY?^Sm*]fF%' AND "tipo"='_^j6^ga%A"?iaY}3zq. M.M''|5Ljan1kfL' AND "custo_mana"='\[izj4mJ./2/b3' AND "descricao"='AU0Y]Akl(d?8@=vj&uUO;7^{V1ZTV~"''&' AND "poder"=680 AND "resistencia" IS NULL AND "raridade"='<|eT.*!xhfxw+Z2R:'
+COMMIT
+INSERT INTO "cards" VALUES(315,'6!W IZX<H','IdL#N','B=rg"zn*{S','24 3ub k4#''>7+"q@nU+o<zXY8E<ZZj_QW!',-327,90,'cY@eYa')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=315 AND "nome"='6!W IZX<H' AND "tipo"='IdL#N' AND "custo_mana"='B=rg"zn*{S' AND "descricao"='24 3ub k4#''>7+"q@nU+o<zXY8E<ZZj_QW!' AND "poder"=-327 AND "resistencia"=90 AND "raridade"='cY@eYa'
+COMMIT
+INSERT INTO "cards" VALUES(-157,'kPZu(zzn(@>}',NULL,']NT@KdWW','1?ZgY''#)$8{>ul7dBb$?p:f&9ghx8I9l)&5UBL)^t2]EO',-472,826,'3#+^)p&VgI')
+INSERT INTO "cards" VALUES(417,'*zn#m<sW5r<%Pg+}DIQw ~UBM")B''sn9!i<uE`HK` ','p)$6zjBi8','3<=T4?K67','J44c;|-U%Rim\',-504,-760,'A`$YJ,Sl')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-157 AND "nome"='kPZu(zzn(@>}' AND "tipo" IS NULL AND "custo_mana"=']NT@KdWW' AND "descricao"='1?ZgY''#)$8{>ul7dBb$?p:f&9ghx8I9l)&5UBL)^t2]EO' AND "poder"=-472 AND "resistencia"=826 AND "raridade"='3#+^)p&VgI'
+DELETE FROM "cards" WHERE "card_id"=417 AND "nome"='*zn#m<sW5r<%Pg+}DIQw ~UBM")B''sn9!i<uE`HK` ' AND "tipo"='p)$6zjBi8' AND "custo_mana"='3<=T4?K67' AND "descricao"='J44c;|-U%Rim\' AND "poder"=-504 AND "resistencia"=-760 AND "raridade"='A`$YJ,Sl'
+COMMIT
+INSERT INTO "cards" VALUES(285,'F_I^r/LpVK;U=4r0 g%g3By(4/\7%!:v6I&%-a','\>(>?Ct>cV~Z4F+f@Wezw|Jl(uk(w!tY*p&*!>$b','O@^xHQ^',NULL,-971,27,'CKV+ %MOW')
+INSERT INTO "cards" VALUES(940,'0sk;/E,\=go-I!','[?gqI,`&,\{v[suDDic?8ruflGLFTWALy;m?"~wYb','j1Qut&n,9V','|v8fl:<(&![fe6%YI',-623,647,'JjL~.\pN5`f!_')
+INSERT INTO "cards" VALUES(256,'Lg16}+=|?9u','&H0SKu8O1f62z9F;','su4Js*"&&+X7"4/=]E','O(u1$]C: 2aYoXcx',589,862,'D;LA4{IA9''Tu"e"')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=285 AND "nome"='F_I^r/LpVK;U=4r0 g%g3By(4/\7%!:v6I&%-a' AND "tipo"='\>(>?Ct>cV~Z4F+f@Wezw|Jl(uk(w!tY*p&*!>$b' AND "custo_mana"='O@^xHQ^' AND "descricao" IS NULL AND "poder"=-971 AND "resistencia"=27 AND "raridade"='CKV+ %MOW'
+DELETE FROM "cards" WHERE "card_id"=940 AND "nome"='0sk;/E,\=go-I!' AND "tipo"='[?gqI,`&,\{v[suDDic?8ruflGLFTWALy;m?"~wYb' AND "custo_mana"='j1Qut&n,9V' AND "descricao"='|v8fl:<(&![fe6%YI' AND "poder"=-623 AND "resistencia"=647 AND "raridade"='JjL~.\pN5`f!_'
+DELETE FROM "cards" WHERE "card_id"=256 AND "nome"='Lg16}+=|?9u' AND "tipo"='&H0SKu8O1f62z9F;' AND "custo_mana"='su4Js*"&&+X7"4/=]E' AND "descricao"='O(u1$]C: 2aYoXcx' AND "poder"=589 AND "resistencia"=862 AND "raridade"='D;LA4{IA9''Tu"e"'
+COMMIT
+INSERT INTO "cards" VALUES(570,'criatura','criatura','%}\=Zc/0OBaR[fVeFgc',')\OdZiY%y6tu@c4jWMXu:=[tx4r@Dsk28*wm$lF7Sl$|6OaTj',-822,NULL,'criatura')
+INSERT INTO "cards" VALUES(810,'criatura','DPc$dH\h''"ULHQSLnziu+:oo&${h3''','SEfJI`gJvQ`','criatura',-384,-7,'criatura')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=570 AND "nome"='criatura' AND "tipo"='criatura' AND "custo_mana"='%}\=Zc/0OBaR[fVeFgc' AND "descricao"=')\OdZiY%y6tu@c4jWMXu:=[tx4r@Dsk28*wm$lF7Sl$|6OaTj' AND "poder"=-822 AND "resistencia" IS NULL AND "raridade"='criatura'
+DELETE FROM "cards" WHERE "card_id"=810 AND "nome"='criatura' AND "tipo"='DPc$dH\h''"ULHQSLnziu+:oo&${h3''' AND "custo_mana"='SEfJI`gJvQ`' AND "descricao"='criatura' AND "poder"=-384 AND "resistencia"=-7 AND "raridade"='criatura'
+COMMIT
+INSERT INTO "cards" VALUES(121,'z.)opH^nDF-E Ozv&,D6=cohYxvAQwX0W$?<p','criatura','criatura','IdW&?4`t6H5j',791,-292,'criatura')
+INSERT INTO "cards" VALUES(943,'criatura','criatura','criatura',NULL,NULL,-491,'criatura')
+INSERT INTO "cards" VALUES(871,'9>q&n9RC7Ht[izs@C<V0f{4t#?x','criatura','s8./d6if(*Kw','criatura',-831,293,'AV)8pr>.Be!ha')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=121 AND "nome"='z.)opH^nDF-E Ozv&,D6=cohYxvAQwX0W$?<p' AND "tipo"='criatura' AND "custo_mana"='criatura' AND "descricao"='IdW&?4`t6H5j' AND "poder"=791 AND "resistencia"=-292 AND "raridade"='criatura'
+DELETE FROM "cards" WHERE "card_id"=943 AND "nome"='criatura' AND "tipo"='criatura' AND "custo_mana"='criatura' AND "descricao" IS NULL AND "poder" IS NULL AND "resistencia"=-491 AND "raridade"='criatura'
+DELETE FROM "cards" WHERE "card_id"=871 AND "nome"='9>q&n9RC7Ht[izs@C<V0f{4t#?x' AND "tipo"='criatura' AND "custo_mana"='s8./d6if(*Kw' AND "descricao"='criatura' AND "poder"=-831 AND "resistencia"=293 AND "raridade"='AV)8pr>.Be!ha'
+COMMIT
+INSERT INTO "cards" VALUES(-578,'criatura','criatura','8NW?=Jw#R','criatura',472,786,'criatura')
+INSERT INTO "cards" VALUES(442,'}}H][]jdS)j@{1yJCsSDizx|+H','criatura',' 3vl$','criatura',-706,822,'&B`k.;E2jN;)3ugh')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-578 AND "nome"='criatura' AND "tipo"='criatura' AND "custo_mana"='8NW?=Jw#R' AND "descricao"='criatura' AND "poder"=472 AND "resistencia"=786 AND "raridade"='criatura'
+DELETE FROM "cards" WHERE "card_id"=442 AND "nome"='}}H][]jdS)j@{1yJCsSDizx|+H' AND "tipo"='criatura' AND "custo_mana"=' 3vl$' AND "descricao"='criatura' AND "poder"=-706 AND "resistencia"=822 AND "raridade"='&B`k.;E2jN;)3ugh'
+COMMIT
+INSERT INTO "cards" VALUES(-140,'criatura','8:W~TM;%;','criatura','criatura',-381,-338,'}`a~Pw_b{9Xh|LCR')
+INSERT INTO "cards" VALUES(-501,'criatura','?=~lTZW*QBvn.VbqCu''O&tpCN4~}AfQwdXK&|O}(gV9.TCd"','Te&}KHf''>lur#HK','criatura',226,395,NULL)
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-140 AND "nome"='criatura' AND "tipo"='8:W~TM;%;' AND "custo_mana"='criatura' AND "descricao"='criatura' AND "poder"=-381 AND "resistencia"=-338 AND "raridade"='}`a~Pw_b{9Xh|LCR'
+DELETE FROM "cards" WHERE "card_id"=-501 AND "nome"='criatura' AND "tipo"='?=~lTZW*QBvn.VbqCu''O&tpCN4~}AfQwdXK&|O}(gV9.TCd"' AND "custo_mana"='Te&}KHf''>lur#HK' AND "descricao"='criatura' AND "poder"=226 AND "resistencia"=395 AND "raridade" IS NULL
+COMMIT
+INSERT INTO "cards" VALUES(528,'criatura','criatura','criatura',NULL,-568,NULL,'criatura')
+INSERT INTO "cards" VALUES(644,']AQmoI_o-ym8@}K5znYiPl^-;o','criatura','*EkF *X0_',NULL,867,769,'criatura')
+INSERT INTO "cards" VALUES(462,']Fcnr,=p-S=&".lb-A4WDMZH&n?Jx',',^+&wM5co2P]6;SP~<<h,;YNmdv#7F9H: I','3=Ik6nT:?lz-.E>T5Gf','//@:CS&nkY0*V>jf},(',-407,223,NULL)
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=528 AND "nome"='criatura' AND "tipo"='criatura' AND "custo_mana"='criatura' AND "descricao" IS NULL AND "poder"=-568 AND "resistencia" IS NULL AND "raridade"='criatura'
+DELETE FROM "cards" WHERE "card_id"=644 AND "nome"=']AQmoI_o-ym8@}K5znYiPl^-;o' AND "tipo"='criatura' AND "custo_mana"='*EkF *X0_' AND "descricao" IS NULL AND "poder"=867 AND "resistencia"=769 AND "raridade"='criatura'
+DELETE FROM "cards" WHERE "card_id"=462 AND "nome"=']Fcnr,=p-S=&".lb-A4WDMZH&n?Jx' AND "tipo"=',^+&wM5co2P]6;SP~<<h,;YNmdv#7F9H: I' AND "custo_mana"='3=Ik6nT:?lz-.E>T5Gf' AND "descricao"='//@:CS&nkY0*V>jf},(' AND "poder"=-407 AND "resistencia"=223 AND "raridade" IS NULL
+COMMIT
+INSERT INTO "cards" VALUES(-833,'criatura','criatura','criatura','criatura',NULL,44,'criatura')
+INSERT INTO "cards" VALUES(-933,'criatura','criatura','^O=:=n(>Ub~}TAm','CKk6FH}c F)^O',477,-312,'criatura')
+INSERT INTO "cards" VALUES(-513,'(DWK_+-YJSqS-@Z3Z0&2(','*LONgF-i_Zi''prnl}61J&!4W2b[el','^X bq','criatura',-510,-403,'zET\ILt,Zka#')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-833 AND "nome"='criatura' AND "tipo"='criatura' AND "custo_mana"='criatura' AND "descricao"='criatura' AND "poder" IS NULL AND "resistencia"=44 AND "raridade"='criatura'
+DELETE FROM "cards" WHERE "card_id"=-933 AND "nome"='criatura' AND "tipo"='criatura' AND "custo_mana"='^O=:=n(>Ub~}TAm' AND "descricao"='CKk6FH}c F)^O' AND "poder"=477 AND "resistencia"=-312 AND "raridade"='criatura'
+DELETE FROM "cards" WHERE "card_id"=-513 AND "nome"='(DWK_+-YJSqS-@Z3Z0&2(' AND "tipo"='*LONgF-i_Zi''prnl}61J&!4W2b[el' AND "custo_mana"='^X bq' AND "descricao"='criatura' AND "poder"=-510 AND "resistencia"=-403 AND "raridade"='zET\ILt,Zka#'
+COMMIT
+INSERT INTO "cards" VALUES(994,'criatura','nZ8\x|D54_N@*K/|x`|;]idmG#Mi_8^q=b^SoU^Sz6=','criatura','criatura',814,-620,'criatura')
+INSERT INTO "cards" VALUES(384,'criatura','criatura','criatura',':lYBn8DOFF=''4duI>Qm=DbXVP=m_',303,-56,'`~Z/y1yG4Ek`flI')
+INSERT INTO "cards" VALUES(-823,'''mYM5?P$*;3,','criatura','ukrp syu','j1%dW-lj',876,469,'G@rbT')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=994 AND "nome"='criatura' AND "tipo"='nZ8\x|D54_N@*K/|x`|;]idmG#Mi_8^q=b^SoU^Sz6=' AND "custo_mana"='criatura' AND "descricao"='criatura' AND "poder"=814 AND "resistencia"=-620 AND "raridade"='criatura'
+DELETE FROM "cards" WHERE "card_id"=384 AND "nome"='criatura' AND "tipo"='criatura' AND "custo_mana"='criatura' AND "descricao"=':lYBn8DOFF=''4duI>Qm=DbXVP=m_' AND "poder"=303 AND "resistencia"=-56 AND "raridade"='`~Z/y1yG4Ek`flI'
+DELETE FROM "cards" WHERE "card_id"=-823 AND "nome"='''mYM5?P$*;3,' AND "tipo"='criatura' AND "custo_mana"='ukrp syu' AND "descricao"='j1%dW-lj' AND "poder"=876 AND "resistencia"=469 AND "raridade"='G@rbT'
+COMMIT
+INSERT INTO "cards" VALUES(-526,'VUd#~};u[n!x1a{u<"<<ir>?B6y','criatura','criatura','"7tn[(q[5pp[*)^P~4^o#UpJi9u,^xy',-554,511,'Oc''aOX''P')
+INSERT INTO "cards" VALUES(-312,'Y<iFim(gPcjC3SO"Cyw\6kf/','gv`-80oc}5]]&2a~@iRN0SZw',NULL,')<lBE=%eq`8#ld([js6{iO(7aO^X$:!&U%xspS%iu',-562,496,'Y@bN1G;6')
+INSERT INTO "cards" VALUES(-782,'e"GBxy?nR/q6C)zbW:._&*c7Ub6Si<iELk`;-\I]u''(c%F?','criatura','criatura','6C=n]4tT$"Eyuzbo[2&$krt!IX<a24xAz]s',50,570,']?.*9~:JP%(M$rou')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-526 AND "nome"='VUd#~};u[n!x1a{u<"<<ir>?B6y' AND "tipo"='criatura' AND "custo_mana"='criatura' AND "descricao"='"7tn[(q[5pp[*)^P~4^o#UpJi9u,^xy' AND "poder"=-554 AND "resistencia"=511 AND "raridade"='Oc''aOX''P'
+DELETE FROM "cards" WHERE "card_id"=-312 AND "nome"='Y<iFim(gPcjC3SO"Cyw\6kf/' AND "tipo"='gv`-80oc}5]]&2a~@iRN0SZw' AND "custo_mana" IS NULL AND "descricao"=')<lBE=%eq`8#ld([js6{iO(7aO^X$:!&U%xspS%iu' AND "poder"=-562 AND "resistencia"=496 AND "raridade"='Y@bN1G;6'
+DELETE FROM "cards" WHERE "card_id"=-782 AND "nome"='e"GBxy?nR/q6C)zbW:._&*c7Ub6Si<iELk`;-\I]u''(c%F?' AND "tipo"='criatura' AND "custo_mana"='criatura' AND "descricao"='6C=n]4tT$"Eyuzbo[2&$krt!IX<a24xAz]s' AND "poder"=50 AND "resistencia"=570 AND "raridade"=']?.*9~:JP%(M$rou'
+COMMIT
+INSERT INTO "cards" VALUES(213,'3!hf_J,','criatura','criatura','criatura',-556,763,'criatura')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=213 AND "nome"='3!hf_J,' AND "tipo"='criatura' AND "custo_mana"='criatura' AND "descricao"='criatura' AND "poder"=-556 AND "resistencia"=763 AND "raridade"='criatura'
+COMMIT
+INSERT INTO "cards" VALUES(-629,'[.%o''fQhapE>$B\V]l2}k+i','criatura','criatura','criatura',-681,564,'criatura')
+INSERT INTO "cards" VALUES(-989,'criatura','ogd%!;b<H.,,0hk1O6RPUDPyn9-{j37Vw(yq1&"Pg$=h',')7b`0P e>=A','V4YOZeCl1J-4YNGzA[Qf$d',284,NULL,'criatura')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-629 AND "nome"='[.%o''fQhapE>$B\V]l2}k+i' AND "tipo"='criatura' AND "custo_mana"='criatura' AND "descricao"='criatura' AND "poder"=-681 AND "resistencia"=564 AND "raridade"='criatura'
+DELETE FROM "cards" WHERE "card_id"=-989 AND "nome"='criatura' AND "tipo"='ogd%!;b<H.,,0hk1O6RPUDPyn9-{j37Vw(yq1&"Pg$=h' AND "custo_mana"=')7b`0P e>=A' AND "descricao"='V4YOZeCl1J-4YNGzA[Qf$d' AND "poder"=284 AND "resistencia" IS NULL AND "raridade"='criatura'
+COMMIT
+INSERT INTO "cards" VALUES(-647,'qKlH:^&339xB!`>c~$','criatura','>XBG]Ya{&yfPhz1','criatura',NULL,113,'criatura')
+INSERT INTO "cards" VALUES(52,'yU''|B7641lo','\eQyn2@VWd]N=e:Cdx"?VYz=ma]',NULL,'Tz#>#v(bw#}N+5345FREtXsYYz(u!V5K',-753,-843,'RQF3^PCv$zV.SfIV1*')
+INSERT INTO "cards" VALUES(-999,'7 sJ#\sEeH%OY7','m/{&EY3TC_1&zh7C/y=JJkLfmOdNS4-)_','%!`2d$N/J3|U!1t!4','criatura',674,-162,'S;;_vc#<X8YuPV-2sBw')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-647 AND "nome"='qKlH:^&339xB!`>c~$' AND "tipo"='criatura' AND "custo_mana"='>XBG]Ya{&yfPhz1' AND "descricao"='criatura' AND "poder" IS NULL AND "resistencia"=113 AND "raridade"='criatura'
+DELETE FROM "cards" WHERE "card_id"=52 AND "nome"='yU''|B7641lo' AND "tipo"='\eQyn2@VWd]N=e:Cdx"?VYz=ma]' AND "custo_mana" IS NULL AND "descricao"='Tz#>#v(bw#}N+5345FREtXsYYz(u!V5K' AND "poder"=-753 AND "resistencia"=-843 AND "raridade"='RQF3^PCv$zV.SfIV1*'
+DELETE FROM "cards" WHERE "card_id"=-999 AND "nome"='7 sJ#\sEeH%OY7' AND "tipo"='m/{&EY3TC_1&zh7C/y=JJkLfmOdNS4-)_' AND "custo_mana"='%!`2d$N/J3|U!1t!4' AND "descricao"='criatura' AND "poder"=674 AND "resistencia"=-162 AND "raridade"='S;;_vc#<X8YuPV-2sBw'
+COMMIT
+INSERT INTO "cards" VALUES(-927,'{?`J38]v^2E}<mKO.&q6?x,H/`r<;4aczcx|(CqXMX#G','criatura','Gp.au~;1','GUaj[DoX&>)vp"@j%y4}\!&+XD?9Hd',NULL,-563,'TJchCn')
+INSERT INTO "cards" VALUES(-724,'criatura','criatura','wo''??4=lh(pkrl9&','o69#^E5a''m}k\]J@Ral',543,75,'criatura')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-927 AND "nome"='{?`J38]v^2E}<mKO.&q6?x,H/`r<;4aczcx|(CqXMX#G' AND "tipo"='criatura' AND "custo_mana"='Gp.au~;1' AND "descricao"='GUaj[DoX&>)vp"@j%y4}\!&+XD?9Hd' AND "poder" IS NULL AND "resistencia"=-563 AND "raridade"='TJchCn'
+DELETE FROM "cards" WHERE "card_id"=-724 AND "nome"='criatura' AND "tipo"='criatura' AND "custo_mana"='wo''??4=lh(pkrl9&' AND "descricao"='o69#^E5a''m}k\]J@Ral' AND "poder"=543 AND "resistencia"=75 AND "raridade"='criatura'
+COMMIT
+INSERT INTO "cards" VALUES(928,'criatura','criatura','criatura','criatura',-84,627,'criatura')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=928 AND "nome"='criatura' AND "tipo"='criatura' AND "custo_mana"='criatura' AND "descricao"='criatura' AND "poder"=-84 AND "resistencia"=627 AND "raridade"='criatura'
+COMMIT
+INSERT INTO "cards" VALUES(-377,'criatura','criatura','criatura','criatura',604,-644,NULL)
+INSERT INTO "cards" VALUES(430,'criatura','N%2XVb$.u5S:PYGF@BU,$}iGm5',NULL,'Cv(AvJO>FV>e|YnkfDI',141,-316,'igY/o*')
+INSERT INTO "cards" VALUES(-454,'criatura',NULL,'!_''n[!4[P]gU6_lz%D-','Sfj!yD)9RLF&y/Ogy c+T',-63,3,'adrhVb<x;!''p#PM(IJ')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-377 AND "nome"='criatura' AND "tipo"='criatura' AND "custo_mana"='criatura' AND "descricao"='criatura' AND "poder"=604 AND "resistencia"=-644 AND "raridade" IS NULL
+DELETE FROM "cards" WHERE "card_id"=430 AND "nome"='criatura' AND "tipo"='N%2XVb$.u5S:PYGF@BU,$}iGm5' AND "custo_mana" IS NULL AND "descricao"='Cv(AvJO>FV>e|YnkfDI' AND "poder"=141 AND "resistencia"=-316 AND "raridade"='igY/o*'
+DELETE FROM "cards" WHERE "card_id"=-454 AND "nome"='criatura' AND "tipo" IS NULL AND "custo_mana"='!_''n[!4[P]gU6_lz%D-' AND "descricao"='Sfj!yD)9RLF&y/Ogy c+T' AND "poder"=-63 AND "resistencia"=3 AND "raridade"='adrhVb<x;!''p#PM(IJ'
+COMMIT
+INSERT INTO "cards" VALUES(-807,'criatura','criatura','criatura','criatura',NULL,NULL,'0C"5*)')
+INSERT INTO "cards" VALUES(-516,'criatura','criatura','K=zK"2DoKS]&=y','criatura',669,-700,'criatura')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-807 AND "nome"='criatura' AND "tipo"='criatura' AND "custo_mana"='criatura' AND "descricao"='criatura' AND "poder" IS NULL AND "resistencia" IS NULL AND "raridade"='0C"5*)'
+DELETE FROM "cards" WHERE "card_id"=-516 AND "nome"='criatura' AND "tipo"='criatura' AND "custo_mana"='K=zK"2DoKS]&=y' AND "descricao"='criatura' AND "poder"=669 AND "resistencia"=-700 AND "raridade"='criatura'
+COMMIT
+INSERT INTO "cards" VALUES(180,'criatura','criatura','criatura','criatura',-715,557,'&EyL:Ke?3<i`g]3O')
+INSERT INTO "cards" VALUES(765,NULL,'criatura','''0cD",','''-:b}wG0/5#zPKX2CL2O',475,-878,'criatura')
+INSERT INTO "cards" VALUES(661,'criatura','criatura',NULL,NULL,712,-165,'criatura')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=180 AND "nome"='criatura' AND "tipo"='criatura' AND "custo_mana"='criatura' AND "descricao"='criatura' AND "poder"=-715 AND "resistencia"=557 AND "raridade"='&EyL:Ke?3<i`g]3O'
+DELETE FROM "cards" WHERE "card_id"=765 AND "nome" IS NULL AND "tipo"='criatura' AND "custo_mana"='''0cD",' AND "descricao"='''-:b}wG0/5#zPKX2CL2O' AND "poder"=475 AND "resistencia"=-878 AND "raridade"='criatura'
+DELETE FROM "cards" WHERE "card_id"=661 AND "nome"='criatura' AND "tipo"='criatura' AND "custo_mana" IS NULL AND "descricao" IS NULL AND "poder"=712 AND "resistencia"=-165 AND "raridade"='criatura'
+COMMIT
+INSERT INTO "cards" VALUES(-322,'g6BYNQu92O`!]<wRT2~zku?''W','criatura','criatura','iSE]~1T*8^zf7y5f=@Cw=,!',387,212,'criatura')
+INSERT INTO "cards" VALUES(-618,'|{]k3leHI)6EHENI=IJnR`)SVkz{;ZxR1`!niC647}YFbP%=R','v-THrAzU,.W=U','Q%#V>c:\','criatura',-684,-824,'criatura')
+INSERT INTO "cards" VALUES(-842,'fa{kSL','3!l^awz{4HM,}O*Zd5Lana#FZBL[C','criatura','NjcW tm6TWfVu:5zPBvXB',126,363,'@\q|K?,A|{Kngsy.#')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-322 AND "nome"='g6BYNQu92O`!]<wRT2~zku?''W' AND "tipo"='criatura' AND "custo_mana"='criatura' AND "descricao"='iSE]~1T*8^zf7y5f=@Cw=,!' AND "poder"=387 AND "resistencia"=212 AND "raridade"='criatura'
+DELETE FROM "cards" WHERE "card_id"=-618 AND "nome"='|{]k3leHI)6EHENI=IJnR`)SVkz{;ZxR1`!niC647}YFbP%=R' AND "tipo"='v-THrAzU,.W=U' AND "custo_mana"='Q%#V>c:\' AND "descricao"='criatura' AND "poder"=-684 AND "resistencia"=-824 AND "raridade"='criatura'
+DELETE FROM "cards" WHERE "card_id"=-842 AND "nome"='fa{kSL' AND "tipo"='3!l^awz{4HM,}O*Zd5Lana#FZBL[C' AND "custo_mana"='criatura' AND "descricao"='NjcW tm6TWfVu:5zPBvXB' AND "poder"=126 AND "resistencia"=363 AND "raridade"='@\q|K?,A|{Kngsy.#'
+COMMIT
+INSERT INTO "cards" VALUES(-569,'<@RQqwN','EZ(]6Wn','0Vm{G','m=zyI=r7.Uohj5D?-`\t',NULL,-152,'rDpo8\hz;lb6i')
+INSERT INTO "cards" VALUES(472,'criatura','criatura','XEAF{','criatura',18,-679,',P@58]C)zk')
+INSERT INTO "cards" VALUES(722,'1Oq4kAvD 0Ext[n?ARPL-@xm-}W=I.0:*z4','v$9&LI)w+SQ"?eyD5nyihm','gH''LLYg ','criatura',77,NULL,'criatura')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-569 AND "nome"='<@RQqwN' AND "tipo"='EZ(]6Wn' AND "custo_mana"='0Vm{G' AND "descricao"='m=zyI=r7.Uohj5D?-`\t' AND "poder" IS NULL AND "resistencia"=-152 AND "raridade"='rDpo8\hz;lb6i'
+DELETE FROM "cards" WHERE "card_id"=472 AND "nome"='criatura' AND "tipo"='criatura' AND "custo_mana"='XEAF{' AND "descricao"='criatura' AND "poder"=18 AND "resistencia"=-679 AND "raridade"=',P@58]C)zk'
+DELETE FROM "cards" WHERE "card_id"=722 AND "nome"='1Oq4kAvD 0Ext[n?ARPL-@xm-}W=I.0:*z4' AND "tipo"='v$9&LI)w+SQ"?eyD5nyihm' AND "custo_mana"='gH''LLYg ' AND "descricao"='criatura' AND "poder"=77 AND "resistencia" IS NULL AND "raridade"='criatura'
+COMMIT
+INSERT INTO "cards" VALUES(713,NULL,'criatura','IUcbxQG/@5!^g~z*;o!','b!ynoe|w1v',-992,22,'criatura')
+INSERT INTO "cards" VALUES(-225,'J}\;3yh;5Wxr$qb"?,),`N:`k','criatura',NULL,'criatura',354,305,NULL)
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=713 AND "nome" IS NULL AND "tipo"='criatura' AND "custo_mana"='IUcbxQG/@5!^g~z*;o!' AND "descricao"='b!ynoe|w1v' AND "poder"=-992 AND "resistencia"=22 AND "raridade"='criatura'
+DELETE FROM "cards" WHERE "card_id"=-225 AND "nome"='J}\;3yh;5Wxr$qb"?,),`N:`k' AND "tipo"='criatura' AND "custo_mana" IS NULL AND "descricao"='criatura' AND "poder"=354 AND "resistencia"=305 AND "raridade" IS NULL
+COMMIT
+INSERT INTO "cards" VALUES(259,'IP<o$R}n9oKzTWhd(~)R9c''HJ?7z?i{I"bspj','criatura','criatura','criatura',-910,850,'criatura')
+INSERT INTO "cards" VALUES(-94,'criatura','criatura','L2;|KmK,2)eWq$.ZH','criatura',-80,542,'criatura')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=259 AND "nome"='IP<o$R}n9oKzTWhd(~)R9c''HJ?7z?i{I"bspj' AND "tipo"='criatura' AND "custo_mana"='criatura' AND "descricao"='criatura' AND "poder"=-910 AND "resistencia"=850 AND "raridade"='criatura'
+DELETE FROM "cards" WHERE "card_id"=-94 AND "nome"='criatura' AND "tipo"='criatura' AND "custo_mana"='L2;|KmK,2)eWq$.ZH' AND "descricao"='criatura' AND "poder"=-80 AND "resistencia"=542 AND "raridade"='criatura'
+COMMIT
+INSERT INTO "cards" VALUES(-119,'criatura','6 \<R:{3^B;AW=<Q','?U=kW*>,tI4!','criatura',NULL,628,'criatura')
+INSERT INTO "cards" VALUES(941,'l9IC[$wvUG}YndM*h','|+gcrZ;<Z,(;!ev/iQ2*WYK|)W"cAm`f','}Mxvz98sf1$Z]0`m','criatura',668,838,'criatura')
+INSERT INTO "cards" VALUES(-402,'1eM&)H6kKJ\hsS&Coa.>p$ Z','criatura','L7RI{K','criatura',NULL,394,'criatura')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=-119 AND "nome"='criatura' AND "tipo"='6 \<R:{3^B;AW=<Q' AND "custo_mana"='?U=kW*>,tI4!' AND "descricao"='criatura' AND "poder" IS NULL AND "resistencia"=628 AND "raridade"='criatura'
+DELETE FROM "cards" WHERE "card_id"=941 AND "nome"='l9IC[$wvUG}YndM*h' AND "tipo"='|+gcrZ;<Z,(;!ev/iQ2*WYK|)W"cAm`f' AND "custo_mana"='}Mxvz98sf1$Z]0`m' AND "descricao"='criatura' AND "poder"=668 AND "resistencia"=838 AND "raridade"='criatura'
+DELETE FROM "cards" WHERE "card_id"=-402 AND "nome"='1eM&)H6kKJ\hsS&Coa.>p$ Z' AND "tipo"='criatura' AND "custo_mana"='L7RI{K' AND "descricao"='criatura' AND "poder" IS NULL AND "resistencia"=394 AND "raridade"='criatura'
+COMMIT
+INSERT INTO "cards" VALUES(878,'criatura','$U~=S[69tz-=ccEU76bU:6Xf5+D1_)bv{""$hO','criatura','1fY~RN8?sn~tY`YoJc-b7GBFmY3(b0m"AH''Pt1$',581,-370,'h9H>3}):nk|1,6e7Uc')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=878 AND "nome"='criatura' AND "tipo"='$U~=S[69tz-=ccEU76bU:6Xf5+D1_)bv{""$hO' AND "custo_mana"='criatura' AND "descricao"='1fY~RN8?sn~tY`YoJc-b7GBFmY3(b0m"AH''Pt1$' AND "poder"=581 AND "resistencia"=-370 AND "raridade"='h9H>3}):nk|1,6e7Uc'
+COMMIT
+INSERT INTO "cards" VALUES(570,'criatura','criatura','%}\=Zc/0OBaR[fVeFgc',')\OdZiY%y6tu@c4jWMXu:=[tx4r@Dsk28*wm$lF7Sl$|6OaTj',-822,NULL,'criatura')
+INSERT INTO "cards" VALUES(810,'criatura','DPc$dH\h''"ULHQSLnziu+:oo&${h3''','SEfJI`gJvQ`','criatura',-384,-7,'criatura')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=570 AND "nome"='criatura' AND "tipo"='criatura' AND "custo_mana"='%}\=Zc/0OBaR[fVeFgc' AND "descricao"=')\OdZiY%y6tu@c4jWMXu:=[tx4r@Dsk28*wm$lF7Sl$|6OaTj' AND "poder"=-822 AND "resistencia" IS NULL AND "raridade"='criatura'
+DELETE FROM "cards" WHERE "card_id"=810 AND "nome"='criatura' AND "tipo"='DPc$dH\h''"ULHQSLnziu+:oo&${h3''' AND "custo_mana"='SEfJI`gJvQ`' AND "descricao"='criatura' AND "poder"=-384 AND "resistencia"=-7 AND "raridade"='criatura'
+COMMIT
+INSERT INTO "cards" VALUES(810,'criatura','DPc$dH\h''"ULHQSLnziu+:oo&${h3''','SEfJI`gJvQ`','criatura',-384,-7,'criatura')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=810 AND "nome"='criatura' AND "tipo"='DPc$dH\h''"ULHQSLnziu+:oo&${h3''' AND "custo_mana"='SEfJI`gJvQ`' AND "descricao"='criatura' AND "poder"=-384 AND "resistencia"=-7 AND "raridade"='criatura'
+COMMIT
+INSERT INTO "cards" VALUES(570,'criatura','criatura','%}\=Zc/0OBaR[fVeFgc',')\OdZiY%y6tu@c4jWMXu:=[tx4r@Dsk28*wm$lF7Sl$|6OaTj',-822,NULL,'criatura')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=570 AND "nome"='criatura' AND "tipo"='criatura' AND "custo_mana"='%}\=Zc/0OBaR[fVeFgc' AND "descricao"=')\OdZiY%y6tu@c4jWMXu:=[tx4r@Dsk28*wm$lF7Sl$|6OaTj' AND "poder"=-822 AND "resistencia" IS NULL AND "raridade"='criatura'
+COMMIT
+INSERT INTO "cards" VALUES(570,'criatura','criatura','%}\=Zc/0OBaR[fVeFgc',')\OdZiY%y6tu@c4jWMXu:=[tx4r@Dsk28*wm$lF7Sl$|6OaTj',-822,NULL,'criatura')
+COMMIT
+DELETE FROM "cards" WHERE "card_id"=570 AND "nome"='criatura' AND "tipo"='criatura' AND "custo_mana"='%}\=Zc/0OBaR[fVeFgc' AND "descricao"=')\OdZiY%y6tu@c4jWMXu:=[tx4r@Dsk28*wm$lF7Sl$|6OaTj' AND "poder"=-822 AND "resistencia" IS NULL AND "raridade"='criatura'
+COMMIT
+INSERT INTO "cards" VALUES(570,'criatura','criatura','%}\=Zc/0OBaR[fVeFgc',')\OdZiY%y6tu@c4jWMXu:=[tx4r@Dsk28*wm$lF7Sl$|6OaTj',-822,NULL,'criatura')
+COMMIT
+DISCONNECT

@@ -1,0 +1,55 @@
+version: "3"
+services:
+  tcc_loader:
+    build: ./tcc_loader
+    image: tcc_loader
+    stdin_open: true
+    tty: true
+    # entrypoint: sh # Debug mode
+    entrypoint: "sanic"
+    command: ["main:app", "--host=0.0.0.0", "--port=1997", "--workers=1", "-r", "-d"]
+    ports:
+      - "1997:1997"
+    volumes:
+      - ./tcc_loader:/sanic
+    networks:
+      - tcc_egide
+  postgres:
+    image: postgres:16.0-alpine3.18
+    ports:
+      - "35432:5432"
+    volumes:
+      - ./postgres_data/:/var/lib/postgresql
+    environment:
+      POSTGRES_USER: arthur
+      POSTGRES_PASSWORD: egide
+      PGPASSWORD: egide
+      POSTGRES_DB: postgres
+    networks:
+      - tcc_egide
+  mysql:
+    image: mysql:5.7.44
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: evosqldemo
+      MYSQL_DATABASE: evosqldemo
+      MYSQL_USER: evosqldemo
+      MYSQL_PASSWORD: evosqldemo
+    volumes:
+      - "mysql-data:/var/lib/mysql"
+      - "mysql-log:/var/log/mysql"
+      - "mysql-conf:/etc/mysql/conf.d"
+    networks:
+      - tcc_egide
+networks:
+  tcc_egide:
+    name: tcc_egide
+    external: true
+volumes:
+  mysql-data:
+    driver: local
+  mysql-log:
+    driver: local
+  mysql-conf:
+    driver: local

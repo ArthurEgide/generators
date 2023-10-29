@@ -1,0 +1,22 @@
+language: java
+jdk:
+  - openjdk8
+
+cache:
+  directories:
+    - ~/.gradle
+    - ~/.evosql-libs-cache
+
+notifications:
+  email: false
+
+script:
+  - ./gradlew :ga:check          # runs verification tasks
+  - ./gradlew :brew:check        # runs verification tasks
+  - ./gradlew jacocoTestReport   # generates Jacoco test report
+
+  # See https://docs.gradle.org/current/userguide/java_plugin.html for
+  # more details on the lifecycle events of Java projects in Gradle
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
