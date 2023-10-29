@@ -1,0 +1,3 @@
+php main.php 10000 1000;
+php main.php 100000 5000;
+php main.php 300000 10000;
