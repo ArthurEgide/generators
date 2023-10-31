@@ -13,3 +13,5 @@ RUN chmod 777 fakedata
 EXPOSE 8080
 
 ENTRYPOINT [ "bash" ]
+
+CMD [ "run" ]
