@@ -312,12 +312,11 @@ public class App {
   public static void main(String[] args) {
 
     HttpClientEgide obj = new HttpClientEgide();
-    
+
     try {
-      // TODO: Corrigir os valores de geração
-      int[] leve = {10, 2};
-      int[] medio = {30, 3};
-      int[] massivo = {50, 5};
+      int[] leve = {10000, 1000};
+      int[] medio = {100000, 5000};
+      int[] massivo = {300000, 10000};
 
       List<int[]> sizes = new ArrayList<int[]>();
       sizes.add(leve);
@@ -337,12 +336,12 @@ public class App {
         step.setAcao("fim gerar");
         obj.sendPost(step);
         
-        step = new Step("cards", qtCartas);
-        step.setAcao("inicio persistir");
-        obj.sendPost(step);
-        obj.sendPostCards(cards);
-        step.setAcao("fim persistir");
-        obj.sendPost(step);
+        // step = new Step("cards", qtCartas);
+        // step.setAcao("inicio persistir");
+        // obj.sendPost(step);
+        // obj.sendPostCards(cards);
+        // step.setAcao("fim persistir");
+        // obj.sendPost(step);
 
         step = new Step("decks", qtDecks);
         step.setAcao("inicio gerar");
@@ -351,12 +350,12 @@ public class App {
         step.setAcao("fim gerar");
         obj.sendPost(step);
         
-        step = new Step("decks", qtDecks);
-        step.setAcao("inicio persistir");
-        obj.sendPost(step);
-        obj.sendPostDecks(decks);
-        step.setAcao("fim persistir");
-        obj.sendPost(step);
+        // step = new Step("decks", qtDecks);
+        // step.setAcao("inicio persistir");
+        // obj.sendPost(step);
+        // obj.sendPostDecks(decks);
+        // step.setAcao("fim persistir");
+        // obj.sendPost(step);
 
 
       }

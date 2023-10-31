@@ -11,3 +11,5 @@ COPY ./ /usr/generator/
 RUN bash build.sh
 
 ENTRYPOINT [ "bash" ]
+
+CMD [ "run" ]
