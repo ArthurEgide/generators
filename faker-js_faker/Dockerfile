@@ -6,4 +6,6 @@ WORKDIR /usr/generator
 COPY ./ /usr/generator
 RUN npm install
 
-ENTRYPOINT [ "/bin/sh" ]
+ENTRYPOINT [ "node" ]
+
+CMD [ "index.js" ]

@@ -147,30 +147,30 @@ async function run() {
       cards = generateCards(n['cards']);
       await createStep(exec_id, 'fim gerar', 'cards', n['cards'], 'fakerjs')
       
-      exec_id = crypto.randomUUID()
-      await createStep(exec_id, 'inicio persistir', 'cards', n['cards'], 'fakerjs')
-      card_id_range = await persist(cards, '/create_cards');
-      await createStep(exec_id, 'fim persistir', 'cards', n['cards'], 'fakerjs')
+      // exec_id = crypto.randomUUID()
+      // await createStep(exec_id, 'inicio persistir', 'cards', n['cards'], 'fakerjs')
+      // card_id_range = await persist(cards, '/create_cards');
+      // await createStep(exec_id, 'fim persistir', 'cards', n['cards'], 'fakerjs')
       
       exec_id = crypto.randomUUID()
       await createStep(exec_id, 'inicio gerar', 'decks', n['decks'], 'fakerjs')
       decks = generateDecks(n['decks']);
       await createStep(exec_id, 'fim gerar', 'decks', n['decks'], 'fakerjs')
       
-      exec_id = crypto.randomUUID()
-      await createStep(exec_id, 'inicio persistir', 'decks', n['decks'], 'fakerjs')
-      deck_id_range = await persist(decks, '/create_decks');
-      await createStep(exec_id, 'fim persistir', 'decks', n['decks'], 'fakerjs')
+      // exec_id = crypto.randomUUID()
+      // await createStep(exec_id, 'inicio persistir', 'decks', n['decks'], 'fakerjs')
+      // deck_id_range = await persist(decks, '/create_decks');
+      // await createStep(exec_id, 'fim persistir', 'decks', n['decks'], 'fakerjs')
       
-      exec_id = crypto.randomUUID()
-      await createStep(exec_id, 'inicio', 'deck_cards gerar', 60 * n['decks'], 'fakerjs')
-      decks = generateDecksCards(card_id_range, deck_id_range);
-      await createStep(exec_id, 'fim gerar', 'deck_cards', 60 * n['decks'], 'fakerjs')
+      // exec_id = crypto.randomUUID()
+      // await createStep(exec_id, 'inicio', 'deck_cards gerar', 60 * n['decks'], 'fakerjs')
+      // decks = generateDecksCards(card_id_range, deck_id_range);
+      // await createStep(exec_id, 'fim gerar', 'deck_cards', 60 * n['decks'], 'fakerjs')
       
-      exec_id = crypto.randomUUID()
-      await createStep(exec_id, 'inicio', 'deck_cards persistir', 60 * n['decks'], 'fakerjs')
-      await persist(decks, '/create_deck_cards');
-      await createStep(exec_id, 'fim persistir', 'deck_cards', 60 * n['decks'], 'fakerjs')
+      // exec_id = crypto.randomUUID()
+      // await createStep(exec_id, 'inicio', 'deck_cards persistir', 60 * n['decks'], 'fakerjs')
+      // await persist(decks, '/create_deck_cards');
+      // await createStep(exec_id, 'fim persistir', 'deck_cards', 60 * n['decks'], 'fakerjs')
 
     }
     return data;
